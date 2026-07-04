@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — The Falcon Tour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/journal.css">
+<style>
+  body {
+    background: var(--ink);
+    color: var(--cream);
+    font-family: 'Manrope', sans-serif;
+  }
+  .admin-wrap {
+    max-width: 1200px;
+    margin: 120px auto 60px;
+    padding: 0 24px;
+  }
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+  }
+  .admin-title h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 38px;
+    margin: 0;
+  }
+  .admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+  .admin-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+  }
+  .admin-card h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 12px;
+    color: var(--amber);
+  }
+  .stat-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: var(--amber);
+    color: var(--ink);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  .user-item, .sub-item {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    transition: background 0.25s ease;
+  }
+  .sub-item {
+    cursor: pointer;
+  }
+  .sub-item:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+  .user-item:last-child, .sub-item:last-child {
+    border-bottom: none;
+  }
+  .user-item h4, .sub-item h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .user-item p, .sub-item p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: rgba(243, 238, 225, 0.6);
+  }
+  .detail-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(19, 27, 34, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+  }
+  .detail-content {
+    background: var(--cream-2);
+    color: var(--ink);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+  }
+  .detail-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--ink);
+  }
+  .detail-row {
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 12px;
+  }
+  .detail-row label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: rgba(19, 27, 34, 0.6);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .detail-row span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  #authCheckScreen {
+    position: fixed;
+    inset: 0;
+    background: var(--ink);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+  }
+</style>
+</head>
+<body>
+
+<div id="authCheckScreen">Validating Admin Credentials...</div>
+
+<header id="siteHeader" class="scrolled">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 6C22 14 14 17 4 18c8 3 15 8 18 18 3-10 10-15 18-18-10-1-18-4-16-12z" fill="#D9A441"/>
+      </svg>
+      <span class="logo-text">The <em>Falcon</em> Tour<small>ADMIN PORTAL</small></span>
+    </a>
+    <nav class="mainnav">
+      <a href="index.html">Back to Site</a>
+    </nav>
+  </div>
+</header>
+
+<div class="admin-wrap">
+  <div class="admin-header">
+    <div class="admin-title">
+      <h1>Dashboard</h1>
+      <p style="color:rgba(243,238,225,0.6); margin-top:6px;">Logged in as: <strong id="adminEmail" style="color:var(--amber);">nikhil2005114@gmail.com</strong></p>
+    </div>
+    <button onclick="logoutUser()" class="btn btn-outline">Log Out</button>
+  </div>
+
+  <div class="admin-grid">
+    <!-- Left: Users Count & List -->
+    <div class="admin-card">
+      <h2>Registered Users <span id="usersCount" class="stat-badge">0</span></h2>
+      <div id="usersList" style="max-height: 500px; overflow-y: auto;">
+        <p style="color:rgba(243,238,225,0.4);">Loading user accounts...</p>
+      </div>
+    </div>
+
+    <!-- Right: Submissions List -->
+    <div class="admin-card">
+      <h2>Trip Inquiries <span id="subsCount" class="stat-badge">0</span></h2>
+      <div id="subsList" style="max-height: 500px; overflow-y: auto;">
+        <p style="color:rgba(243,238,225,0.4);">Loading submission log...</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SUBMISSION DETAIL MODAL ============ -->
+<div id="detailModal" class="detail-modal">
+  <div class="detail-content">
+    <button onclick="closeDetailModal()" class="detail-close">&times;</button>
+    <h3 style="font-family:'Fraunces',serif; font-size:28px; margin-top:0; margin-bottom:24px; color:var(--ink);">Inquiry Details</h3>
+    
+    <div class="detail-row">
+      <label>CLIENT NAME</label>
+      <span id="detailName">-</span>
+    </div>
+    <div class="detail-row">
+      <label>PHONE NUMBER</label>
+      <span id="detailPhone">-</span>
+    </div>
+    <div class="detail-row">
+      <label>EMAIL ADDRESS</label>
+      <span id="detailEmail">-</span>
+    </div>
+    <div class="detail-row">
+      <label>CHOSEN DESTINATION</label>
+      <span id="detailDestination" style="color:var(--amber); font-weight:700;">-</span>
+    </div>
+    <div class="detail-row" style="border:none; margin-bottom:0; padding-bottom:0;">
+      <label>SUBMISSION DATE</label>
+      <span id="detailDate">-</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FIREBASE SDK COMPAT ============ -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+<script src="../assets/js/firebase-config.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (typeof firebase === 'undefined') {
+      document.getElementById('authCheckScreen').textContent = "Firebase is not initialized. Please configure API keys.";
+      return;
+    }
+
+    // Auth security guard
+    window.auth.onAuthStateChanged((user) => {
+      if (!user) {
+        // Not logged in, redirect
+        window.location.href = "index.html";
+      } else if (user.email !== 'nikhil2005114@gmail.com') {
+        // Access Denied for other users
+        document.body.innerHTML = `
+          <div style="height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; background:var(--ink); color:var(--cream); padding:20px;">
+            <h1 style="font-family:'Fraunces',serif; font-size:42px; color:red;">Access Denied</h1>
+            <p style="margin-top:10px; font-size:18px;">Only basecamp coordinators can view this administrative portal.</p>
+            <a href="index.html" class="btn btn-primary" style="margin-top:24px;">Return Basecamp</a>
+          </div>
+        `;
+      } else {
+        // Authenticated admin, load data
+        document.getElementById('authCheckScreen').style.display = 'none';
+        document.getElementById('adminEmail').textContent = user.email;
+        loadAdminDashboardData();
+      }
+    });
+  });
+
+  function loadAdminDashboardData() {
+    // 1. Load users
+    window.db.collection('users').orderBy('joined', 'desc').onSnapshot((snapshot) => {
+      const countBadge = document.getElementById('usersCount');
+      const listContainer = document.getElementById('usersList');
+      
+      countBadge.textContent = snapshot.size;
+      
+      if (snapshot.empty) {
+        listContainer.innerHTML = `<p style="color:rgba(243,238,225,0.4); text-align:center; padding:20px;">No registered user accounts found.</p>`;
+        return;
+      }
+
+      listContainer.innerHTML = snapshot.docs.map(doc => {
+        const u = doc.data();
+        const dateStr = u.joined ? new Date(u.joined.seconds * 1000).toLocaleDateString() : 'N/A';
+        return `
+          <div class="user-item">
+            <h4>${u.name || 'No Name'}</h4>
+            <p>${u.email}</p>
+            <p style="font-size:11px; opacity:0.5;">Joined: ${dateStr}</p>
+          </div>
+        `;
+      }).join('');
+    });
+
+    // 2. Load submissions
+    window.db.collection('submissions').orderBy('timestamp', 'desc').onSnapshot((snapshot) => {
+      const countBadge = document.getElementById('subsCount');
+      const listContainer = document.getElementById('subsList');
+      
+      countBadge.textContent = snapshot.size;
+
+      if (snapshot.empty) {
+        listContainer.innerHTML = `<p style="color:rgba(243,238,225,0.4); text-align:center; padding:20px;">No inquiries submitted yet.</p>`;
+        return;
+      }
+
+      window.submissionsData = {}; // Cache doc data for detail modal lookup
+      
+      listContainer.innerHTML = snapshot.docs.map(doc => {
+        const s = doc.data();
+        const id = doc.id;
+        window.submissionsData[id] = s;
+
+        const dateStr = s.timestamp ? new Date(s.timestamp.seconds * 1000).toLocaleDateString() : 'Just now';
+        
+        return `
+          <div class="sub-item" onclick="openDetailModal('${id}')">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <h4>${s.name}</h4>
+              <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--amber); font-weight:700;">${s.destination}</span>
+            </div>
+            <p>${s.email} · ${s.phone}</p>
+            <p style="font-size:11px; opacity:0.5; margin-top:6px;">Submitted: ${dateStr} (Click to view details)</p>
+          </div>
+        `;
+      }).join('');
+    });
+  }
+
+  // Detail Modal Handlers
+  window.openDetailModal = function(id) {
+    const s = window.submissionsData[id];
+    if (!s) return;
+
+    document.getElementById('detailName').textContent = s.name;
+    document.getElementById('detailPhone').textContent = s.phone;
+    document.getElementById('detailEmail').textContent = s.email;
+    document.getElementById('detailDestination').textContent = s.destination;
+    
+    const dateStr = s.timestamp ? new Date(s.timestamp.seconds * 1000).toLocaleString() : 'Just now';
+    document.getElementById('detailDate').textContent = dateStr;
+
+    document.getElementById('detailModal').style.display = 'flex';
+  };
+
+  window.closeDetailModal = function() {
+    document.getElementById('detailModal').style.display = 'none';
+  };
+</script>
+</body>
+</html>
