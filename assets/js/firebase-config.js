@@ -17,6 +17,58 @@ function isAdminEmail(email) {
 }
 
 const ADMIN_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`;
+const CHEVRON_ICON = `<svg class="user-menu-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function userMenuHtml(displayName, menuId) {
+  const safeName = escapeHtml(displayName);
+  return `
+    <div class="user-menu-wrap">
+      <button type="button" class="user-menu-trigger" id="${menuId}Trigger" aria-expanded="false" aria-haspopup="true">
+        <span class="user-menu-name">${safeName}</span>
+        ${CHEVRON_ICON}
+      </button>
+      <div class="user-menu-dropdown" id="${menuId}Dropdown">
+        <button type="button" onclick="logoutUser()" class="user-menu-logout">Logout</button>
+      </div>
+    </div>
+  `;
+}
+
+function initUserMenuDropdown(menuId) {
+  const trigger = document.getElementById(`${menuId}Trigger`);
+  const dropdown = document.getElementById(`${menuId}Dropdown`);
+  if (!trigger || !dropdown) return;
+
+  if (!window._userMenuCloseBound) {
+    window._userMenuCloseBound = true;
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.user-menu-dropdown.is-open').forEach((menu) => {
+        menu.classList.remove('is-open');
+        const linkedTrigger = document.getElementById(menu.id.replace('Dropdown', 'Trigger'));
+        if (linkedTrigger) linkedTrigger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  trigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    document.querySelectorAll('.user-menu-dropdown.is-open').forEach((menu) => {
+      if (menu !== dropdown) menu.classList.remove('is-open');
+    });
+    const isOpen = dropdown.classList.toggle('is-open');
+    trigger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  dropdown.addEventListener('click', (e) => e.stopPropagation());
+}
 
 // Initialize Firebase if the script compat libraries are loaded
 if (typeof firebase !== 'undefined') {
@@ -40,24 +92,28 @@ document.addEventListener("DOMContentLoaded", () => {
     let mobileUserHtml = '';
 
     if (user) {
-      // User is logged in
       const isAdmin = isAdminEmail(user.email);
       const displayName = user.displayName || user.email.split('@')[0];
-      
-      userHtml = `
-        <div class="user-profile-menu">
-          <span class="user-greeting">Hi, ${displayName}</span>
-          <div class="user-profile-actions">
-            ${isAdmin ? `<a href="admin.html" class="btn-admin" title="Open Admin Dashboard">${ADMIN_ICON}<span class="btn-admin-label">Admin Panel</span></a>` : ''}
-            <button type="button" onclick="logoutUser()" class="btn-logout-small">Logout</button>
+
+      if (isAdmin) {
+        userHtml = `
+          <div class="user-profile-menu">
+            <a href="admin.html" class="btn-admin" title="Open Admin Dashboard">${ADMIN_ICON}<span class="btn-admin-label">Admin Panel</span></a>
           </div>
-        </div>
-      `;
-      mobileUserHtml = `
-        <li class="mobile-user-greeting">Signed in as ${displayName}</li>
-        ${isAdmin ? `<li><a href="admin.html" class="mobile-admin-btn">${ADMIN_ICON} Admin Panel</a></li>` : ''}
-        <li><button type="button" onclick="logoutUser()" class="mobile-logout-btn">Logout</button></li>
-      `;
+        `;
+        mobileUserHtml = `
+          <li><a href="admin.html" class="mobile-admin-btn">${ADMIN_ICON} Admin Panel</a></li>
+        `;
+      } else {
+        userHtml = `
+          <div class="user-profile-menu">
+            ${userMenuHtml(displayName, 'desktopUserMenu')}
+          </div>
+        `;
+        mobileUserHtml = `
+          <li>${userMenuHtml(displayName, 'mobileUserMenu')}</li>
+        `;
+      }
     } else {
       // User is logged out
       userHtml = `
@@ -70,6 +126,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (userNavContainer) userNavContainer.innerHTML = userHtml;
     if (mobileUserNavContainer) mobileUserNavContainer.innerHTML = mobileUserHtml;
+
+    if (user && !isAdminEmail(user.email)) {
+      initUserMenuDropdown('desktopUserMenu');
+      initUserMenuDropdown('mobileUserMenu');
+    }
   });
 });
 
