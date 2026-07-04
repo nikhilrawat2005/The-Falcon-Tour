@@ -22,9 +22,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 24px;
     margin-bottom: 40px;
+  }
+  .admin-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
   }
   .admin-title h1 {
     font-family: 'Fraunces', serif;
@@ -64,74 +72,127 @@
     border-radius: 3px;
     margin-left: 10px;
   }
-  .user-item, .sub-item {
-    padding: 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
-    transition: background 0.25s ease;
+  .admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
-  .sub-item {
-    cursor: pointer;
+  .admin-list-item {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 6px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.02);
+    transition: border-color 0.25s ease, background 0.25s ease;
   }
-  .sub-item:hover {
-    background: rgba(255, 255, 255, 0.03);
+  .admin-list-item.is-open {
+    border-color: rgba(217, 164, 65, 0.35);
+    background: rgba(217, 164, 65, 0.04);
   }
-  .user-item:last-child, .sub-item:last-child {
-    border-bottom: none;
-  }
-  .user-item h4, .sub-item h4 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .user-item p, .sub-item p {
-    margin: 4px 0 0;
-    font-size: 13px;
-    color: rgba(243, 238, 225, 0.6);
-  }
-  .detail-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(19, 27, 34, 0.85);
-    backdrop-filter: blur(8px);
-    z-index: 999;
-    align-items: center;
-    justify-content: center;
-  }
-  .detail-content {
-    background: var(--cream-2);
-    color: var(--ink);
+  .admin-list-trigger {
     width: 100%;
-    max-width: 500px;
-    padding: 40px;
-    border-radius: 8px;
-    position: relative;
-  }
-  .detail-close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
     background: none;
     border: none;
-    font-size: 24px;
+    color: var(--cream);
     cursor: pointer;
+    text-align: left;
+    font-family: 'Manrope', sans-serif;
+    transition: background 0.2s ease;
+  }
+  .admin-list-trigger:hover {
+    background: rgba(255, 255, 255, 0.03);
+  }
+  .admin-list-num {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--amber);
     color: var(--ink);
-  }
-  .detail-row {
-    margin-bottom: 16px;
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 12px;
-  }
-  .detail-row label {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: rgba(19, 27, 34, 0.6);
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+  .admin-list-main {
+    flex: 1;
+    min-width: 0;
+  }
+  .admin-list-name {
     display: block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .admin-list-meta {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    color: rgba(243, 238, 225, 0.5);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .admin-list-chevron {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    color: rgba(243, 238, 225, 0.45);
+    transition: transform 0.25s ease, color 0.25s ease;
+  }
+  .admin-list-item.is-open .admin-list-chevron {
+    transform: rotate(180deg);
+    color: var(--amber);
+  }
+  .admin-list-dropdown {
+    display: none;
+    padding: 0 16px 16px 62px;
+    animation: adminDropIn 0.2s ease;
+  }
+  .admin-list-item.is-open .admin-list-dropdown {
+    display: block;
+  }
+  @keyframes adminDropIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .admin-detail-row {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .admin-detail-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .admin-detail-row label {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(243, 238, 225, 0.45);
     margin-bottom: 4px;
   }
-  .detail-row span {
-    font-size: 16px;
+  .admin-detail-row span {
+    font-size: 14px;
+    color: rgba(243, 238, 225, 0.9);
+    word-break: break-word;
+  }
+  .admin-detail-row span.highlight {
+    color: var(--amber);
     font-weight: 600;
+  }
+  .admin-empty {
+    color: rgba(243, 238, 225, 0.4);
+    text-align: center;
+    padding: 32px 20px;
+    font-size: 14px;
   }
   #authCheckScreen {
     position: fixed;
@@ -143,6 +204,63 @@
     justify-content: center;
     font-family: 'Fraunces', serif;
     font-size: 24px;
+  }
+  .admin-logout-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:rgba(255,80,80,.1);
+    color:#ff8a8a;
+    border:1px solid rgba(255,80,80,.35);
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    padding:12px 22px;
+    border-radius:var(--radius);
+    cursor:pointer;
+    flex-shrink:0;
+    transition:transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  .admin-logout-btn svg{
+    width:16px;
+    height:16px;
+    flex-shrink:0;
+  }
+  .admin-logout-btn:hover{
+    background:rgba(255,80,80,.2);
+    border-color:#ff6b6b;
+    color:#fff;
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(255,80,80,.2);
+  }
+  .admin-nav-logout{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    padding:10px 16px;
+    border-radius:var(--radius);
+    border:1px solid rgba(255,80,80,.4);
+    background:rgba(255,80,80,.12);
+    color:#ff9a9a;
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    cursor:pointer;
+    transition:background .25s ease, color .25s ease, border-color .25s ease;
+  }
+  .admin-nav-logout:hover{
+    background:rgba(255,80,80,.22);
+    color:#fff;
+    border-color:#ff6b6b;
+  }
+  .admin-nav-logout svg{width:14px;height:14px;}
+  @media (max-width: 768px) {
+    .admin-grid { grid-template-columns: 1fr; }
+    .admin-title h1 { font-size: 28px; }
+    .admin-header-actions { width: 100%; }
+    .admin-logout-btn { width: 100%; justify-content: center; }
   }
 </style>
 </head>
@@ -158,6 +276,10 @@
     </a>
     <nav class="mainnav">
       <a href="index.html">Back to Site</a>
+      <button type="button" onclick="logoutUser()" class="admin-nav-logout" title="Sign out of admin account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Log Out
+      </button>
     </nav>
   </div>
 </header>
@@ -168,61 +290,29 @@
       <h1>Dashboard</h1>
       <p style="color:rgba(243,238,225,0.6); margin-top:6px;">Logged in as: <strong id="adminEmail" style="color:var(--amber);">nikhil2005114@gmail.com</strong></p>
     </div>
-    <button onclick="logoutUser()" class="btn btn-outline">Log Out</button>
+    <div class="admin-header-actions">
+      <button type="button" onclick="logoutUser()" class="admin-logout-btn" title="Sign out of admin account">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+        Log Out
+      </button>
+    </div>
   </div>
 
   <div class="admin-grid">
     <!-- Left: Users Count & List -->
     <div class="admin-card">
       <h2>Registered Users <span id="usersCount" class="stat-badge">0</span></h2>
-      <div id="usersList" style="max-height: 500px; overflow-y: auto;">
-        <p style="color:rgba(243,238,225,0.4);">Loading user accounts...</p>
+      <div id="usersList" class="admin-list" style="max-height: 500px; overflow-y: auto;">
+        <p class="admin-empty">Loading user accounts...</p>
       </div>
     </div>
 
     <!-- Right: Submissions List -->
     <div class="admin-card">
       <h2>Trip Inquiries <span id="subsCount" class="stat-badge">0</span></h2>
-      <div id="subsList" style="max-height: 500px; overflow-y: auto;">
-        <p style="color:rgba(243,238,225,0.4);">Loading submission log...</p>
+      <div id="subsList" class="admin-list" style="max-height: 500px; overflow-y: auto;">
+        <p class="admin-empty">Loading submission log...</p>
       </div>
-    </div>
-  </div>
-</div>
-
-<!-- ============ SUBMISSION DETAIL MODAL ============ -->
-<div id="detailModal" class="detail-modal">
-  <div class="detail-content">
-    <button onclick="closeDetailModal()" class="detail-close">&times;</button>
-    <h3 style="font-family:'Fraunces',serif; font-size:28px; margin-top:0; margin-bottom:24px; color:var(--ink);">Inquiry Details</h3>
-    
-    <div class="detail-row">
-      <label>CLIENT NAME</label>
-      <span id="detailName">-</span>
-    </div>
-    <div class="detail-row">
-      <label>PHONE NUMBER</label>
-      <span id="detailPhone">-</span>
-    </div>
-    <div class="detail-row">
-      <label>EMAIL ADDRESS</label>
-      <span id="detailEmail">-</span>
-    </div>
-    <div class="detail-row">
-      <label>CHOSEN DESTINATION</label>
-      <span id="detailDestination" style="color:var(--amber); font-weight:700;">-</span>
-    </div>
-    <div class="detail-row">
-      <label>TRAVEL DATES</label>
-      <span id="detailTravelDates">-</span>
-    </div>
-    <div class="detail-row">
-      <label>MESSAGE</label>
-      <span id="detailMessage">-</span>
-    </div>
-    <div class="detail-row" style="border:none; margin-bottom:0; padding-bottom:0;">
-      <label>SUBMISSION DATE</label>
-      <span id="detailDate">-</span>
     </div>
   </div>
 </div>
@@ -264,26 +354,85 @@
   });
 
   function loadAdminDashboardData() {
+    const CHEVRON = `<svg class="admin-list-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function formatDate(ts) {
+      if (!ts || !ts.seconds) return 'N/A';
+      return new Date(ts.seconds * 1000).toLocaleString('en-IN', {
+        day: '2-digit', month: 'short', year: 'numeric',
+        hour: '2-digit', minute: '2-digit'
+      });
+    }
+
+    function formatDateShort(ts) {
+      if (!ts || !ts.seconds) return 'Just now';
+      return new Date(ts.seconds * 1000).toLocaleDateString('en-IN', {
+        day: '2-digit', month: 'short', year: 'numeric'
+      });
+    }
+
+    window.toggleAdminItem = function(btn) {
+      const item = btn.closest('.admin-list-item');
+      const isOpen = item.classList.contains('is-open');
+      const list = item.parentElement;
+      list.querySelectorAll('.admin-list-item.is-open').forEach((el) => {
+        if (el !== item) el.classList.remove('is-open');
+      });
+      item.classList.toggle('is-open', !isOpen);
+      btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
+    };
+
     // 1. Load users
     window.db.collection('users').orderBy('joined', 'desc').onSnapshot((snapshot) => {
       const countBadge = document.getElementById('usersCount');
       const listContainer = document.getElementById('usersList');
-      
+
       countBadge.textContent = snapshot.size;
-      
+
       if (snapshot.empty) {
-        listContainer.innerHTML = `<p style="color:rgba(243,238,225,0.4); text-align:center; padding:20px;">No registered user accounts found.</p>`;
+        listContainer.innerHTML = `<p class="admin-empty">No registered user accounts found.</p>`;
         return;
       }
 
-      listContainer.innerHTML = snapshot.docs.map(doc => {
+      listContainer.innerHTML = snapshot.docs.map((doc, index) => {
         const u = doc.data();
-        const dateStr = u.joined ? new Date(u.joined.seconds * 1000).toLocaleDateString() : 'N/A';
+        const name = escapeHtml(u.name || 'No Name');
+        const email = escapeHtml(u.email || '—');
+        const joined = formatDate(u.joined);
+        const num = String(index + 1).padStart(2, '0');
+
         return `
-          <div class="user-item">
-            <h4>${u.name || 'No Name'}</h4>
-            <p>${u.email}</p>
-            <p style="font-size:11px; opacity:0.5;">Joined: ${dateStr}</p>
+          <div class="admin-list-item">
+            <button type="button" class="admin-list-trigger" onclick="toggleAdminItem(this)" aria-expanded="false">
+              <span class="admin-list-num">${num}</span>
+              <span class="admin-list-main">
+                <span class="admin-list-name">${name}</span>
+                <span class="admin-list-meta">Signed in user</span>
+              </span>
+              ${CHEVRON}
+            </button>
+            <div class="admin-list-dropdown">
+              <div class="admin-detail-row">
+                <label>Full Name</label>
+                <span>${name}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Email Address</label>
+                <span>${email}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Joined On</label>
+                <span>${joined}</span>
+              </div>
+            </div>
           </div>
         `;
       }).join('');
@@ -293,65 +442,77 @@
     window.db.collection('submissions').orderBy('timestamp', 'desc').onSnapshot((snapshot) => {
       const countBadge = document.getElementById('subsCount');
       const listContainer = document.getElementById('subsList');
-      
+
       countBadge.textContent = snapshot.size;
 
       if (snapshot.empty) {
-        listContainer.innerHTML = `<p style="color:rgba(243,238,225,0.4); text-align:center; padding:20px;">No inquiries submitted yet.</p>`;
+        listContainer.innerHTML = `<p class="admin-empty">No inquiries submitted yet.</p>`;
         return;
       }
 
-      window.submissionsData = {}; // Cache doc data for detail modal lookup
-      
-      listContainer.innerHTML = snapshot.docs.map(doc => {
+      listContainer.innerHTML = snapshot.docs.map((doc, index) => {
         const s = doc.data();
-        const id = doc.id;
-        window.submissionsData[id] = s;
+        const name = escapeHtml(s.name || 'Unknown');
+        const email = escapeHtml(s.email || '—');
+        const phone = escapeHtml(s.phone || '—');
+        const destination = escapeHtml(s.destination || '—');
+        const message = escapeHtml(s.message || '—');
+        const submitted = formatDate(s.timestamp);
+        const submittedShort = formatDateShort(s.timestamp);
+        const num = String(index + 1).padStart(2, '0');
 
-        const dateStr = s.timestamp ? new Date(s.timestamp.seconds * 1000).toLocaleDateString() : 'Just now';
-        
+        let travelDates = 'Not specified';
+        if (s.travelFrom && s.travelTo) {
+          travelDates = `${escapeHtml(s.travelFrom)} → ${escapeHtml(s.travelTo)}`;
+        } else if (s.travelFrom || s.travelTo) {
+          travelDates = escapeHtml(s.travelFrom || s.travelTo);
+        }
+
         return `
-          <div class="sub-item" onclick="openDetailModal('${id}')">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-              <h4>${s.name}</h4>
-              <span style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--amber); font-weight:700;">${s.destination}</span>
+          <div class="admin-list-item">
+            <button type="button" class="admin-list-trigger" onclick="toggleAdminItem(this)" aria-expanded="false">
+              <span class="admin-list-num">${num}</span>
+              <span class="admin-list-main">
+                <span class="admin-list-name">${name}</span>
+                <span class="admin-list-meta">${submittedShort}</span>
+              </span>
+              ${CHEVRON}
+            </button>
+            <div class="admin-list-dropdown">
+              <div class="admin-detail-row">
+                <label>Client Name</label>
+                <span>${name}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Email Address</label>
+                <span>${email}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Phone Number</label>
+                <span>${phone}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Destination</label>
+                <span class="highlight">${destination}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Travel Dates</label>
+                <span>${travelDates}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Message</label>
+                <span>${message}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Submitted On</label>
+                <span>${submitted}</span>
+              </div>
             </div>
-            <p>${s.email} · ${s.phone}</p>
-            <p style="font-size:11px; opacity:0.5; margin-top:6px;">Submitted: ${dateStr} (Click to view details)</p>
           </div>
         `;
       }).join('');
     });
   }
-
-  // Detail Modal Handlers
-  window.openDetailModal = function(id) {
-    const s = window.submissionsData[id];
-    if (!s) return;
-
-    document.getElementById('detailName').textContent = s.name;
-    document.getElementById('detailPhone').textContent = s.phone;
-    document.getElementById('detailEmail').textContent = s.email;
-    document.getElementById('detailDestination').textContent = s.destination;
-
-    let travelDates = 'Not specified';
-    if (s.travelFrom && s.travelTo) {
-      travelDates = `${s.travelFrom} → ${s.travelTo}`;
-    } else if (s.travelFrom || s.travelTo) {
-      travelDates = s.travelFrom || s.travelTo;
-    }
-    document.getElementById('detailTravelDates').textContent = travelDates;
-    document.getElementById('detailMessage').textContent = s.message || '—';
-
-    const dateStr = s.timestamp ? new Date(s.timestamp.seconds * 1000).toLocaleString() : 'Just now';
-    document.getElementById('detailDate').textContent = dateStr;
-
-    document.getElementById('detailModal').style.display = 'flex';
-  };
-
-  window.closeDetailModal = function() {
-    document.getElementById('detailModal').style.display = 'none';
-  };
 </script>
 </body>
 </html>

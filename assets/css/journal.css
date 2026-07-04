@@ -54,8 +54,15 @@
   }
   .btn-primary{background:var(--amber);color:var(--ink);}
   .btn-primary:hover{background:var(--amber-2);transform:translateY(-2px);}
-  .btn-outline{border-color:var(--line-light);color:var(--cream);}
-  .btn-outline:hover{border-color:var(--amber);color:var(--amber);transform:translateY(-2px);}
+  .btn-outline{border-color:var(--line-light);color:var(--cream);background:transparent;}
+  .btn-outline:hover{border-color:var(--amber);color:var(--amber);background:rgba(217,164,65,.08);transform:translateY(-2px);}
+  button.btn-outline{
+    background:transparent;
+    color:var(--cream);
+    -webkit-appearance:none;
+    appearance:none;
+  }
+  button.btn-outline:hover{color:var(--amber);}
   .btn-dark{border-color:var(--ink);color:var(--ink);}
   .btn-dark:hover{background:var(--ink);color:var(--cream);}
   .btn-signin{background:var(--amber);color:var(--ink);border-color:var(--amber);}
