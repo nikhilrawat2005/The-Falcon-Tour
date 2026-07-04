@@ -71,6 +71,89 @@
   .btn-google{background:#fff;color:var(--ink);border:1px solid var(--line);}
   .btn-google:hover{background:#f8f8f8;border-color:var(--ink);transform:translateY(-2px);}
 
+  /* ===== AUTH / USER NAV ===== */
+  #userNavContainer{display:flex;align-items:center;}
+  .user-profile-menu{display:flex;align-items:center;gap:12px;}
+  .user-greeting{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;
+    letter-spacing:.04em;
+    color:rgba(243,238,225,.72);
+    white-space:nowrap;
+    max-width:110px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .user-profile-actions{display:flex;align-items:center;gap:8px;}
+  .btn-admin{
+    display:inline-flex;align-items:center;gap:7px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+    padding:10px 14px;border-radius:var(--radius);
+    border:1px solid rgba(217,164,65,.5);
+    background:linear-gradient(135deg, rgba(217,164,65,.18), rgba(217,164,65,.08));
+    color:var(--amber-2);
+    white-space:nowrap;
+    transition:transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease, box-shadow .25s ease;
+  }
+  .btn-admin svg{width:14px;height:14px;flex-shrink:0;}
+  .btn-admin:hover{
+    background:var(--amber);
+    color:var(--ink);
+    border-color:var(--amber);
+    transform:translateY(-2px);
+    box-shadow:0 6px 18px rgba(217,164,65,.28);
+  }
+  .btn-logout-small{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px;letter-spacing:.04em;text-transform:uppercase;
+    padding:10px 12px;border-radius:var(--radius);
+    background:transparent;
+    border:1px solid rgba(243,238,225,.18);
+    color:rgba(243,238,225,.72);
+    cursor:pointer;
+    transition:transform .25s ease, border-color .25s ease, color .25s ease;
+  }
+  .btn-logout-small:hover{
+    border-color:rgba(243,238,225,.42);
+    color:var(--cream);
+    transform:translateY(-1px);
+  }
+  .mobile-user-greeting{
+    color:rgba(243,238,225,.55);
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    margin-bottom:4px;
+  }
+  .mobile-admin-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    width:fit-content;
+    padding:14px 20px;
+    border-radius:var(--radius);
+    border:1px solid rgba(217,164,65,.45);
+    background:rgba(217,164,65,.12);
+    color:var(--amber);
+    font-family:'Fraunces',serif;
+    font-size:24px;
+    transition:background .25s ease, color .25s ease, border-color .25s ease;
+  }
+  .mobile-admin-btn svg{width:20px;height:20px;flex-shrink:0;}
+  .mobile-admin-btn:hover{background:var(--amber);color:var(--ink);border-color:var(--amber);}
+  .mobile-logout-btn{
+    color:rgba(243,238,225,.75);
+    background:none;
+    border:none;
+    font-family:'Fraunces',serif;
+    font-size:22px;
+    cursor:pointer;
+    padding:0;
+    text-align:left;
+    transition:color .2s ease;
+  }
+  .mobile-logout-btn:hover{color:var(--cream);}
+
   /* ===== IMAGE SLOTS ===== */
   .img-slot{
     position:relative;
@@ -551,6 +634,10 @@
     header.scrolled .logo-img{height:46px;width:46px;}
     .logo-text{font-size:18px;}
     .foot-logo .logo-img, footer .logo-img{height:42px;width:42px;}
+    .user-greeting{display:none;}
+    .btn-admin{padding:9px 11px;}
+    .btn-admin-label{display:none;}
+    .btn-logout-small{padding:9px 10px;font-size:10px;}
     .search-card{grid-template-columns:1fr 1fr;row-gap:20px;}
     .search-field{border-right:none;padding-left:0;}
     .search-submit{grid-column:span 2;padding-left:0;}
@@ -614,7 +701,7 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="header-right">
-      <div id="userNavContainer" style="display:inline-block; margin-right:12px;"></div>
+      <div id="userNavContainer"></div>
       <a href="#contact" class="btn btn-outline">Plan My Trip</a>
       <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>

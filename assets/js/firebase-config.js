@@ -16,6 +16,8 @@ function isAdminEmail(email) {
   return window.ADMIN_EMAILS.includes(email);
 }
 
+const ADMIN_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>`;
+
 // Initialize Firebase if the script compat libraries are loaded
 if (typeof firebase !== 'undefined') {
   firebase.initializeApp(firebaseConfig);
@@ -45,14 +47,16 @@ document.addEventListener("DOMContentLoaded", () => {
       userHtml = `
         <div class="user-profile-menu">
           <span class="user-greeting">Hi, ${displayName}</span>
-          ${isAdmin ? `<a href="admin.html" class="btn-admin-link">Admin Panel</a>` : ''}
-          <button onclick="logoutUser()" class="btn-logout-small">Logout</button>
+          <div class="user-profile-actions">
+            ${isAdmin ? `<a href="admin.html" class="btn-admin" title="Open Admin Dashboard">${ADMIN_ICON}<span class="btn-admin-label">Admin Panel</span></a>` : ''}
+            <button type="button" onclick="logoutUser()" class="btn-logout-small">Logout</button>
+          </div>
         </div>
       `;
       mobileUserHtml = `
-        <li><span style="color:#D9A441;font-family:'Fraunces',serif;font-size:22px;">Hi, ${displayName}</span></li>
-        ${isAdmin ? `<li><a href="admin.html" style="color:#D9A441;font-family:'Fraunces',serif;font-size:26px;">Admin Panel</a></li>` : ''}
-        <li><button onclick="logoutUser()" style="color:#F3EEE1;background:none;border:none;font-family:'Fraunces',serif;font-size:26px;cursor:pointer;padding:0;text-align:left;">Logout</button></li>
+        <li class="mobile-user-greeting">Signed in as ${displayName}</li>
+        ${isAdmin ? `<li><a href="admin.html" class="mobile-admin-btn">${ADMIN_ICON} Admin Panel</a></li>` : ''}
+        <li><button type="button" onclick="logoutUser()" class="mobile-logout-btn">Logout</button></li>
       `;
     } else {
       // User is logged out
