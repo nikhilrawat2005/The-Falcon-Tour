@@ -457,9 +457,11 @@
         const phone = escapeHtml(s.phone || '—');
         const destination = escapeHtml(s.destination || '—');
         const message = escapeHtml(s.message || '—');
-        const submitted = formatDate(s.timestamp);
         const submittedShort = formatDateShort(s.timestamp);
         const num = String(index + 1).padStart(2, '0');
+        const displayPhone = s.countryCode && s.localPhone
+          ? `${escapeHtml(s.countryCode)} ${escapeHtml(s.localPhone)}`
+          : phone;
 
         let travelDates = 'Not specified';
         if (s.travelFrom && s.travelTo) {
@@ -474,7 +476,7 @@
               <span class="admin-list-num">${num}</span>
               <span class="admin-list-main">
                 <span class="admin-list-name">${name}</span>
-                <span class="admin-list-meta">${submittedShort}</span>
+                <span class="admin-list-meta">Form · ${submittedShort}</span>
               </span>
               ${CHEVRON}
             </button>
@@ -489,7 +491,7 @@
               </div>
               <div class="admin-detail-row">
                 <label>Phone Number</label>
-                <span>${phone}</span>
+                <span>${displayPhone}</span>
               </div>
               <div class="admin-detail-row">
                 <label>Destination</label>
@@ -502,10 +504,6 @@
               <div class="admin-detail-row">
                 <label>Message</label>
                 <span>${message}</span>
-              </div>
-              <div class="admin-detail-row">
-                <label>Submitted On</label>
-                <span>${submitted}</span>
               </div>
             </div>
           </div>

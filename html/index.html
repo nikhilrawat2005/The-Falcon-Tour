@@ -1213,7 +1213,37 @@
 
         <div style="display:flex; flex-direction:column; gap:6px;">
           <label style="font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(243,238,225,0.6);">PHONE NUMBER</label>
-          <input type="tel" id="formPhone" required placeholder="+91 98765 43210, +1 555 123 4567, +971 50 123 4567" title="Include country code (e.g. +91, +1, +44, +971)" style="width:100%; padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px;">
+          <div style="display:flex; gap:10px; align-items:stretch;">
+            <select id="formCountryCode" required aria-label="Country code" style="flex:0 0 118px; padding:14px 10px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px;">
+              <option value="+91" selected>🇮🇳 +91</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+971">🇦🇪 +971</option>
+              <option value="+65">🇸🇬 +65</option>
+              <option value="+60">🇲🇾 +60</option>
+              <option value="+94">🇱🇰 +94</option>
+              <option value="+90">🇹🇷 +90</option>
+              <option value="+64">🇳🇿 +64</option>
+              <option value="+994">🇦🇿 +994</option>
+              <option value="+84">🇻🇳 +84</option>
+              <option value="+33">🇫🇷 +33</option>
+              <option value="+49">🇩🇪 +49</option>
+              <option value="+61">🇦🇺 +61</option>
+              <option value="+81">🇯🇵 +81</option>
+              <option value="+86">🇨🇳 +86</option>
+              <option value="+966">🇸🇦 +966</option>
+              <option value="+974">🇶🇦 +974</option>
+              <option value="+973">🇧🇭 +973</option>
+              <option value="+968">🇴🇲 +968</option>
+              <option value="+852">🇭🇰 +852</option>
+              <option value="+82">🇰🇷 +82</option>
+              <option value="+39">🇮🇹 +39</option>
+              <option value="+34">🇪🇸 +34</option>
+              <option value="+7">🇷🇺 +7</option>
+              <option value="+27">🇿🇦 +27</option>
+            </select>
+            <input type="tel" id="formPhone" required placeholder="98765 43210" inputmode="numeric" pattern="[0-9\s\-()]{8,15}" title="Enter your mobile number without country code" style="flex:1; min-width:0; padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px;">
+          </div>
         </div>
 
         <div style="display:flex; flex-direction:column; gap:6px;">
@@ -1502,12 +1532,15 @@
     }
   }
 
-  function isValidInternationalPhone(phone) {
-    const trimmed = phone.trim();
-    if (!trimmed) return false;
-    if (!/^\+?[\d\s\-().]+$/.test(trimmed)) return false;
-    const digits = trimmed.replace(/\D/g, '');
-    return digits.length >= 8 && digits.length <= 15;
+  function isValidPhoneNumber(phone) {
+    const digits = phone.replace(/\D/g, '');
+    return digits.length >= 8 && digits.length <= 12;
+  }
+
+  function getFullPhoneNumber() {
+    const countryCode = document.getElementById('formCountryCode').value;
+    const localNumber = document.getElementById('formPhone').value.trim();
+    return `${countryCode} ${localNumber}`;
   }
 
   function validateTravelDates(from, to) {
@@ -1538,7 +1571,8 @@
   window.handleFormSubmission = function(e) {
     e.preventDefault();
     const name = document.getElementById('formName').value.trim();
-    const phone = document.getElementById('formPhone').value.trim();
+    const localPhone = document.getElementById('formPhone').value.trim();
+    const phone = getFullPhoneNumber();
     const email = document.getElementById('formEmail').value.trim();
     const destinationSelect = document.getElementById('formDestination').value;
     const customDest = document.getElementById('formCustomDestination').value.trim();
@@ -1549,10 +1583,10 @@
 
     const destination = destinationSelect === 'Other' ? customDest : destinationSelect;
 
-    if (!isValidInternationalPhone(phone)) {
+    if (!isValidPhoneNumber(localPhone)) {
       feedback.style.display = 'block';
       feedback.style.color = '#ff6b6b';
-      feedback.textContent = 'Please enter a valid phone number with country code (e.g. +91, +1, +44, +971).';
+      feedback.textContent = 'Please enter a valid phone number (8–12 digits).';
       return;
     }
 
@@ -1580,6 +1614,8 @@
     db.collection('submissions').add({
       name: name,
       phone: phone,
+      countryCode: document.getElementById('formCountryCode').value,
+      localPhone: localPhone,
       email: email,
       destination: destination,
       travelFrom: travelFrom || null,
