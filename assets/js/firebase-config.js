@@ -2,13 +2,19 @@
 // Replace the placeholders below with your actual credentials from the Firebase Console.
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY_HERE",
-  authDomain: "YOUR_PROJECT_ID_HERE.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID_HERE",
-  storageBucket: "YOUR_PROJECT_ID_HERE.firebasestorage.app",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID_HERE",
-  appId: "YOUR_APP_ID_HERE"
+  apiKey: "AIzaSyD886ZgqpKQuMnHdx-tZUdXwaO4UeEQwMI",
+  authDomain: "the-falcon-tour.firebaseapp.com",
+  projectId: "the-falcon-tour",
+  storageBucket: "the-falcon-tour.firebasestorage.app",
+  messagingSenderId: "898187329494",
+  appId: "1:898187329494:web:c00b07e08d7c908020ee77",
 };
+
+window.ADMIN_EMAILS = ['nikhil2005114@gmail.com', 'manishrawat2636@gmail.com'];
+
+function isAdminEmail(email) {
+  return window.ADMIN_EMAILS.includes(email);
+}
 
 // Initialize Firebase if the script compat libraries are loaded
 if (typeof firebase !== 'undefined') {
@@ -33,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (user) {
       // User is logged in
-      const isAdmin = user.email === 'nikhil2005114@gmail.com';
+      const isAdmin = isAdminEmail(user.email);
       const displayName = user.displayName || user.email.split('@')[0];
       
       userHtml = `
@@ -51,10 +57,10 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       // User is logged out
       userHtml = `
-        <button onclick="openAuthModal()" class="btn btn-outline">Sign In</button>
+        <button onclick="openAuthModal()" class="btn btn-primary btn-signin">Sign In</button>
       `;
       mobileUserHtml = `
-        <li><button onclick="openAuthModal()" style="color:#F3EEE1;background:none;border:none;font-family:'Fraunces',serif;font-size:26px;cursor:pointer;padding:0;text-align:left;">Sign In / Join</button></li>
+        <li><button onclick="openAuthModal()" style="color:#D9A441;background:none;border:none;font-family:'Fraunces',serif;font-size:26px;cursor:pointer;padding:0;text-align:left;">Sign In / Join</button></li>
       `;
     }
 
@@ -70,4 +76,46 @@ window.logoutUser = function() {
   }).catch((error) => {
     console.error("Sign out error", error);
   });
+};
+
+// Google Sign-In handler
+window.signInWithGoogle = function() {
+  if (typeof auth === 'undefined') {
+    const feedback = document.getElementById('authFeedback');
+    if (feedback) {
+      feedback.style.display = 'block';
+      feedback.style.color = 'red';
+      feedback.textContent = 'Firebase authentication not configured yet.';
+    }
+    return;
+  }
+
+  const provider = new firebase.auth.GoogleAuthProvider();
+  const feedback = document.getElementById('authFeedback');
+  if (feedback) {
+    feedback.style.display = 'block';
+    feedback.style.color = 'var(--ink)';
+    feedback.textContent = 'Connecting to Google...';
+  }
+
+  auth.signInWithPopup(provider)
+    .then((result) => {
+      const user = result.user;
+      return db.collection('users').doc(user.uid).set({
+        name: user.displayName || user.email.split('@')[0],
+        email: user.email,
+        joined: firebase.firestore.FieldValue.serverTimestamp(),
+        uid: user.uid,
+        provider: 'google'
+      }, { merge: true });
+    })
+    .then(() => {
+      if (typeof closeAuthModal === 'function') closeAuthModal();
+    })
+    .catch((error) => {
+      if (feedback) {
+        feedback.style.color = 'red';
+        feedback.textContent = error.message;
+      }
+    });
 };

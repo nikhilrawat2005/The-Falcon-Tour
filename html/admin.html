@@ -31,6 +31,8 @@
     font-size: 38px;
     margin: 0;
   }
+  .logo-admin .logo-text{font-size:0;line-height:1;}
+  .logo-admin .logo-text small{font-size:9px;display:block;line-height:normal;margin-top:6px;}
   .admin-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -150,10 +152,8 @@
 
 <header id="siteHeader" class="scrolled">
   <div class="wrap">
-    <a href="index.html" class="logo">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M24 6C22 14 14 17 4 18c8 3 15 8 18 18 3-10 10-15 18-18-10-1-18-4-16-12z" fill="#D9A441"/>
-      </svg>
+    <a href="index.html" class="logo logo-admin">
+      <img src="../assets/images/logo.png" alt="The Falcon Tour" class="logo-img">
       <span class="logo-text">The <em>Falcon</em> Tour<small>ADMIN PORTAL</small></span>
     </a>
     <nav class="mainnav">
@@ -212,6 +212,14 @@
       <label>CHOSEN DESTINATION</label>
       <span id="detailDestination" style="color:var(--amber); font-weight:700;">-</span>
     </div>
+    <div class="detail-row">
+      <label>TRAVEL DATES</label>
+      <span id="detailTravelDates">-</span>
+    </div>
+    <div class="detail-row">
+      <label>MESSAGE</label>
+      <span id="detailMessage">-</span>
+    </div>
     <div class="detail-row" style="border:none; margin-bottom:0; padding-bottom:0;">
       <label>SUBMISSION DATE</label>
       <span id="detailDate">-</span>
@@ -237,7 +245,7 @@
       if (!user) {
         // Not logged in, redirect
         window.location.href = "index.html";
-      } else if (user.email !== 'nikhil2005114@gmail.com') {
+      } else if (!window.ADMIN_EMAILS.includes(user.email)) {
         // Access Denied for other users
         document.body.innerHTML = `
           <div style="height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; background:var(--ink); color:var(--cream); padding:20px;">
@@ -325,7 +333,16 @@
     document.getElementById('detailPhone').textContent = s.phone;
     document.getElementById('detailEmail').textContent = s.email;
     document.getElementById('detailDestination').textContent = s.destination;
-    
+
+    let travelDates = 'Not specified';
+    if (s.travelFrom && s.travelTo) {
+      travelDates = `${s.travelFrom} → ${s.travelTo}`;
+    } else if (s.travelFrom || s.travelTo) {
+      travelDates = s.travelFrom || s.travelTo;
+    }
+    document.getElementById('detailTravelDates').textContent = travelDates;
+    document.getElementById('detailMessage').textContent = s.message || '—';
+
     const dateStr = s.timestamp ? new Date(s.timestamp.seconds * 1000).toLocaleString() : 'Just now';
     document.getElementById('detailDate').textContent = dateStr;
 

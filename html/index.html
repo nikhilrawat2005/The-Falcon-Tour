@@ -66,6 +66,10 @@
   .btn-outline:hover{border-color:var(--amber);color:var(--amber);transform:translateY(-2px);}
   .btn-dark{border-color:var(--ink);color:var(--ink);}
   .btn-dark:hover{background:var(--ink);color:var(--cream);}
+  .btn-signin{background:var(--amber);color:var(--ink);border-color:var(--amber);}
+  .btn-signin:hover{background:var(--amber-2);color:var(--ink);transform:translateY(-2px);}
+  .btn-google{background:#fff;color:var(--ink);border:1px solid var(--line);}
+  .btn-google:hover{background:#f8f8f8;border-color:var(--ink);transform:translateY(-2px);}
 
   /* ===== IMAGE SLOTS ===== */
   .img-slot{
@@ -189,11 +193,52 @@
     padding:14px 0;
     box-shadow:0 6px 24px rgba(0,0,0,.18);
   }
-  .logo{display:flex;align-items:center;gap:10px;}
-  .logo svg{width:34px;height:34px;flex-shrink:0;}
-  .logo-text{font-family:'Fraunces',serif;font-size:20px;color:var(--cream);line-height:1;}
+  .logo{display:flex;align-items:center;gap:14px;flex-shrink:0;min-width:0;}
+  .logo-img{
+    height:64px;
+    width:64px;
+    flex-shrink:0;
+    object-fit:contain;
+    object-position:center;
+    display:block;
+  }
+  header.scrolled .logo-img{height:54px;width:54px;}
+  .logo:has(.logo-img):not(.logo-admin) .logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:3px;
+    min-width:0;
+  }
+  .foot-logo .logo-img,
+  footer .logo-img{
+    height:50px;
+    width:50px;
+    object-fit:contain;
+    object-position:center;
+  }
+  .foot-logo .logo-text,
+  footer .logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:3px;
+    font-size:18px;
+    color:var(--cream);
+  }
+  .logo-text{font-family:'Fraunces',serif;font-size:22px;color:var(--cream);line-height:1.05;letter-spacing:-.01em;white-space:nowrap;}
   .logo-text em{font-style:italic;color:var(--amber);}
-  .logo-text small{display:block;font-family:'JetBrains Mono',monospace;font-style:normal;font-size:9px;letter-spacing:.22em;color:rgba(243,238,225,.6);margin-top:4px;}
+  .logo-text small{
+    display:block;
+    font-family:'JetBrains Mono',monospace;
+    font-style:normal;
+    font-size:9px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:rgba(243,238,225,.65);
+    margin-top:0;
+    line-height:1.3;
+  }
 
   nav.mainnav{display:flex;align-items:center;gap:36px;}
   nav.mainnav a{
@@ -208,9 +253,6 @@
   nav.mainnav a:hover::after{width:100%;}
 
   .header-right{display:flex;align-items:center;gap:18px;}
-  .phone-block{display:flex;flex-direction:column;text-align:right;color:var(--cream);}
-  .phone-block small{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.1em;color:rgba(243,238,225,.55);text-transform:uppercase;}
-  .phone-block strong{font-size:14px;letter-spacing:.02em;}
   .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px;}
   .burger span{width:22px;height:2px;background:var(--cream);display:block;}
 
@@ -467,8 +509,7 @@
   /* ===== FOOTER ===== */
   footer{background:var(--ink-2);color:var(--cream);padding:90px 0 30px;}
   .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.1fr;gap:50px;}
-  .foot-logo{display:flex;align-items:center;gap:10px;margin-bottom:18px;}
-  .foot-logo svg{width:30px;height:30px;}
+  .foot-logo{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
   .foot-about p{color:rgba(243,238,225,.6);font-size:14px;max-width:280px;}
   .foot-social{display:flex;gap:12px;margin-top:22px;}
   .foot-social a{
@@ -506,7 +547,10 @@
   @media (max-width:980px){
     nav.mainnav{display:none;}
     .burger{display:flex;}
-    .header-right .phone-block{display:none;}
+    .logo-img{height:52px;width:52px;}
+    header.scrolled .logo-img{height:46px;width:46px;}
+    .logo-text{font-size:18px;}
+    .foot-logo .logo-img, footer .logo-img{height:42px;width:42px;}
     .search-card{grid-template-columns:1fr 1fr;row-gap:20px;}
     .search-field{border-right:none;padding-left:0;}
     .search-submit{grid-column:span 2;padding-left:0;}
@@ -523,6 +567,11 @@
   }
   @media (max-width:620px){
     .wrap{padding:0 20px;}
+    .logo{gap:10px;}
+    .logo-img{height:46px;width:46px;}
+    header.scrolled .logo-img{height:42px;width:42px;}
+    .logo-text{font-size:16px;}
+    .logo-text small{font-size:8px;letter-spacing:.14em;}
     section{padding:80px 0;}
     .activities-grid{grid-template-columns:1fr;}
     .featured-grid{grid-template-columns:1fr;}
@@ -552,10 +601,7 @@
 <header id="siteHeader">
   <div class="wrap">
     <a href="#top" class="logo">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M24 6C22 14 14 17 4 18c8 3 15 8 18 18 3-10 10-15 18-18-10-1-18-4-16-12z" fill="#D9A441"/>
-        <path d="M24 6c-1 5-3 8-6 10 3-1 5-2 6-4 1 2 3 3 6 4-3-2-5-5-6-10z" fill="#131B22" opacity=".35"/>
-      </svg>
+      <img src="../assets/images/logo.png" alt="The Falcon Tour" class="logo-img">
       <span class="logo-text">The <em>Falcon</em> Tour<small>ADVENTURE &amp; TRAVEL CO.</small></span>
     </a>
     <nav class="mainnav">
@@ -568,10 +614,6 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="header-right">
-      <div class="phone-block">
-        <small>Call us, open 24/7</small>
-        <strong>+91 86793 43402</strong>
-      </div>
       <div id="userNavContainer" style="display:inline-block; margin-right:12px;"></div>
       <a href="#contact" class="btn btn-outline">Plan My Trip</a>
       <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -1005,6 +1047,28 @@
             <div style="font-size:18px; font-weight:700; margin-top:4px;">@thefalcontour</div>
           </div>
         </a>
+
+        <!-- Facebook Card -->
+        <a href="https://www.facebook.com/profile.php?id=61590039310904" target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; gap:20px; text-decoration:none; background:rgba(255,255,255,0.03); padding:20px; border-radius:6px; border:1px solid rgba(255,255,255,0.05); transition:transform 0.3s ease, border-color 0.3s ease; color:inherit;" class="tilt">
+          <div style="width:48px; height:48px; border-radius:50%; background:#1877F2; display:flex; align-items:center; justify-content:center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <div>
+            <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--amber);">FACEBOOK</div>
+            <div style="font-size:18px; font-weight:700; margin-top:4px;">The Falcon Tour</div>
+          </div>
+        </a>
+
+        <!-- Email Card -->
+        <a href="mailto:thefalcontour@gmail.com" style="display:flex; align-items:center; gap:20px; text-decoration:none; background:rgba(255,255,255,0.03); padding:20px; border-radius:6px; border:1px solid rgba(255,255,255,0.05); transition:transform 0.3s ease, border-color 0.3s ease; color:inherit;" class="tilt">
+          <div style="width:48px; height:48px; border-radius:50%; background:var(--amber); display:flex; align-items:center; justify-content:center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div>
+            <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--amber);">EMAIL US</div>
+            <div style="font-size:18px; font-weight:700; margin-top:4px;">thefalcontour@gmail.com</div>
+          </div>
+        </a>
       </div>
     </div>
 
@@ -1020,7 +1084,7 @@
 
         <div style="display:flex; flex-direction:column; gap:6px;">
           <label style="font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(243,238,225,0.6);">PHONE NUMBER</label>
-          <input type="tel" id="formPhone" required placeholder="+91 99999 99999" style="width:100%; padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px;">
+          <input type="tel" id="formPhone" required placeholder="+91 98765 43210, +1 555 123 4567, +971 50 123 4567" title="Include country code (e.g. +91, +1, +44, +971)" style="width:100%; padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px;">
         </div>
 
         <div style="display:flex; flex-direction:column; gap:6px;">
@@ -1051,6 +1115,22 @@
           <input type="text" id="formCustomDestination" placeholder="Where do you want to go?" style="width:100%; padding:14px; background:rgba(0,0,0,0.25); border:1px solid var(--amber); border-radius:4px; color:var(--cream); font-size:14px;">
         </div>
 
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <label style="font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(243,238,225,0.6);">TRAVEL FROM</label>
+            <input type="date" id="formTravelFrom" style="width:100%; padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px; color-scheme:dark;">
+          </div>
+          <div style="display:flex; flex-direction:column; gap:6px;">
+            <label style="font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(243,238,225,0.6);">TRAVEL TO</label>
+            <input type="date" id="formTravelTo" style="width:100%; padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px; color-scheme:dark;">
+          </div>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:6px;">
+          <label style="font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(243,238,225,0.6);">MESSAGE <span style="opacity:0.6;">(OPTIONAL)</span></label>
+          <textarea id="formMessage" rows="4" placeholder="Tell us about your trip plans, group size, budget, or any special requests..." style="width:100%; padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px; resize:vertical; font-family:inherit;"></textarea>
+        </div>
+
         <button type="submit" class="btn btn-primary magnetic" style="margin-top:10px; width:100%; justify-content:center;">Submit Inquiry →</button>
         <div id="formFeedback" style="display:none; font-family:'JetBrains Mono',monospace; font-size:13px; margin-top:10px; text-align:center;"></div>
       </form>
@@ -1061,11 +1141,9 @@
 <!-- ============ FOOTER ============ -->
 <footer style="background: var(--ink); border-top: 1px solid rgba(255,255,255,0.05); padding: 40px 0;">
   <div class="wrap" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
-    <div style="display:flex; align-items:center; gap:12px;">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:30px; height:30px;">
-        <path d="M24 6C22 14 14 17 4 18c8 3 15 8 18 18 3-10 10-15 18-18-10-1-18-4-16-12z" fill="#D9A441"/>
-      </svg>
-      <span class="logo-text" style="color:var(--cream);">The <em>Falcon</em> Tour</span>
+    <div class="foot-logo">
+      <img src="../assets/images/logo.png" alt="The Falcon Tour" class="logo-img">
+      <span class="logo-text">The <em>Falcon</em> Tour<small>Adventure &amp; Travel Co.</small></span>
     </div>
     <span style="color:rgba(243,238,225,0.4); font-size:13px;">© 2026 The Falcon Tour. All rights reserved. Built for travellers who chase the view.</span>
   </div>
@@ -1255,6 +1333,17 @@
       <div id="authFeedback" style="display:none; font-family:'JetBrains Mono',monospace; font-size:12px; color:red; text-align:center;"></div>
     </form>
 
+    <div style="display:flex; align-items:center; gap:12px; margin:24px 0;">
+      <div style="flex:1; height:1px; background:var(--line);"></div>
+      <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(19,27,34,0.5); text-transform:uppercase;">or</span>
+      <div style="flex:1; height:1px; background:var(--line);"></div>
+    </div>
+
+    <button type="button" onclick="signInWithGoogle()" class="btn btn-google" style="width:100%; justify-content:center; padding:14px; display:flex; align-items:center; gap:10px;">
+      <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.56 2.94-2.23 5.43-4.76 7.08l7.73 6c4.51-4.16 7.11-10.28 7.11-17.55z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+      Continue with Google
+    </button>
+
     <div style="text-align:center; margin-top:24px; font-size:13px; color:rgba(19,27,34,0.7);">
       <span id="authToggleText">Don't have an account?</span>
       <button onclick="toggleAuthMode()" id="authToggleBtn" style="background:none; border:none; color:var(--amber); font-weight:700; cursor:pointer; padding:0; margin-left:4px; text-decoration:underline;">Create one</button>
@@ -1284,17 +1373,67 @@
     }
   }
 
+  function isValidInternationalPhone(phone) {
+    const trimmed = phone.trim();
+    if (!trimmed) return false;
+    if (!/^\+?[\d\s\-().]+$/.test(trimmed)) return false;
+    const digits = trimmed.replace(/\D/g, '');
+    return digits.length >= 8 && digits.length <= 15;
+  }
+
+  function validateTravelDates(from, to) {
+    if (!from && !to) return { valid: true };
+    if (from && to) {
+      if (new Date(to) < new Date(from)) {
+        return { valid: false, message: 'Travel To must be on or after Travel From.' };
+      }
+      return { valid: true };
+    }
+    return { valid: false, message: 'Please enter both Travel From and Travel To dates.' };
+  }
+
+  (function initTravelDateFields() {
+    const travelFrom = document.getElementById('formTravelFrom');
+    const travelTo = document.getElementById('formTravelTo');
+    if (!travelFrom || !travelTo) return;
+
+    travelFrom.addEventListener('change', () => {
+      travelTo.min = travelFrom.value || '';
+      if (travelFrom.value && travelTo.value && travelTo.value < travelFrom.value) {
+        travelTo.value = travelFrom.value;
+      }
+    });
+  })();
+
   // Handle inquiry form submission
   window.handleFormSubmission = function(e) {
     e.preventDefault();
-    const name = document.getElementById('formName').value;
-    const phone = document.getElementById('formPhone').value;
-    const email = document.getElementById('formEmail').value;
+    const name = document.getElementById('formName').value.trim();
+    const phone = document.getElementById('formPhone').value.trim();
+    const email = document.getElementById('formEmail').value.trim();
     const destinationSelect = document.getElementById('formDestination').value;
-    const customDest = document.getElementById('formCustomDestination').value;
+    const customDest = document.getElementById('formCustomDestination').value.trim();
+    const travelFrom = document.getElementById('formTravelFrom').value;
+    const travelTo = document.getElementById('formTravelTo').value;
+    const message = document.getElementById('formMessage').value.trim();
     const feedback = document.getElementById('formFeedback');
 
     const destination = destinationSelect === 'Other' ? customDest : destinationSelect;
+
+    if (!isValidInternationalPhone(phone)) {
+      feedback.style.display = 'block';
+      feedback.style.color = '#ff6b6b';
+      feedback.textContent = 'Please enter a valid phone number with country code (e.g. +91, +1, +44, +971).';
+      return;
+    }
+
+    const dateCheck = validateTravelDates(travelFrom, travelTo);
+    if (!dateCheck.valid) {
+      feedback.style.display = 'block';
+      feedback.style.color = '#ff6b6b';
+      feedback.textContent = dateCheck.message;
+      return;
+    }
 
     if (typeof db === 'undefined') {
       feedback.style.display = 'block';
@@ -1314,6 +1453,9 @@
       phone: phone,
       email: email,
       destination: destination,
+      travelFrom: travelFrom || null,
+      travelTo: travelTo || null,
+      message: message || null,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       userId: currentUser ? currentUser.uid : 'anonymous'
     })
