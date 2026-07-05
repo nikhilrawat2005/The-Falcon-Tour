@@ -51,8 +51,12 @@ Follow these steps to set up Firebase for The Falcon Tour website:
          match /submissions/{subId} {
            // Allow anyone to submit a contact form
            allow write: if true;
-           // Only admin (email: nikhil2005114@gmail.com) can read submissions
-           allow read: if request.auth != null && request.auth.token.email == 'nikhil2005114@gmail.com';
+           // Only admins can read submissions
+           allow read: if request.auth != null && request.auth.token.email in [
+             'nikhil2005114@gmail.com',
+             'manishrawat2636@gmail.com',
+             'thefalcontour@gmail.com'
+           ];
          }
        }
      }

@@ -10,7 +10,7 @@ const firebaseConfig = {
   appId: "1:898187329494:web:c00b07e08d7c908020ee77",
 };
 
-window.ADMIN_EMAILS = ['nikhil2005114@gmail.com', 'manishrawat2636@gmail.com'];
+window.ADMIN_EMAILS = ['nikhil2005114@gmail.com', 'manishrawat2636@gmail.com', 'thefalcontour@gmail.com'];
 
 function isAdminEmail(email) {
   return window.ADMIN_EMAILS.includes(email);
