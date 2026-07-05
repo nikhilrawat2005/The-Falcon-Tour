@@ -71,52 +71,6 @@
   .btn-google{background:#fff;color:var(--ink);border:1px solid var(--line);}
   .btn-google:hover{background:#f8f8f8;border-color:var(--ink);transform:translateY(-2px);}
 
-  /* ===== PHONE OTP VERIFY ===== */
-  .phone-verify-row{display:flex;gap:10px;align-items:stretch;}
-  .phone-verify-row input[type="tel"]{flex:1;min-width:0;}
-  .btn-verify{
-    flex:0 0 auto;padding:14px 18px;
-    background:rgba(217,164,65,.15);color:var(--amber);
-    border:1px solid rgba(217,164,65,.45);border-radius:4px;
-    font-family:'JetBrains Mono',monospace;font-size:12px;
-    letter-spacing:.04em;text-transform:uppercase;
-    cursor:pointer;white-space:nowrap;
-    transition:background .25s ease, border-color .25s ease, opacity .25s ease;
-  }
-  .btn-verify:hover:not(:disabled){background:rgba(217,164,65,.28);border-color:var(--amber);}
-  .btn-verify:disabled{opacity:.45;cursor:not-allowed;}
-  .btn-verify.is-verified{background:rgba(81,207,102,.15);border-color:#51cf66;color:#51cf66;}
-  .phone-verified-badge{
-    display:none;align-items:center;gap:6px;
-    font-family:'JetBrains Mono',monospace;font-size:12px;color:#51cf66;
-  }
-  .phone-verified-badge.is-visible{display:inline-flex;}
-  .phone-verified-badge svg{flex-shrink:0;}
-  .otp-section{
-    display:none;flex-direction:column;gap:10px;
-    padding:14px;background:rgba(217,164,65,.06);
-    border:1px solid rgba(217,164,65,.25);border-radius:4px;
-  }
-  .otp-section.is-visible{display:flex;}
-  .otp-row{display:flex;gap:10px;align-items:stretch;}
-  .otp-row input{
-    flex:1;min-width:0;padding:14px;
-    background:rgba(0,0,0,0.25);border:1px solid rgba(255,255,255,0.15);
-    border-radius:4px;color:var(--cream);font-size:14px;letter-spacing:.2em;
-  }
-  .btn-otp-submit{
-    flex:0 0 auto;padding:14px 18px;
-    background:var(--amber);color:var(--ink);
-    border:none;border-radius:4px;
-    font-family:'JetBrains Mono',monospace;font-size:12px;
-    letter-spacing:.04em;text-transform:uppercase;cursor:pointer;
-    transition:background .25s ease, opacity .25s ease;
-  }
-  .btn-otp-submit:hover:not(:disabled){background:var(--amber-2);}
-  .btn-otp-submit:disabled{opacity:.45;cursor:not-allowed;}
-  #recaptcha-container{position:absolute;width:0;height:0;overflow:hidden;opacity:0;pointer-events:none;}
-  #contactSubmitBtn:disabled{opacity:.45;cursor:not-allowed;transform:none;}
-
   /* ===== AUTH / USER NAV ===== */
   #userNavContainer{display:flex;align-items:center;}
   .user-profile-menu{display:flex;align-items:center;}
@@ -1258,13 +1212,7 @@
         </div>
 
         <div style="display:flex; flex-direction:column; gap:6px;">
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:10px;">
-            <label style="font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(243,238,225,0.6);">PHONE NUMBER</label>
-            <span id="phoneVerifiedBadge" class="phone-verified-badge" aria-live="polite">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-              Verified
-            </span>
-          </div>
+          <label style="font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(243,238,225,0.6);">PHONE NUMBER</label>
           <div style="display:flex; gap:10px; align-items:stretch;">
             <select id="formCountryCode" required aria-label="Country code" style="flex:0 0 118px; padding:14px 10px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px;">
               <option value="+91" selected>🇮🇳 +91</option>
@@ -1294,20 +1242,8 @@
               <option value="+7">🇷🇺 +7</option>
               <option value="+27">🇿🇦 +27</option>
             </select>
-            <div class="phone-verify-row" style="flex:1; min-width:0;">
-              <input type="tel" id="formPhone" required placeholder="98765 43210" inputmode="numeric" pattern="[0-9\s\-()]{8,15}" title="Enter your mobile number without country code" style="padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px;">
-              <button type="button" id="phoneVerifyBtn" class="btn-verify" onclick="sendPhoneOtp()">Verify</button>
-            </div>
+            <input type="tel" id="formPhone" required placeholder="98765 43210" inputmode="numeric" pattern="[0-9\s\-()]{8,15}" title="Enter your mobile number without country code" style="flex:1; min-width:0; padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px;">
           </div>
-          <div id="otpSection" class="otp-section">
-            <label style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--amber);">ENTER OTP SENT TO YOUR PHONE</label>
-            <div class="otp-row">
-              <input type="text" id="formOtp" inputmode="numeric" maxlength="6" placeholder="6-digit OTP" autocomplete="one-time-code">
-              <button type="button" id="otpSubmitBtn" class="btn-otp-submit" onclick="confirmPhoneOtp()">Submit OTP</button>
-            </div>
-            <span id="otpFeedback" style="font-family:'JetBrains Mono',monospace; font-size:12px; color:rgba(243,238,225,0.7);"></span>
-          </div>
-          <div id="recaptcha-container"></div>
         </div>
 
         <div style="display:flex; flex-direction:column; gap:6px;">
@@ -1354,8 +1290,7 @@
           <textarea id="formMessage" rows="4" placeholder="Tell us about your trip plans, group size, budget, or any special requests..." style="width:100%; padding:14px; background:rgba(0,0,0,0.25); border:1px solid rgba(255,255,255,0.15); border-radius:4px; color:var(--cream); font-size:14px; resize:vertical; font-family:inherit;"></textarea>
         </div>
 
-        <button type="submit" id="contactSubmitBtn" class="btn btn-primary magnetic" disabled style="margin-top:10px; width:100%; justify-content:center;">Submit Inquiry →</button>
-        <p id="phoneVerifyHint" style="margin:0; font-family:'JetBrains Mono',monospace; font-size:11px; color:rgba(243,238,225,0.45); text-align:center;">Verify your phone number to submit the form.</p>
+        <button type="submit" class="btn btn-primary magnetic" style="margin-top:10px; width:100%; justify-content:center;">Submit Inquiry →</button>
         <div id="formFeedback" style="display:none; font-family:'JetBrains Mono',monospace; font-size:13px; margin-top:10px; text-align:center;"></div>
       </form>
     </div>
@@ -1608,204 +1543,11 @@
     return `${countryCode} ${localNumber}`;
   }
 
-  function getE164PhoneNumber() {
-    const countryCode = document.getElementById('formCountryCode').value;
-    const digits = document.getElementById('formPhone').value.replace(/\D/g, '');
-    return `${countryCode}${digits}`;
-  }
-
-  // ---- Phone OTP verification ----
-  let phoneVerified = false;
-  let phoneConfirmationResult = null;
-  let recaptchaVerifier = null;
-  let verifiedPhoneE164 = '';
-
-  function setOtpFeedback(message, color) {
-    const el = document.getElementById('otpFeedback');
-    if (!el) return;
-    el.textContent = message || '';
-    el.style.color = color || 'rgba(243,238,225,0.7)';
-  }
-
-  function resetPhoneVerification() {
-    phoneVerified = false;
-    phoneConfirmationResult = null;
-    verifiedPhoneE164 = '';
-
-    const verifyBtn = document.getElementById('phoneVerifyBtn');
-    const badge = document.getElementById('phoneVerifiedBadge');
-    const otpSection = document.getElementById('otpSection');
-    const submitBtn = document.getElementById('contactSubmitBtn');
-    const hint = document.getElementById('phoneVerifyHint');
-    const phoneInput = document.getElementById('formPhone');
-    const countrySelect = document.getElementById('formCountryCode');
-    const otpInput = document.getElementById('formOtp');
-
-    if (verifyBtn) {
-      verifyBtn.textContent = 'Verify';
-      verifyBtn.classList.remove('is-verified');
-      verifyBtn.disabled = false;
-    }
-    if (badge) badge.classList.remove('is-visible');
-    if (otpSection) otpSection.classList.remove('is-visible');
-    if (submitBtn) submitBtn.disabled = true;
-    if (hint) hint.style.display = 'block';
-    if (phoneInput) phoneInput.disabled = false;
-    if (countrySelect) countrySelect.disabled = false;
-    if (otpInput) otpInput.value = '';
-    setOtpFeedback('');
-  }
-
-  function markPhoneVerified() {
-    phoneVerified = true;
-    verifiedPhoneE164 = getE164PhoneNumber();
-
-    const verifyBtn = document.getElementById('phoneVerifyBtn');
-    const badge = document.getElementById('phoneVerifiedBadge');
-    const otpSection = document.getElementById('otpSection');
-    const submitBtn = document.getElementById('contactSubmitBtn');
-    const hint = document.getElementById('phoneVerifyHint');
-    const phoneInput = document.getElementById('formPhone');
-    const countrySelect = document.getElementById('formCountryCode');
-
-    if (verifyBtn) {
-      verifyBtn.textContent = '✓ Verified';
-      verifyBtn.classList.add('is-verified');
-      verifyBtn.disabled = true;
-    }
-    if (badge) badge.classList.add('is-visible');
-    if (otpSection) otpSection.classList.remove('is-visible');
-    if (submitBtn) submitBtn.disabled = false;
-    if (hint) hint.style.display = 'none';
-    if (phoneInput) phoneInput.disabled = true;
-    if (countrySelect) countrySelect.disabled = true;
-    setOtpFeedback('');
-  }
-
-  function getRecaptchaVerifier() {
-    if (typeof firebase === 'undefined' || !window.auth) return null;
-
-    if (recaptchaVerifier) {
-      try { recaptchaVerifier.clear(); } catch (e) { /* ignore */ }
-      recaptchaVerifier = null;
-    }
-
-    recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
-      size: 'invisible',
-      callback: function() {},
-      'expired-callback': function() {
-        setOtpFeedback('reCAPTCHA expired. Click Verify again.', '#ff6b6b');
-      }
-    });
-
-    return recaptchaVerifier;
-  }
-
-  window.sendPhoneOtp = function() {
-    const localPhone = document.getElementById('formPhone').value.trim();
-    const verifyBtn = document.getElementById('phoneVerifyBtn');
-    const feedback = document.getElementById('formFeedback');
-
-    if (!isValidPhoneNumber(localPhone)) {
-      feedback.style.display = 'block';
-      feedback.style.color = '#ff6b6b';
-      feedback.textContent = 'Please enter a valid phone number (8–12 digits) before verifying.';
-      return;
-    }
-
-    if (typeof auth === 'undefined') {
-      feedback.style.display = 'block';
-      feedback.style.color = '#ff6b6b';
-      feedback.textContent = 'Firebase not loaded. Check your configuration.';
-      return;
-    }
-
-    const e164 = getE164PhoneNumber();
-    verifyBtn.disabled = true;
-    verifyBtn.textContent = 'Sending…';
-    setOtpFeedback('Sending OTP…', '#D9A441');
-    feedback.style.display = 'none';
-
-    const verifier = getRecaptchaVerifier();
-    verifier.render().then(function() {
-      return auth.signInWithPhoneNumber(e164, verifier);
-    })
-    .then(function(confirmationResult) {
-      phoneConfirmationResult = confirmationResult;
-      document.getElementById('otpSection').classList.add('is-visible');
-      verifyBtn.disabled = false;
-      verifyBtn.textContent = 'Resend OTP';
-      setOtpFeedback('OTP sent! Enter the 6-digit code below.', '#D9A441');
-      document.getElementById('formOtp').focus();
-    })
-    .catch(function(error) {
-      console.error('OTP send error:', error);
-      verifyBtn.disabled = false;
-      verifyBtn.textContent = 'Verify';
-      setOtpFeedback('', '');
-      feedback.style.display = 'block';
-      feedback.style.color = '#ff6b6b';
-      feedback.textContent = error.message || 'Failed to send OTP. Please try again.';
-      try { if (recaptchaVerifier) recaptchaVerifier.clear(); } catch (e) { /* ignore */ }
-      recaptchaVerifier = null;
-    });
-  };
-
-  window.confirmPhoneOtp = function() {
-    const otp = document.getElementById('formOtp').value.trim();
-    const otpBtn = document.getElementById('otpSubmitBtn');
-    const feedback = document.getElementById('formFeedback');
-
-    if (!/^\d{6}$/.test(otp)) {
-      setOtpFeedback('Please enter a valid 6-digit OTP.', '#ff6b6b');
-      return;
-    }
-
-    if (!phoneConfirmationResult) {
-      setOtpFeedback('Click Verify first to receive an OTP.', '#ff6b6b');
-      return;
-    }
-
-    otpBtn.disabled = true;
-    otpBtn.textContent = 'Checking…';
-    setOtpFeedback('Verifying OTP…', '#D9A441');
-
-    phoneConfirmationResult.confirm(otp)
-      .then(function() {
-        markPhoneVerified();
-        feedback.style.display = 'block';
-        feedback.style.color = '#51cf66';
-        feedback.textContent = 'Phone number verified successfully!';
-      })
-      .catch(function(error) {
-        console.error('OTP confirm error:', error);
-        setOtpFeedback('Invalid OTP. Please try again.', '#ff6b6b');
-      })
-      .finally(function() {
-        otpBtn.disabled = false;
-        otpBtn.textContent = 'Submit OTP';
-      });
-  };
-
-  (function initPhoneVerificationListeners() {
-    const phoneInput = document.getElementById('formPhone');
-    const countrySelect = document.getElementById('formCountryCode');
+  (function initTravelDateField() {
     const travelDate = document.getElementById('formTravelDate');
-
-    if (phoneInput) {
-      phoneInput.addEventListener('input', function() {
-        if (phoneVerified && getE164PhoneNumber() !== verifiedPhoneE164) {
-          resetPhoneVerification();
-        }
-      });
-    }
-    if (countrySelect) {
-      countrySelect.addEventListener('change', resetPhoneVerification);
-    }
-    if (travelDate) {
-      const today = new Date().toISOString().split('T')[0];
-      travelDate.min = today;
-    }
+    if (!travelDate) return;
+    const today = new Date().toISOString().split('T')[0];
+    travelDate.min = today;
   })();
 
   // Handle inquiry form submission
@@ -1823,13 +1565,6 @@
     const feedback = document.getElementById('formFeedback');
 
     const destination = destinationSelect === 'Other' ? customDest : destinationSelect;
-
-    if (!phoneVerified || getE164PhoneNumber() !== verifiedPhoneE164) {
-      feedback.style.display = 'block';
-      feedback.style.color = '#ff6b6b';
-      feedback.textContent = 'Please verify your phone number before submitting.';
-      return;
-    }
 
     if (!isValidPhoneNumber(localPhone)) {
       feedback.style.display = 'block';
@@ -1870,7 +1605,6 @@
       phone: phone,
       countryCode: document.getElementById('formCountryCode').value,
       localPhone: localPhone,
-      phoneVerified: true,
       email: email,
       destination: destination,
       travelDate: travelDate,
@@ -1884,7 +1618,6 @@
       feedback.textContent = 'Adventure logged! Our team will contact you shortly.';
       document.getElementById('contactForm').reset();
       toggleCustomDestinationField('');
-      resetPhoneVerification();
       const travelDateEl = document.getElementById('formTravelDate');
       if (travelDateEl) {
         const today = new Date().toISOString().split('T')[0];
