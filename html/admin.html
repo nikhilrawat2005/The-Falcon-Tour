@@ -466,11 +466,15 @@
           : phone;
 
         let travelDates = 'Not specified';
-        if (s.travelFrom && s.travelTo) {
+        if (s.travelDate) {
+          travelDates = escapeHtml(s.travelDate);
+        } else if (s.travelFrom && s.travelTo) {
           travelDates = `${escapeHtml(s.travelFrom)} → ${escapeHtml(s.travelTo)}`;
         } else if (s.travelFrom || s.travelTo) {
           travelDates = escapeHtml(s.travelFrom || s.travelTo);
         }
+
+        const numTravellers = s.numTravellers ? String(s.numTravellers) : '—';
 
         return `
           <div class="admin-list-item">
@@ -493,15 +497,19 @@
               </div>
               <div class="admin-detail-row">
                 <label>Phone Number</label>
-                <span>${displayPhone}</span>
+                <span>${displayPhone} ${s.phoneVerified ? '<span style="color:#51cf66;">✓ Verified</span>' : ''}</span>
               </div>
               <div class="admin-detail-row">
                 <label>Destination</label>
                 <span class="highlight">${destination}</span>
               </div>
               <div class="admin-detail-row">
-                <label>Travel Dates</label>
+                <label>Travel Date</label>
                 <span>${travelDates}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>No. of Travellers</label>
+                <span>${escapeHtml(numTravellers)}</span>
               </div>
               <div class="admin-detail-row">
                 <label>Message</label>
