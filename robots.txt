@@ -1,0 +1,11 @@
+# robots.txt for https://thefalcontour.com
+# Last updated: 2026-07-07
+
+User-agent: *
+Allow: /
+
+# Keep private/internal pages out of search results
+Disallow: /admin.html
+
+# Sitemap location
+Sitemap: https://thefalcontour.com/sitemap.xml
