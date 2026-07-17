@@ -3,16 +3,26 @@
   const header = document.getElementById('siteHeader');
   window.addEventListener('scroll', () => {
     header.classList.toggle('scrolled', window.scrollY > 40);
-  });
+  }, { passive: true });
 
   // mobile nav
   const burger = document.getElementById('burgerBtn');
   const mobileNav = document.getElementById('mobileNav');
-  burger.addEventListener('click', () => {
-    const open = mobileNav.style.display === 'block';
-    mobileNav.style.display = open ? 'none' : 'block';
-  });
-  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.style.display = 'none'));
+  if (burger && mobileNav) {
+    burger.addEventListener('click', () => {
+      const open = mobileNav.classList.contains('is-open');
+      mobileNav.classList.toggle('is-open', !open);
+      mobileNav.style.display = open ? 'none' : 'block';
+      burger.setAttribute('aria-expanded', open ? 'false' : 'true');
+      burger.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+    });
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileNav.classList.remove('is-open');
+      mobileNav.style.display = 'none';
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+    }));
+  }
 
   // reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
@@ -44,11 +54,13 @@
 
   // scroll progress bar
   const progressBar = document.getElementById('scrollProgress');
-  window.addEventListener('scroll', () => {
-    const h = document.documentElement;
-    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
-    progressBar.style.width = scrolled + '%';
-  });
+  if (progressBar && CSS && !CSS.supports('animation-timeline', 'scroll()')) {
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+      progressBar.style.width = scrolled + '%';
+    }, { passive: true });
+  }
 
   // custom cursor
   const cursorDot = document.getElementById('cursorDot');
@@ -97,7 +109,7 @@
       const y = window.scrollY;
       heroParallax.style.transform = `translateY(${y * 0.35}px)`;
       heroParallax.querySelector('img').style.transform = `scale(${1.15 + y * 0.0002})`;
-    });
+    }, { passive: true });
   }
 
   // stagger index for reveal groups

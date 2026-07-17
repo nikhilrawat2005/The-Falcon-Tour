@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BPXGKYKBXD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BPXGKYKBXD');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Premium Tour Packages | The Falcon Tour</title>
+<link href="https://thefalcontour.com/packages/" rel="canonical"/>
+<link href="../assets/images/logo.png" rel="icon" type="image/png"/>
+<link href="../assets/images/logo.png" rel="apple-touch-icon"/>
+<meta content="Explore our hand-planned premium travel packages across Europe, Japan, New Zealand, Australia, and the USA. Eleven curated itineraries by The Falcon Tour." name="description"/>
+<meta content="tour packages, premium travel, europe tour, japan cherry blossom, new zealand adventure, swiss paris holiday" name="keywords"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1" name="robots"/>
+<meta content="The Falcon Tour" name="author"/>
+<meta content="#D9A441" name="theme-color"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
+<link href="../assets/css/journal.css" rel="stylesheet"/>
+<style>
+  /* ===== PACKAGES LISTING STYLES ===== */
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 40px 0 50px;
+  }
+  .filter-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid var(--line);
+    color: var(--text-dark);
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .25s ease;
+  }
+  .filter-pill:hover {
+    border-color: var(--amber);
+    color: var(--amber);
+  }
+  .filter-pill.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--cream);
+  }
+
+  .pkg-section-group {
+    margin-bottom: 60px;
+    transition: all .4s ease;
+  }
+  .country-heading {
+    font-family: 'Fraunces', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin: 40px 0 20px;
+    border-bottom: 1px solid rgba(19,27,34,.08);
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .pkgs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+    margin-bottom: 30px;
+  }
+
+  /* Shared card aesthetics mapping homepage styling */
+  .pkg-card-list {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    border-radius: var(--radius-card, 6px);
+    transition: transform .4s cubic-bezier(.4,0,.2,1), box-shadow .4s cubic-bezier(.4,0,.2,1), opacity .3s ease;
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+  .pkg-card-list:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 32px 64px rgba(19,27,34,.22);
+  }
+  .pkg-card-list .img-slot {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    border: none;
+  }
+  .pkg-card-list .img-slot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .7s cubic-bezier(.4,0,.2,1);
+  }
+  .pkg-card-list:hover .img-slot img {
+    transform: scale(1.08);
+  }
+  .pkg-card-list::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+      rgba(19,27,34,0) 0%,
+      rgba(19,27,34,.15) 35%,
+      rgba(19,27,34,.72) 68%,
+      rgba(19,27,34,.97) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity .4s ease;
+  }
+  .pkg-card-list:hover::before {
+    opacity: .88;
+  }
+  .pkg-days-badge {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 3;
+    background: var(--amber);
+    color: var(--ink);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 4px;
+    letter-spacing: .07em;
+    box-shadow: 0 4px 16px rgba(217,164,65,.3);
+  }
+  .pkg-region-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 3;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgba(243,238,225,.9);
+    background: rgba(19,27,34,.5);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(243,238,225,.18);
+    padding: 5px 12px;
+    border-radius: 3px;
+  }
+  .pkg-card-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 22px 24px 26px;
+    z-index: 2;
+  }
+  .pkg-route-str {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    color: var(--amber);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .pkg-card-body h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    color: var(--cream);
+    margin: 0 0 10px;
+    line-height: 1.15;
+    font-weight: 500;
+  }
+  .pkg-highlights-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 16px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .4s ease, opacity .4s ease;
+  }
+  .pkg-card-list:hover .pkg-highlights-list {
+    max-height: 120px;
+    opacity: 1;
+  }
+  .pkg-hl-item-str {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12.5px;
+    color: rgba(243,238,225,.8);
+  }
+  .pkg-hl-item-str::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--amber);
+    flex-shrink: 0;
+  }
+  .pkg-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .pkg-price-str {
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: var(--amber);
+    font-weight: 500;
+  }
+  .pkg-price-str small {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: rgba(243,238,225,.5);
+    display: block;
+    letter-spacing: .06em;
+    margin-top: 2px;
+  }
+  .pkg-cta-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--cream);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid rgba(243,238,225,.4);
+    padding-bottom: 3px;
+    transition: color .25s, border-color .25s;
+    white-space: nowrap;
+  }
+  .pkg-card-list:hover .pkg-cta-btn {
+    color: var(--amber);
+    border-color: var(--amber);
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 680px) {
+    .pkgs-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .pkg-card-list {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .country-heading {
+      font-size: 20px;
+      margin: 28px 0 14px;
+    }
+  }
+  @media (min-width: 681px) and (max-width: 1024px) {
+    .pkgs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1400px) {
+    .pkgs-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Premium Tour Packages", "description": "Explore our hand-planned premium travel packages across Europe, Switzerland, Paris, Japan, New Zealand, and the UK.", "url": "https://thefalcontour.com/packages/"}</script>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="grain"></div>
+<header class="scrolled" id="siteHeader">
+<div class="wrap">
+<a class="logo" href="../index.html">
+<img alt="The Falcon Tour" class="logo-img" src="../assets/images/logo.png"/>
+<span class="logo-text">The <em>Falcon</em> Tour<small>ADVENTURE &amp; TRAVEL CO.</small></span>
+</a>
+<nav class="mainnav">
+<a href="../destinations/index.html">Destinations</a>
+<a class="active" href="index.html">Packages</a>
+<a href="../activities/index.html">Activities</a>
+<a href="../index.html#contact">Contact</a>
+</nav>
+<div class="header-right">
+<a class="btn btn-outline" href="../index.html#contact">Plan My Trip</a>
+<button aria-label="Menu" class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<nav id="mobileNav" class="mobile-nav-panel">
+<ul class="mobile-nav-list">
+<li><a href="../destinations/index.html" class="mobile-nav-link">Destinations</a></li>
+<li><a href="index.html" class="mobile-nav-link">Packages</a></li>
+<li><a href="../activities/index.html" class="mobile-nav-link">Activities</a></li>
+<li><a href="../index.html#contact" class="mobile-nav-link">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section class="idx-hero">
+<div class="wrap">
+<div class="eyebrow">Tour Packages</div>
+<h1>Thirty-two premium journeys, <em>meticulously planned</em>.</h1>
+<p>Each trip is hand-built door-to-door, balancing must-see landmarks with local secrets.</p>
+</div>
+</section>
+
+<!-- LISTING AND FILTERS -->
+<section style="background:var(--cream-2); padding: 20px 0 80px;">
+<div class="wrap">
+  
+    <div class="filter-container reveal">
+    <button class="filter-pill active" onclick="filterPackages('all', this)">All</button>
+    <button class="filter-pill" onclick="filterPackages('europe', this)">Europe</button>
+    <button class="filter-pill" onclick="filterPackages('scandinavia', this)">Scandinavia</button>
+    <button class="filter-pill" onclick="filterPackages('asia', this)">Asia</button>
+    <button class="filter-pill" onclick="filterPackages('oceania', this)">Oceania</button>
+    <button class="filter-pill" onclick="filterPackages('usa', this)">USA</button>
+    <button class="filter-pill" onclick="filterPackages('dubai', this)">Dubai</button>
+    <button class="filter-pill" onclick="filterPackages('southeast-asia', this)">SE Asia</button>
+    <button class="filter-pill" onclick="filterPackages('honeymoon', this)">Honeymoon</button>
+    <button class="filter-pill" onclick="filterPackages('adventure', this)">Adventure</button>
+  </div>
+
+  <!-- 🇪🇺 Europe & Switzerland Section -->
+  <div class="pkg-section-group" id="sec-europe">
+    <h2 class="country-heading">🇪🇺 Europe & Switzerland</h2>
+    <div class="pkgs-grid">
+    <a class="pkg-card-list reveal" data-categories="europe" href="package-essence-of-europe.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Essence of Europe" loading="lazy" src="../assets/images/europe/1.jpg"/></div>
+      <div class="pkg-days-badge">8D / 7N</div>
+      <div class="pkg-region-badge">🇮🇹 🇨🇭 Europe</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Rome · Florence · Venice · Zurich · Lucerne</span>
+        <h3>Essence of Europe</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Colosseum & Vatican Museums</div><div class="pkg-hl-item-str">Venice Gondola Ride</div><div class="pkg-hl-item-str">Mt. Pilatus Cable Car, Lucerne</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,25,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="europe honeymoon" href="package-swiss-paris.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Swiss Paris at a Glance" loading="lazy" src="../assets/images/switzerland/swiss-alps-guide.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇨🇭 🇫🇷 Swiss + France</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Zurich · Mt. Titlis · Lucerne · Paris · Disneyland</span>
+        <h3>Swiss Paris at a Glance</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Mt. Titlis Glacier Walk</div><div class="pkg-hl-item-str">Eiffel Tower Top Floor Tickets</div><div class="pkg-hl-item-str">Disneyland Paris Full Day Entry</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,80,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="europe" href="package-uk-scotland.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Wonders of UK & Scotland" loading="lazy" src="../assets/images/europe/2.jpg"/></div>
+      <div class="pkg-days-badge">8D / 7N</div>
+      <div class="pkg-region-badge">🇬🇧 UK · Scotland</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">London · Oxford · Manchester · Glasgow · Edinburgh</span>
+        <h3>Wonders of UK & Scotland</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Edinburgh Castle Tour</div><div class="pkg-hl-item-str">Loch Ness & Highlands Cruise</div><div class="pkg-hl-item-str">Oxford University Filming Sites</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹2,30,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="europe" href="package-grand-european-odyssey.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Grand European Odyssey" loading="lazy" src="../assets/images/europe/3.jpg"/></div>
+      <div class="pkg-days-badge">13D / 12N</div>
+      <div class="pkg-region-badge">🇮🇹 🇨🇭 🇫🇷 🇳🇱 Europe</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Rome · Venice · Lucerne · Zurich · Paris · Amsterdam</span>
+        <h3>Grand European Odyssey</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Rome Colosseum & Gondola</div><div class="pkg-hl-item-str">Mount Pilatus Cable Car</div><div class="pkg-hl-item-str">Louvre & Canal Cruise</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹2,55,400<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="europe" href="package-alpine-elegance-switzerland.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Alpine Elegance Switzerland" loading="lazy" src="../assets/images/switzerland/swiss-alps-guide.jpg"/></div>
+      <div class="pkg-days-badge">10D / 9N</div>
+      <div class="pkg-region-badge">🇨🇭 Switzerland</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">St. Moritz · Zermatt · Interlaken · Lucerne · Zurich</span>
+        <h3>Alpine Elegance Switzerland</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Glacier Express Scenic Train</div><div class="pkg-hl-item-str">Matterhorn Glacier Paradise</div><div class="pkg-hl-item-str">Jungfraujoch Top of Europe</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,55,063<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <!-- ❄️ Scandinavia & Iceland Section -->
+  <div class="pkg-section-group" id="sec-scandinavia">
+    <h2 class="country-heading">❄️ Scandinavia & Iceland</h2>
+    <div class="pkgs-grid">
+    <a class="pkg-card-list reveal" data-categories="europe scandinavia adventure" href="package-scandinavia-northern-lights.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Discover Scandinavia | Chasing the Northern Lights" loading="lazy" src="../assets/images/europe/northern-lights-guide.jpg"/></div>
+      <div class="pkg-days-badge">9D / 8N</div>
+      <div class="pkg-region-badge">🇩🇰 🇳🇴 🇸🇪 🇫🇮 Scandinavia</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Oslo · Stockholm · Helsinki · Tallinn · Rovaniemi</span>
+        <h3>Discover Scandinavia</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Northern Lights Safari in Lapland</div>
+          <div class="pkg-hl-item-str">Santa Claus Village &amp; Husky Sled Ride</div>
+          <div class="pkg-hl-item-str">Oslo Fjord Cruise &amp; Tallinn Day Trip</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹3,55,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="europe scandinavia" href="package-classic-scandinavia.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Scandinavia | A Journey Through the Nordic World" loading="lazy" src="../assets/images/europe/europe-travel-guide.jpg"/></div>
+      <div class="pkg-days-badge">10D / 9N</div>
+      <div class="pkg-region-badge">🇫🇮 🇸🇪 🇳🇴 🇩🇰 Scandinavia</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Helsinki · Stockholm · Oslo · Bergen · Copenhagen</span>
+        <h3>Classic Scandinavia</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Norway in a Nutshell Scenic Tour</div>
+          <div class="pkg-hl-item-str">Overnight Cruises &amp; Funicular Rides</div>
+          <div class="pkg-hl-item-str">Tivoli Gardens &amp; Carlsberg Brewery</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹2,95,558<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="europe scandinavia adventure" href="package-iceland.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Iceland Signature Journey | Nature's Greatest Masterpiece" loading="lazy" src="../assets/images/iceland/iceland-guide.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇮🇸 Iceland</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Reykjavik · Golden Circle · Akureyri · Diamond Circle</span>
+        <h3>Iceland Signature Journey</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Golden Circle &amp; Diamond Circle Tours</div>
+          <div class="pkg-hl-item-str">Whale Watching from Reykjavik</div>
+          <div class="pkg-hl-item-str">Lake Myvatn &amp; Internal Flights Included</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹2,40,279<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="europe scandinavia adventure" href="package-scandinavia-unveiled.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Scandinavia Unveiled | Fjords, Mountains &amp; Nordic Wonders" loading="lazy" src="../assets/images/europe/europe-itinerary.jpg"/></div>
+      <div class="pkg-days-badge">10D / 9N</div>
+      <div class="pkg-region-badge">🇸🇪 🇳🇴 🇩🇰 Sweden, Norway &amp; Denmark</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Stockholm · Mora · Trondheim · Molde · Loen · Bergen · Oslo · Copenhagen</span>
+        <h3>Scandinavia Unveiled</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Scenic Atlantic Ocean Road Drive</div>
+          <div class="pkg-hl-item-str">Fjord Ferries &amp; Briksdalsbreen Glacier</div>
+          <div class="pkg-hl-item-str">UNESCO Sites: Røros &amp; Bryggen Wharf</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,87,196<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <!-- 🇯🇵 Japan Section -->
+  <div class="pkg-section-group" id="sec-japan">
+    <h2 class="country-heading">🇯🇵 Japan</h2>
+    <div class="pkgs-grid">
+    <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-japan.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Japan for First Timers" loading="lazy" src="../assets/images/japan/mount-fuji-guide.jpg"/></div>
+      <div class="pkg-days-badge">9D / 8N</div>
+      <div class="pkg-region-badge">🇯🇵 Japan · Asia</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Tokyo · Hakone · Mt. Fuji · Kyoto · Nara · Osaka</span>
+        <h3>Japan for First Timers</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">7-day JR Bullet Train Pass</div><div class="pkg-hl-item-str">Fushimi Inari Torii Gates</div><div class="pkg-hl-item-str">Lake Ashi Scenic Cruise</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,50,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-japan-alpine.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Alpine Majesty: Snow Walls" loading="lazy" src="../assets/images/japan/japan-itinerary.jpg"/></div>
+      <div class="pkg-days-badge">10D / 9N</div>
+      <div class="pkg-region-badge">🇯🇵 Japan Alpine</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Tokyo · Nagano · Alpine Route · Kyoto · Osaka</span>
+        <h3>Alpine Majesty: Snow Walls</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Tateyama Kurobe Snow Corridor</div><div class="pkg-hl-item-str">Zenko-ji Temple, Nagano Visit</div><div class="pkg-hl-item-str">Nara Deer Park & Kyoto Shrines</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹3,90,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-journey-through-japan.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Journey Through Japan" loading="lazy" src="../assets/images/japan/cherry-blossom-guide.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇯🇵 Japan Grand Tour</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Tokyo · Nikko · Hakone · Kyoto · Hiroshima · Osaka</span>
+        <h3>Journey Through Japan</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Tokyo Sightseeing & Skytree</div><div class="pkg-hl-item-str">Mount Fuji & Hakone 1 Day Tour</div><div class="pkg-hl-item-str">Kyoto & Nara Day Tour</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,70,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-japan-first-impressions.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="First Impressions of Japan" loading="lazy" src="../assets/images/japan/tokyo-guide.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇯🇵 Japan Golden Route</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Tokyo · Mt. Fuji · Kanazawa · Kyoto · Osaka</span>
+        <h3>First Impressions of Japan</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Bullet Train Tokyo to Kanazawa</div><div class="pkg-hl-item-str">Golden Pavilion & Torii Gates</div><div class="pkg-hl-item-str">Dotonbori Neon Street Food</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹3,40,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-japan-f1-adventure.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="The Ultimate Japan F1 Adventure" loading="lazy" src="../assets/images/japan/osaka-guide.jpg"/></div>
+      <div class="pkg-days-badge">9D / 8N</div>
+      <div class="pkg-region-badge">🇯🇵 Japan F1</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Osaka · Kyoto · Nara · Nagoya · Hakone · Tokyo</span>
+        <h3>The Ultimate Japan F1 Adventure</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Kyoto & Nara Temple Tour</div><div class="pkg-hl-item-str">Hakone Cable Car & Lake Cruise</div><div class="pkg-hl-item-str">Suzuka Circuit & Tokyo Sights</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,98,890<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <!-- 🇳🇿 New Zealand Section -->
+  <div class="pkg-section-group" id="sec-new-zealand">
+    <h2 class="country-heading">🇳🇿 New Zealand</h2>
+    <div class="pkgs-grid">
+    <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-new-zealand.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="New Zealand Discovery" loading="lazy" src="../assets/images/new-zealand/queenstown-guide.jpg"/></div>
+      <div class="pkg-days-badge">8D / 7N</div>
+      <div class="pkg-region-badge">🇳🇿 New Zealand</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Auckland · Hobbiton · Rotorua · Queenstown · Milford Sound</span>
+        <h3>New Zealand Discovery</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Hobbiton Movie Set Guided Tour</div><div class="pkg-hl-item-str">Milford Sound Wilderness Cruise</div><div class="pkg-hl-item-str">Skyline Gondola & Luge</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,63,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-new-zealand-uncovered.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="New Zealand Uncovered" loading="lazy" src="../assets/images/new-zealand/auckland-guide.jpg"/></div>
+      <div class="pkg-days-badge">12D / 11N</div>
+      <div class="pkg-region-badge">🇳🇿 North & South Islands</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Auckland · Rotorua · Wellington · Christchurch · Queenstown</span>
+        <h3>New Zealand Uncovered</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Waitomo Glowworm Caves Boat</div><div class="pkg-hl-item-str">Interislander Ferry Crossing</div><div class="pkg-hl-item-str">Shotover Jet Ride, Queenstown</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹3,20,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-scenic-new-zealand.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Scenic New Zealand" loading="lazy" src="../assets/images/new-zealand/queenstown-guide.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇳🇿 New Zealand</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Auckland · Hobbiton · Rotorua · Queenstown</span>
+        <h3>Scenic New Zealand</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Hobbiton Movie Set Guided Tour</div><div class="pkg-hl-item-str">Waimangu Geothermal Valley</div><div class="pkg-hl-item-str">Milford Sound Fiordland Cruise</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,85,683<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-new-zealand-shared-journey.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="NZ Scenic Shared Journey" loading="lazy" src="../assets/images/new-zealand/road-trip-guide.jpg"/></div>
+      <div class="pkg-days-badge">14D / 13N</div>
+      <div class="pkg-region-badge">🇳🇿 New Zealand</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Auckland · Rotorua · Wellington · Christchurch · Queenstown</span>
+        <h3>NZ Scenic Shared Journey</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Waitomo Glowworm Caves</div><div class="pkg-hl-item-str">Te Ra Guided Geothermal Valley</div><div class="pkg-hl-item-str">Skyline Gondola & Luge</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹2,74,521<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <!-- 🇦🇺 Australia Section -->
+  <div class="pkg-section-group" id="sec-australia">
+    <h2 class="country-heading">🇦🇺 Australia</h2>
+    <div class="pkgs-grid">
+    <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-discover-australia.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Discover Australia" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
+      <div class="pkg-days-badge">9D / 8N</div>
+      <div class="pkg-region-badge">🇦🇺 Australia</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Sydney · Gold Coast · Brisbane · Cairns · Reef</span>
+        <h3>Discover Australia</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Great Barrier Reef Catamaran</div><div class="pkg-hl-item-str">Gold Coast Movie World Entry</div><div class="pkg-hl-item-str">Sydney Opera House Guided Tour</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,85,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="oceania honeymoon" href="package-essence-of-australia.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Essence of Australia" loading="lazy" src="../assets/images/australia/australia-honeymoon-guide.jpg"/></div>
+      <div class="pkg-days-badge">13D / 12N</div>
+      <div class="pkg-region-badge">🇦🇺 Australia East & South</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Melbourne · Great Ocean Road · Adelaide · Uluru · Sydney</span>
+        <h3>Essence of Australia</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Melbourne Great Ocean Road Tour</div><div class="pkg-hl-item-str">Cairns Great Barrier Reef Tour</div><div class="pkg-hl-item-str">Movie World & Sea World Entry</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹2,31,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="oceania" href="package-discover-melbourne.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Discover Melbourne" loading="lazy" src="../assets/images/australia/melbourne-guide.jpg"/></div>
+      <div class="pkg-days-badge">4D / 3N</div>
+      <div class="pkg-region-badge">🇦🇺 Melbourne CBD</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Melbourne CBD · Great Ocean Road · Phillip Island</span>
+        <h3>Discover Melbourne</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Great Ocean Road Scenic Drive</div><div class="pkg-hl-item-str">Brighton Beach Boxes & Wildlife</div><div class="pkg-hl-item-str">Phillip Island Penguin Parade</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹49,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="oceania" href="package-classic-australia.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Australia Tour" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇦🇺 Sydney & Melbourne</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Melbourne · Great Ocean Road · Sydney · Blue Mountains</span>
+        <h3>Classic Australia Tour</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Brighton Beach & Penguin Parade</div><div class="pkg-hl-item-str">Sydney Opera House Guided Tour</div><div class="pkg-hl-item-str">Blue Mountains Scenic World</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,15,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <!-- 🇳🇿 🇦🇺 Australia & New Zealand Combo Section -->
+  <div class="pkg-section-group" id="sec-anz-combo">
+    <h2 class="country-heading">🇳🇿 🇦🇺 Australia & New Zealand Combo</h2>
+    <div class="pkgs-grid">
+    <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-australia-new-zealand-combo.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Discover Australia & NZ" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
+      <div class="pkg-days-badge">15D / 14N</div>
+      <div class="pkg-region-badge">🇦🇺 🇳🇿 AUS & NZ Combo</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Auckland · Queenstown · Sydney · Cairns · Melbourne</span>
+        <h3>Discover Australia & NZ</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Hobbiton & Geothermal Valley</div><div class="pkg-hl-item-str">Great Barrier Reef Catamaran</div><div class="pkg-hl-item-str">Great Ocean Road Small Eco Tour</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹4,51,758<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <!-- 🇺🇸 United States (USA) Section -->
+  <div class="pkg-section-group" id="sec-usa">
+    <h2 class="country-heading">🇺🇸 United States (USA)</h2>
+    <div class="pkgs-grid">
+    <a class="pkg-card-list reveal" data-categories="usa adventure" href="package-west-coast-usa.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="West Coast USA Highlights" loading="lazy" src="../assets/images/usa/grand-canyon-guide.jpg"/></div>
+      <div class="pkg-days-badge">8D / 7N</div>
+      <div class="pkg-region-badge">🇺🇸 USA West Coast</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Las Vegas · Grand Canyon · Los Angeles · San Francisco</span>
+        <h3>West Coast USA Highlights</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Grand Canyon West Rim Skywalk</div><div class="pkg-hl-item-str">Hollywood & Beverly Hills Tour</div><div class="pkg-hl-item-str">San Francisco Bay Cruise</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,99,283<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="usa adventure" href="package-east-coast-usa.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="East Coast Highlights" loading="lazy" src="../assets/images/usa/new-york-guide.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇺🇸 USA East Coast</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">New York · Philadelphia · Washington D.C. · Niagara</span>
+        <h3>East Coast Highlights</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Statue of Liberty Ferry</div><div class="pkg-hl-item-str">Summit One Vanderbilt Entry</div><div class="pkg-hl-item-str">Cave of the Winds & Niagara Falls</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹2,22,400<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="usa adventure" href="package-explore-america.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Explore America" loading="lazy" src="../assets/images/usa/grand-canyon-guide.jpg"/></div>
+      <div class="pkg-days-badge">16D / 15N</div>
+      <div class="pkg-region-badge">🇺🇸 USA Coast-to-Coast</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">New York · Washington D.C. · Las Vegas · Los Angeles · Orlando</span>
+        <h3>Explore America</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Summit One Vanderbilt NYC</div><div class="pkg-hl-item-str">Universal Studios Hollywood</div><div class="pkg-hl-item-str">Magic Kingdom & Epcot Orlando</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹4,95,454<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <!-- 🇸🇬 🇲🇾 Southeast Asia (SE Asia) Section -->
+  <div class="pkg-section-group" id="sec-southeast-asia">
+    <h2 class="country-heading">🇸🇬 🇲🇾 Southeast Asia (SE Asia)</h2>
+    <div class="pkgs-grid">
+    <a class="pkg-card-list reveal" data-categories="southeast-asia" href="package-singapore-malaysia.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Singapore & Malaysia Escape" loading="lazy" src="../assets/images/singapore/1.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇸🇬 🇲🇾 Twin Country</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Singapore · Sentosa Island · Kuala Lumpur · Genting Highlands</span>
+        <h3>Singapore & Malaysia Escape</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Gardens by the Bay & Sentosa</div><div class="pkg-hl-item-str">Universal Studios Full Day</div><div class="pkg-hl-item-str">Genting Cable Car & Batu Caves</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹1,40,000<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="southeast-asia" href="package-singapore-highlights.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Singapore Highlights" loading="lazy" src="../assets/images/singapore/2.jpg"/></div>
+      <div class="pkg-days-badge">4D / 3N</div>
+      <div class="pkg-region-badge">🇸🇬 Singapore</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Singapore City Tour · Sentosa Island · Universal Studios</span>
+        <h3>Singapore Highlights</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Universal Studios Singapore</div><div class="pkg-hl-item-str">Sentosa Cable Car & Wings of Time</div><div class="pkg-hl-item-str">Singapore River Cruise</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹62,757<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="southeast-asia" href="package-discover-singapore-value.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Discover Singapore" loading="lazy" src="../assets/images/singapore/3.jpg"/></div>
+      <div class="pkg-days-badge">4D / 3N</div>
+      <div class="pkg-region-badge">🇸🇬 Singapore Value</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Singapore City Tour · Sentosa Island · Gardens by the Bay</span>
+        <h3>Discover Singapore</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Gardens by the Bay Flower Dome</div><div class="pkg-hl-item-str">Sentosa Madame Tussauds Entry</div><div class="pkg-hl-item-str">Full Day guided city sights</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹42,373<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="southeast-asia honeymoon" href="package-ultimate-singapore-luxury.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Ultimate Singapore Luxury" loading="lazy" src="../assets/images/singapore/4.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇸🇬 Singapore Luxury</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Marina Bay Sands · Sentosa Island · Gardens by the Bay</span>
+        <h3>Ultimate Singapore Luxury</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Marina Bay Sands Sands SkyPark</div><div class="pkg-hl-item-str">Night Safari Wildlife Tram</div><div class="pkg-hl-item-str">Cable Car Dining Experience</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹79,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <!-- 🇦🇪 Dubai Section -->
+  <div class="pkg-section-group" id="sec-dubai">
+    <h2 class="country-heading">🇦🇪 Dubai</h2>
+    <div class="pkgs-grid">
+    <a class="pkg-card-list reveal" data-categories="dubai" href="package-discover-dubai.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Discover Dubai Essentials" loading="lazy" src="../assets/images/dubai/1.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇦🇪 Dubai essentials</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Dubai City Tour · Desert Safari · Burj Khalifa · Abu Dhabi Tour</span>
+        <h3>Discover Dubai Essentials</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Desert Safari with BBQ Dinner</div><div class="pkg-hl-item-str">Burj Khalifa 124th Floor Entry</div><div class="pkg-hl-item-str">Abu Dhabi Sheikh Zayed Mosque</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹42,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="dubai honeymoon" href="package-ultimate-dubai-luxury.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Ultimate Dubai Luxury" loading="lazy" src="../assets/images/dubai/2.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇦🇪 Dubai luxury</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Marina Dhow Cruise · Desert Safari · Burj Khalifa · Atlantis The Palm</span>
+        <h3>Ultimate Dubai Luxury</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Luxury Marina Dhow Cruise</div><div class="pkg-hl-item-str">Burj Khalifa Observation Deck</div><div class="pkg-hl-item-str">Atlantis Aquaventure Waterpark</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹89,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pkg-footer">
+<div class="wrap pkg-footer-row">
+<div class="foot-logo">
+<img alt="The Falcon Tour" class="logo-img" src="../assets/images/logo.png"/>
+<span class="logo-text">The <em>Falcon</em> Tour<small>Adventure &amp; Travel Co.</small></span>
+</div>
+<nav class="pkg-footer-nav">
+<a href="../destinations/index.html" class="pkg-footer-nav-link">Destinations</a>
+<a href="index.html" class="pkg-footer-nav-link">Packages</a>
+<a href="../activities/index.html" class="pkg-footer-nav-link">Activities</a>
+<a href="../why-us/index.html" class="pkg-footer-nav-link">Why Us</a>
+<a href="../blogs/index.html" class="pkg-footer-nav-link">Blog</a>
+<a href="../index.html#contact" class="pkg-footer-nav-link">Contact</a>
+</nav>
+<span class="pkg-footer-copyright"> 2026 The Falcon Tour</span>
+</div>
+</footer>
+<a aria-label="Chat on WhatsApp" class="wa-float" href="https://wa.me/918679343402">
+<svg viewbox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.6 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+</a>
+
+<script>
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 40); }, { passive: true });
+  const burger = document.getElementById('burgerBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  
+  if (burger && mobileNav) {
+    burger.addEventListener('click', () => {
+      const open = mobileNav.classList.contains('is-open');
+      mobileNav.classList.toggle('is-open', !open);
+      mobileNav.style.display = open ? 'none' : 'block';
+      burger.setAttribute('aria-expanded', open ? 'false' : 'true');
+      burger.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+    });
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileNav.classList.remove('is-open');
+      mobileNav.style.display = 'none';
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+    }));
+  }
+
+  // Motion Dev Integration
+  const { animate, stagger, spring } = Motion;
+
+  // Premium scroll reveal for package listing
+  document.querySelectorAll('.pkgs-grid').forEach(grid => {
+    Motion.inView(grid, () => {
+      animate(
+        grid.querySelectorAll('.reveal'),
+        { opacity: [0, 1], y: [20, 0] },
+        { delay: stagger(0.05), duration: 0.5, easing: spring({ stiffness: 120, damping: 15 }) }
+      );
+    });
+  });
+
+  const scrollProgress = document.getElementById('scrollProgress');
+  if (scrollProgress && CSS && !CSS.supports('animation-timeline', 'scroll()')) {
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const s = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100;
+      scrollProgress.style.width = s + '%';
+    }, { passive: true });
+  }
+
+  const cursorDot = document.getElementById('cursorDot');
+  const cursorRing = document.getElementById('cursorRing');
+  let mx=0,my=0,rx=0,ry=0;
+  window.addEventListener('mousemove', (e) => { mx=e.clientX;my=e.clientY;cursorDot.style.left=mx+'px';cursorDot.style.top=my+'px'; });
+  (function loop(){ rx+=(mx-rx)*.16;ry+=(my-ry)*.16;cursorRing.style.left=rx+'px';cursorRing.style.top=ry+'px';requestAnimationFrame(loop); })();
+  document.querySelectorAll('a,button,.tilt').forEach(el => { el.addEventListener('mouseenter',()=>cursorRing.classList.add('grow')); el.addEventListener('mouseleave',()=>cursorRing.classList.remove('grow')); });
+
+  // Spring based 3D tilt cards
+  document.querySelectorAll('.tilt').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      animate(card, { rotateY: px * 8, rotateX: py * -8, y: -4 }, { duration: 0.1, easing: "ease-out" });
+    });
+    card.addEventListener('mouseleave', () => {
+      animate(card, { rotateY: 0, rotateX: 0, y: 0 }, { duration: 0.45, easing: spring({ stiffness: 150, damping: 13 }) });
+    });
+  });
+
+  // Premium filtering function using Motion Dev spring animations
+  function filterPackages(category, element) {
+    document.querySelectorAll('.filter-pill').forEach(btn => btn.classList.remove('active'));
+    element.classList.add('active');
+
+    const sections = document.querySelectorAll('.pkg-section-group');
+    sections.forEach(sec => {
+      const cards = Array.from(sec.querySelectorAll('.pkg-card-list'));
+      let visibleCount = 0;
+      const toShow = [];
+      const toHide = [];
+
+      cards.forEach(card => {
+        const cats = card.getAttribute('data-categories').split(' ');
+        if (category === 'all' || cats.includes(category)) {
+          toShow.push(card);
+          visibleCount++;
+        } else {
+          toHide.push(card);
+        }
+      });
+
+      // Animate cards that are filtered OUT
+      if (toHide.length > 0) {
+        animate(
+          toHide,
+          { opacity: 0, scale: 0.94, y: 15 },
+          { duration: 0.25, easing: "ease-in" }
+        ).then(() => {
+          toHide.forEach(c => c.style.display = 'none');
+        });
+      }
+
+      // Animate cards that are filtered IN
+      if (toShow.length > 0) {
+        toShow.forEach(c => {
+          c.style.display = 'block';
+        });
+        animate(
+          toShow,
+          { opacity: 1, scale: 1, y: 0 },
+          { delay: stagger(0.05), duration: 0.45, easing: spring({ stiffness: 120, damping: 15 }) }
+        );
+      }
+
+      // Smooth section collapse
+      if (visibleCount > 0) {
+        sec.style.display = 'block';
+        animate(sec, { opacity: 1, height: "auto" }, { duration: 0.35, easing: "ease-out" });
+      } else {
+        animate(sec, { opacity: 0, height: 0 }, { duration: 0.25, easing: "ease-in" }).then(() => {
+          sec.style.display = 'none';
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>

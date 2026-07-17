@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BPXGKYKBXD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BPXGKYKBXD');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Travel Blog | Europe, Japan, Australia, USA | The Falcon Tour</title>
+<link href="https://thefalcontour.com/blogs/" rel="canonical"/>
+<link href="../assets/images/logo.png" rel="icon" type="image/png"/>
+<link href="../assets/images/logo.png" rel="apple-touch-icon"/>
+<meta content="100+ in-depth travel guides — from visa tips and itineraries to city guides for Amsterdam, Paris, Rome, Barcelona, Prague and more." name="description"/>
+<meta content="Europe travel blog, Europe travel guides, Europe itinerary, Europe visa, European cities" name="keywords"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1" name="robots"/>
+<meta content="The Falcon Tour" name="author"/>
+<meta content="#D9A441" name="theme-color"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="../assets/css/journal.css" rel="stylesheet"/>
+<style>
+  .blogs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;}
+  .blog-entry{background:#fff;border-radius:6px;overflow:hidden;border:1px solid var(--line);transition:transform .3s ease,box-shadow .3s ease;display:block;color:inherit;text-decoration:none;}
+  .blog-entry:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(19,27,34,.14);}
+  .blog-entry-img{height:200px;overflow:hidden;position:relative;}
+  .blog-entry-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .blog-entry:hover .blog-entry-img img{transform:scale(1.06);}
+  .blog-entry-body{padding:20px 22px 24px;}
+  .blog-entry-body .tag{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--rust);margin-bottom:8px;display:block;}
+  .blog-entry-body h3{font-size:18px;line-height:1.3;margin:0 0 10px;color:var(--text-dark);}
+  .blog-entry-body p{font-size:13.5px;color:var(--text-mute);margin:0;line-height:1.6;}
+  .blog-entry-body .readmore{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.04em;color:var(--amber);}
+  .filter-bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px;}
+  .filter-pill{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.05em;text-transform:uppercase;padding:8px 18px;border:1px solid var(--line);border-radius:30px;background:var(--cream);cursor:pointer;transition:.2s;}
+  .filter-pill:hover,.filter-pill.active{border-color:var(--amber);color:var(--amber);}
+  @media(max-width:980px){.blogs-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:620px){.blogs-grid{grid-template-columns:1fr;}.blog-entry-img{height:160px;}}
+
+  .blogs-row-container {
+    margin-bottom: 56px;
+    position: relative;
+  }
+  .row-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 12px;
+  }
+  .country-title {
+    font-size: 26px;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+  }
+  .country-title span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-mute);
+    font-weight: 400;
+    background: rgba(19, 27, 34, 0.05);
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  .country-title:hover {
+    color: var(--amber);
+  }
+  .scroll-arrows {
+    display: flex;
+    gap: 8px;
+  }
+  .scroll-arrow {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: all 0.25s ease;
+    color: var(--text-dark);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }
+  .scroll-arrow:hover {
+    border-color: var(--amber);
+    color: var(--ink);
+    background: var(--amber);
+    transform: scale(1.05);
+  }
+  .blogs-row-scroll {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 18px;
+    padding-top: 5px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .blogs-row-scroll::-webkit-scrollbar {
+    height: 6px;
+  }
+  .blogs-row-scroll::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.03);
+    border-radius: 10px;
+  }
+  .blogs-row-scroll::-webkit-scrollbar-thumb {
+    background: rgba(19,27,34,0.15);
+    border-radius: 10px;
+  }
+  .blogs-row-scroll::-webkit-scrollbar-thumb:hover {
+    background: var(--amber);
+  }
+  .blogs-row-scroll .blog-entry {
+    flex: 0 0 360px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .blogs-row-scroll .blog-entry {
+      flex: 0 0 290px;
+    }
+    .country-title {
+      font-size: 22px;
+    }
+  }
+
+
+  /* Premium Social Contact Modal Styles */
+  .social-modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    background: rgba(19, 27, 34, 0.92);
+    backdrop-filter: blur(12px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .social-modal-overlay.is-active {
+    display: flex;
+    opacity: 1;
+  }
+  .social-modal-card {
+    background: var(--ink);
+    color: var(--cream);
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    position: relative;
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+  }
+  .social-modal-overlay.is-active .social-modal-card {
+    transform: scale(1);
+  }
+  .social-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: var(--cream);
+    line-height: 1;
+    transition: color 0.2s;
+  }
+  .social-modal-close:hover {
+    color: var(--amber);
+  }
+  .social-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 28px;
+  }
+  .social-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cream);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .social-item.whatsapp {
+    background: rgba(37, 211, 102, 0.08);
+  }
+  .social-item.whatsapp:hover {
+    background: rgba(37, 211, 102, 0.18);
+    border-color: rgba(37, 211, 102, 0.4);
+    transform: translateX(4px);
+  }
+  .social-item.instagram {
+    background: rgba(225, 48, 108, 0.08);
+  }
+  .social-item.instagram:hover {
+    background: rgba(225, 48, 108, 0.18);
+    border-color: rgba(225, 48, 108, 0.4);
+    transform: translateX(4px);
+  }
+  .social-item.facebook {
+    background: rgba(24, 119, 242, 0.08);
+  }
+  .social-item.facebook:hover {
+    background: rgba(24, 119, 242, 0.18);
+    border-color: rgba(24, 119, 242, 0.4);
+    transform: translateX(4px);
+  }
+  .social-item.email {
+    background: rgba(217, 164, 65, 0.06);
+  }
+  .social-item.email:hover {
+    background: rgba(217, 164, 65, 0.14);
+    border-color: rgba(217, 164, 65, 0.3);
+    transform: translateX(4px);
+  }
+  .social-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    color: #fff;
+  }
+  .social-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+  }
+  .social-item.whatsapp .social-icon { background: #25D366; }
+  .social-item.instagram .social-icon { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+  .social-item.facebook .social-icon { background: #1877F2; }
+  .social-item.email .social-icon { background: var(--amber); color: var(--ink); }
+  .social-info {
+    flex-grow: 1;
+  }
+  .social-info h5 {
+    margin: 0 0 3px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Fraunces', serif;
+  }
+  .social-info p {
+    margin: 0;
+    font-size: 12px;
+    color: rgba(243, 238, 225, 0.6);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .social-action-arrow {
+    font-size: 16px;
+    color: var(--amber);
+    transition: transform 0.2s;
+  }
+  .social-item:hover .social-action-arrow {
+    transform: translateX(3px);
+  }
+
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Europe Travel Blog", "description": "100+ in-depth travel guides covering city trips, itineraries, visa tips, costs and packing advice.", "url": "https://thefalcontour.com/blogs/"}</script>
+</head>
+<body>
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="grain"></div>
+<header class="scrolled" id="siteHeader">
+<div class="wrap">
+<a class="logo" href="../index.html">
+<img alt="The Falcon Tour" class="logo-img" src="../assets/images/logo.png"/>
+<span class="logo-text">The <em>Falcon</em> Tour<small>ADVENTURE &amp; TRAVEL CO.</small></span>
+</a>
+<nav class="mainnav">
+<a href="../destinations/index.html">Destinations</a>
+<a href="../packages/index.html">Packages</a>
+<a href="../activities/index.html">Activities</a>
+<a href="../index.html#contact">Contact</a>
+</nav>
+<div class="header-right">
+<a class="btn btn-outline" href="../index.html#contact">Plan My Trip</a>
+<button aria-label="Menu" class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
+</div>
+</div>
+</header>
+<nav id="mobileNav" style="display:none;position:fixed;inset:0;z-index:99;background:#131B22;padding:120px 32px 40px;">
+<ul style="display:flex;flex-direction:column;gap:26px;">
+<li><a href="../destinations/index.html" style="color:#F3EEE1;font-family:'Fraunces',serif;font-size:26px;">Destinations</a></li>
+<li><a href="../packages/index.html" style="color:#F3EEE1;font-family:'Fraunces',serif;font-size:26px;">Packages</a></li>
+<li><a href="../activities/index.html" style="color:#F3EEE1;font-family:'Fraunces',serif;font-size:26px;">Activities</a></li>
+<li><a href="../index.html#contact" style="color:#F3EEE1;font-family:'Fraunces',serif;font-size:26px;">Contact</a></li>
+</ul>
+</nav>
+<!-- HERO -->
+<section class="idx-hero" style="background:var(--ink);color:var(--cream);">
+<div class="wrap">
+<div class="eyebrow" style="color:var(--amber);">Europe Travel Blog</div>
+<h1>Notes from the road, <em>not the brochure.</em></h1>
+<p>100+ in-depth travel guides across Europe, New Zealand, Japan, Australia & USA — from visa guides to hidden gems.</p>
+</div>
+</section>
+<!-- BLOG LIST -->
+
+<section style="background:var(--cream-2); padding: 60px 0;">
+<div class="wrap">
+  <!-- Regions Filter -->
+  <div class="filter-bar" id="regionFilters" style="margin-bottom: 24px; justify-content: center; display: flex; gap: 12px;">
+    <span class="filter-pill active" data-filter-region="all">All Regions</span>
+    <span class="filter-pill" data-filter-region="europe">Europe</span>
+    <span class="filter-pill" data-filter-region="newzealand">New Zealand</span>
+    <span class="filter-pill" data-filter-region="asia">Asia (Japan)</span>
+    <span class="filter-pill" data-filter-region="oceania">Oceania</span>
+    <span class="filter-pill" data-filter-region="americas">USA</span>
+  </div>
+  
+  <!-- Country Quick-Links -->
+  <div class="filter-bar" id="countryQuickLinks" style="margin-bottom: 48px; justify-content: center; display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="filter-pill active" data-filter-country="all">All Countries</span>
+    <span class="filter-pill" data-filter-country="new-zealand">New Zealand</span>
+    <span class="filter-pill" data-filter-country="switzerland">Switzerland</span>
+    <span class="filter-pill" data-filter-country="france">France</span>
+    <span class="filter-pill" data-filter-country="italy">Italy</span>
+    <span class="filter-pill" data-filter-country="spain">Spain</span>
+    <span class="filter-pill" data-filter-country="austria">Austria</span>
+    <span class="filter-pill" data-filter-country="netherlands">Netherlands</span>
+    <span class="filter-pill" data-filter-country="greece">Greece</span>
+    <span class="filter-pill" data-filter-country="iceland">Iceland</span>
+    <span class="filter-pill" data-filter-country="czech-republic">Czech Republic</span>
+    <span class="filter-pill" data-filter-country="japan">Japan</span>
+    <span class="filter-pill" data-filter-country="australia">Australia</span>
+    <span class="filter-pill" data-filter-country="usa">USA</span>
+    <span class="filter-pill" data-filter-country="europe-general">Europe General</span>
+  </div>
+
+
+  <div class="blogs-row-container reveal" data-region="asia" data-country="japan">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="japan">🇯🇵 Japan <span>20 guides</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('japan', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('japan', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-japan">
+    
+      <a class="blog-entry" href="japan/anime-places-japan.html">
+        <div class="blog-entry-img"><img alt="Anime Places in Japan 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/anime-places-japan.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Travel Guide</span>
+          <h3>Anime Places in Japan 2026 | Tips, Costs & Itinerary</h3>
+          <p>Explore Japan</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/best-time-to-visit-japan.html">
+        <div class="blog-entry-img"><img alt="Best Time to Visit Japan 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/best-time-to-visit-japan.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Travel Guide</span>
+          <h3>Best Time to Visit Japan 2026 | Tips, Costs & Itinerary</h3>
+          <p>Discover the best time to visit Japan by season, from cherry blossoms in spring to snow festivals in winter, with tra...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/cherry-blossom-guide.html">
+        <div class="blog-entry-img"><img alt="Cherry Blossom Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/cherry-blossom-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Cherry Blossom Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Complete guide to Japan</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/disneyland-japan.html">
+        <div class="blog-entry-img"><img alt="Tokyo Disneyland Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/disneyland-japan.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Travel Guide</span>
+          <h3>Tokyo Disneyland Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Tokyo Disneyland and DisneySea visit with tips on tickets, best rides, seasonal events, and getting there.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-family-guide.html">
+        <div class="blog-entry-img"><img alt="Japan Family Travel Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-family-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Family</span>
+          <h3>Japan Family Travel Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Practical tips for planning a family trip to Japan, including kid-friendly attractions, transport, and dining advice.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-faqs.html">
+        <div class="blog-entry-img"><img alt="Japan Travel FAQs 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-faqs.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Tips</span>
+          <h3>Japan Travel FAQs 2026 | Tips, Costs & Itinerary</h3>
+          <p>Answers to the most common questions about traveling to Japan, from visas and budget to safety and best time to visit.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-honeymoon-guide.html">
+        <div class="blog-entry-img"><img alt="Japan Honeymoon Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-honeymoon-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Honeymoon</span>
+          <h3>Japan Honeymoon Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan a romantic Japan honeymoon with our guide to scenic destinations, ryokan stays, and couple-friendly experiences.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-itinerary.html">
+        <div class="blog-entry-img"><img alt="Japan Itinerary 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-itinerary.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Itinerary</span>
+          <h3>Japan Itinerary 2026 | Tips, Costs & Itinerary</h3>
+          <p>A practical Japan itinerary covering Tokyo, Kyoto, Osaka, and Mount Fuji, ideal for first-time visitors with 7-10 days.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-rail-pass-guide.html">
+        <div class="blog-entry-img"><img alt="Japan Rail Pass Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-rail-pass-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Japan Rail Pass Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Everything you need to know about the Japan Rail Pass, including cost, coverage, activation, and whether it</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-shopping-guide.html">
+        <div class="blog-entry-img"><img alt="Japan Shopping Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-shopping-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Shopping</span>
+          <h3>Japan Shopping Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Guide to the best shopping districts in Japan, from Tokyo</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-travel-guide.html">
+        <div class="blog-entry-img"><img alt="Japan Travel Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-travel-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa & Entry</span>
+          <h3>Japan Travel Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Complete Japan travel guide covering visas, budget, best time to visit, itineraries, and top destinations for your 20...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-travel-tips.html">
+        <div class="blog-entry-img"><img alt="Japan Travel Tips 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-travel-tips.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Tips</span>
+          <h3>Japan Travel Tips 2026 | Tips, Costs & Itinerary</h3>
+          <p>Essential Japan travel tips covering money, etiquette, connectivity, and practical advice for a smooth trip.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-trip-cost.html">
+        <div class="blog-entry-img"><img alt="Japan Trip Cost 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-trip-cost.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Budget</span>
+          <h3>Japan Trip Cost 2026 | Tips, Costs & Itinerary</h3>
+          <p>Detailed breakdown of Japan trip costs including flights, hotels, food, transport, and daily budgets for every travel...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japan-visa-guide.html">
+        <div class="blog-entry-img"><img alt="Japan Visa Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japan-visa-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa & Entry</span>
+          <h3>Japan Visa Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Everything you need to know about applying for a Japan tourist visa, required documents, processing time, and eligibi...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/japanese-food-guide.html">
+        <div class="blog-entry-img"><img alt="Japanese Food Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/japanese-food-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Food</span>
+          <h3>Japanese Food Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>A guide to must-try Japanese dishes, regional specialties, dining etiquette, and where to find the best food in Japan.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/kyoto-guide.html">
+        <div class="blog-entry-img"><img alt="Kyoto Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/kyoto-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Kyoto Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Discover Kyoto</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/mount-fuji-guide.html">
+        <div class="blog-entry-img"><img alt="Mount Fuji Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/mount-fuji-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Mount Fuji Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Mount Fuji visit with tips on best viewpoints, climbing season, nearby towns, and how to get there from Tokyo.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/nara-guide.html">
+        <div class="blog-entry-img"><img alt="Nara Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/nara-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Nara Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Visit Nara for its famous deer park and ancient temples. Complete guide to Todai-ji, transport, and day-trip planning.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/osaka-guide.html">
+        <div class="blog-entry-img"><img alt="Osaka Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/osaka-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Osaka Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Osaka trip with this guide to Osaka Castle, Dotonbori street food, day trips, and practical travel tips.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="japan/tokyo-guide.html">
+        <div class="blog-entry-img"><img alt="Tokyo Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/japan/tokyo-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Tokyo Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Explore Tokyo with our complete guide to top attractions, neighborhoods, food, and travel tips for Japan</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+
+  <div class="blogs-row-container reveal" data-region="oceania" data-country="australia">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="australia">🇦🇺 Australia <span>20 guides</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('australia', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('australia', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-australia">
+    
+      <a class="blog-entry" href="australia/australia-budget.html">
+        <div class="blog-entry-img"><img alt="Australia Trip Budget 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-budget.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Budget</span>
+          <h3>Australia Trip Budget 2026 | Tips, Costs & Itinerary</h3>
+          <p>Detailed breakdown of Australia trip costs including flights, hotels, food, transport, and daily budgets for every tr...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-family-guide.html">
+        <div class="blog-entry-img"><img alt="Australia Family Travel Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-family-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Family</span>
+          <h3>Australia Family Travel Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Practical tips for planning a family trip to Australia, including kid-friendly attractions, transport, and safety adv...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-faqs.html">
+        <div class="blog-entry-img"><img alt="Australia Travel FAQs 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-faqs.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Tips</span>
+          <h3>Australia Travel FAQs 2026 | Tips, Costs & Itinerary</h3>
+          <p>Answers to the most common questions about traveling to Australia, from visas and budget to safety and best time to v...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-food-guide.html">
+        <div class="blog-entry-img"><img alt="Australia Food Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-food-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Food</span>
+          <h3>Australia Food Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>A guide to must-try Australian dishes, coffee culture, and regional food specialties across the country.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-honeymoon-guide.html">
+        <div class="blog-entry-img"><img alt="Australia Honeymoon Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-honeymoon-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Honeymoon</span>
+          <h3>Australia Honeymoon Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan a romantic Australia honeymoon with our guide to scenic destinations, luxury stays, and couple-friendly experien...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-packing-guide.html">
+        <div class="blog-entry-img"><img alt="Australia Packing Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-packing-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Tips</span>
+          <h3>Australia Packing Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>A practical Australia packing list covering clothing, sun protection, and essentials for city, beach, and outback tra...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-road-trip-guide.html">
+        <div class="blog-entry-img"><img alt="Australia Road Trip Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-road-trip-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Australia Road Trip Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan an Australia road trip with our guide to the best routes, driving tips, and how to prepare for long-distance dri...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-shopping-guide.html">
+        <div class="blog-entry-img"><img alt="Australia Shopping Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-shopping-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Shopping</span>
+          <h3>Australia Shopping Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Guide to the best shopping districts in Australia, from Sydney</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-travel-guide.html">
+        <div class="blog-entry-img"><img alt="Australia Travel Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-travel-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa & Entry</span>
+          <h3>Australia Travel Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Complete Australia travel guide covering visas, budget, best time to visit, and top destinations from Sydney to the G...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-travel-tips.html">
+        <div class="blog-entry-img"><img alt="Australia Travel Tips 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-travel-tips.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Tips</span>
+          <h3>Australia Travel Tips 2026 | Tips, Costs & Itinerary</h3>
+          <p>Essential Australia travel tips covering money, etiquette, connectivity, and practical advice for a smooth trip.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-visa.html">
+        <div class="blog-entry-img"><img alt="Australia Visa Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-visa.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa & Entry</span>
+          <h3>Australia Visa Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Everything you need to know about applying for an Australia tourist visa or eVisitor/ETA, documents, and processing t...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/australia-wildlife-guide.html">
+        <div class="blog-entry-img"><img alt="Australia Wildlife Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/australia-wildlife-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Australia Wildlife Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Where to see kangaroos, koalas, and other native Australian wildlife safely, plus reef and rainforest wildlife tips.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/best-time-to-visit-australia.html">
+        <div class="blog-entry-img"><img alt="Best Time to Visit Australia 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/best-time-to-visit-australia.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Travel Guide</span>
+          <h3>Best Time to Visit Australia 2026 | Tips, Costs & Itinerary</h3>
+          <p>Discover the best time to visit Australia by season and region, from Sydney summers to Great Barrier Reef diving cond...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/brisbane-guide.html">
+        <div class="blog-entry-img"><img alt="Brisbane Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/brisbane-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Brisbane Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Explore Brisbane</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/gold-coast-guide.html">
+        <div class="blog-entry-img"><img alt="Gold Coast Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/gold-coast-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Gold Coast Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Guide to the Gold Coast</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/great-barrier-reef.html">
+        <div class="blog-entry-img"><img alt="Great Barrier Reef Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/great-barrier-reef.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Travel Guide</span>
+          <h3>Great Barrier Reef Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Guide to visiting the Great Barrier Reef, including best tour bases, diving vs snorkeling, and the ideal time to visit.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/great-ocean-road.html">
+        <div class="blog-entry-img"><img alt="Great Ocean Road Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/great-ocean-road.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Travel Guide</span>
+          <h3>Great Ocean Road Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Great Ocean Road trip with tips on the Twelve Apostles, stops along the route, and how many days you need.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/melbourne-guide.html">
+        <div class="blog-entry-img"><img alt="Melbourne Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/melbourne-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Melbourne Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Melbourne trip with this guide to laneway culture, coffee, art, and day trips along the Great Ocean Road.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/sydney-guide.html">
+        <div class="blog-entry-img"><img alt="Sydney Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Sydney Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Explore Sydney with our guide to the Opera House, Harbour Bridge, beaches, and neighborhoods for your Australia trip.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="australia/tasmania-guide.html">
+        <div class="blog-entry-img"><img alt="Tasmania Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/australia/tasmania-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Tasmania Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Explore Tasmania</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+
+  <div class="blogs-row-container reveal" data-region="americas" data-country="usa">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="usa">🇺🇸 United States <span>25 guides</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('usa', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('usa', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-usa">
+    
+      <a class="blog-entry" href="usa/best-time-to-visit-usa.html">
+        <div class="blog-entry-img"><img alt="Best Time to Visit USA 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/best-time-to-visit-usa.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Travel Guide</span>
+          <h3>Best Time to Visit USA 2026 | Tips, Costs & Itinerary</h3>
+          <p>Discover the best time to visit the USA by season and region, from New York falls to national park summers.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/disney-world-guide.html">
+        <div class="blog-entry-img"><img alt="Disney World Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/disney-world-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Disney World Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Walt Disney World visit with tips on parks, tickets, best rides, and getting there.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/east-coast-vs-west-coast.html">
+        <div class="blog-entry-img"><img alt="East Coast vs West Coast 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/east-coast-vs-west-coast.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Travel Guide</span>
+          <h3>East Coast vs West Coast 2026 | Tips, Costs & Itinerary</h3>
+          <p>Comparing the East Coast and West Coast of the USA to help you decide which region fits your travel style.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/grand-canyon-guide.html">
+        <div class="blog-entry-img"><img alt="Grand Canyon Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/grand-canyon-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Grand Canyon Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Grand Canyon visit with tips on South Rim vs West Rim, hiking, and getting there from Las Vegas.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/las-vegas-guide.html">
+        <div class="blog-entry-img"><img alt="Las Vegas Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/las-vegas-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Las Vegas Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Guide to the Las Vegas Strip, shows, day trips to the Grand Canyon, and practical tips for your Vegas visit.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/los-angeles-guide.html">
+        <div class="blog-entry-img"><img alt="Los Angeles Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/los-angeles-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Los Angeles Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Los Angeles trip with this guide to Hollywood, beaches, theme parks, and getting around LA.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/miami-guide.html">
+        <div class="blog-entry-img"><img alt="Miami Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/miami-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Miami Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Guide to Miami</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/national-parks-guide.html">
+        <div class="blog-entry-img"><img alt="National Parks Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/national-parks-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>National Parks Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Guide to the USA</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/new-york-guide.html">
+        <div class="blog-entry-img"><img alt="New York Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/new-york-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>New York Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Explore New York City with our guide to Times Square, Central Park, museums, and neighborhoods for your USA trip.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/orlando-guide.html">
+        <div class="blog-entry-img"><img alt="Orlando Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/orlando-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Orlando Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Orlando trip with this guide to Disney World, Universal Studios, and family-friendly attractions.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/route-66-guide.html">
+        <div class="blog-entry-img"><img alt="Route 66 Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/route-66-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Route 66 Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Route 66 road trip with tips on key stops, how many days you need, and driving logistics.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/san-francisco-guide.html">
+        <div class="blog-entry-img"><img alt="San Francisco Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/san-francisco-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>San Francisco Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Explore San Francisco</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-budget-guide.html">
+        <div class="blog-entry-img"><img alt="USA Budget Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-budget-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Budget</span>
+          <h3>USA Budget Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Practical money-saving tips for traveling the USA on a budget, from accommodation to transport and dining.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-family-guide.html">
+        <div class="blog-entry-img"><img alt="USA Family Travel Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-family-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Family</span>
+          <h3>USA Family Travel Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Practical tips for planning a family trip to the USA, including kid-friendly attractions and transport advice.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-faqs.html">
+        <div class="blog-entry-img"><img alt="USA Travel FAQs 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-faqs.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Tips</span>
+          <h3>USA Travel FAQs 2026 | Tips, Costs & Itinerary</h3>
+          <p>Answers to the most common questions about traveling to the USA, from visas and budget to safety and best time to visit.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-food-guide.html">
+        <div class="blog-entry-img"><img alt="USA Food Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-food-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Food</span>
+          <h3>USA Food Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>A guide to must-try American dishes, regional specialties, and dining etiquette across the USA.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-honeymoon-guide.html">
+        <div class="blog-entry-img"><img alt="USA Honeymoon Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-honeymoon-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Honeymoon</span>
+          <h3>USA Honeymoon Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan a romantic USA honeymoon with our guide to scenic destinations, luxury stays, and couple-friendly experiences.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-packing-guide.html">
+        <div class="blog-entry-img"><img alt="USA Packing Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-packing-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Tips</span>
+          <h3>USA Packing Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>A practical USA packing list covering clothing, regional weather differences, and trip essentials.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-shopping-guide.html">
+        <div class="blog-entry-img"><img alt="USA Shopping Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-shopping-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Shopping</span>
+          <h3>USA Shopping Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Guide to the best shopping destinations in the USA, from NYC boutiques to outlet malls and tax-free shopping tips.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-travel-guide.html">
+        <div class="blog-entry-img"><img alt="USA Travel Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-travel-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa & Entry</span>
+          <h3>USA Travel Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Complete USA travel guide covering visas, budget, best time to visit, and top destinations from New York to the Grand...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-travel-tips.html">
+        <div class="blog-entry-img"><img alt="USA Travel Tips 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-travel-tips.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Tips</span>
+          <h3>USA Travel Tips 2026 | Tips, Costs & Itinerary</h3>
+          <p>Essential USA travel tips covering money, tipping culture, connectivity, and practical advice for a smooth trip.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-trip-cost.html">
+        <div class="blog-entry-img"><img alt="USA Trip Cost 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-trip-cost.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Budget</span>
+          <h3>USA Trip Cost 2026 | Tips, Costs & Itinerary</h3>
+          <p>Detailed breakdown of USA trip costs including flights, hotels, food, transport, and daily budgets for every travel s...</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/usa-visa-guide.html">
+        <div class="blog-entry-img"><img alt="USA Visa Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/usa-visa-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa & Entry</span>
+          <h3>USA Visa Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Everything you need to know about the US ESTA and B2 tourist visa, required documents, and processing time.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/washington-dc-guide.html">
+        <div class="blog-entry-img"><img alt="Washington DC Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/washington-dc-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Washington DC Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Plan your Washington DC trip with this guide to the Smithsonian museums, monuments, and cherry blossoms.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="usa/yellowstone-guide.html">
+        <div class="blog-entry-img"><img alt="Yellowstone Guide 2026 | Tips, Costs & Itinerary" loading="lazy" src="../assets/images/usa/yellowstone-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Yellowstone Guide 2026 | Tips, Costs & Itinerary</h3>
+          <p>Guide to visiting Yellowstone National Park, including geysers, wildlife viewing, and the best time to go.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+
+  <div class="blogs-rows-wrapper">
+    
+  <div class="blogs-row-container reveal" data-region="newzealand" data-country="new-zealand">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="new-zealand">New Zealand <span>18 guides</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('new-zealand', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('new-zealand', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-new-zealand">
+  
+      <a class="blog-entry" href="new-zealand/new-zealand-travel-guide.html">
+        <div class="blog-entry-img"><img alt="New Zealand Travel Guide 2025 – Plan Your Perfect Trip" loading="lazy" src="../assets/images/new-zealand/new-zealand-travel-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>New Zealand Travel Guide 2025 – Plan Your Perfect Trip</h3>
+          <p>Complete New Zealand travel guide covering visas, budget, best time to visit, itineraries and top destinations for first-time travelers.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/nz-10-days-itinerary.html">
+        <div class="blog-entry-img"><img alt="Best New Zealand 10 Days Itinerary – North & South Island Plan" loading="lazy" src="../assets/images/new-zealand/nz-10-days-itinerary.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Itinerary</span>
+          <h3>Best New Zealand 10 Days Itinerary – North & South Island Plan</h3>
+          <p>A ready-made 10-day New Zealand itinerary covering Auckland, Rotorua, Queenstown and Milford Sound for first-time visitors.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/best-time-to-visit-nz.html">
+        <div class="blog-entry-img"><img alt="Best Time to Visit New Zealand – Season-Wise Travel Guide" loading="lazy" src="../assets/images/new-zealand/best-time-to-visit-nz.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>Best Time to Visit New Zealand – Season-Wise Travel Guide</h3>
+          <p>Find out the best time to visit New Zealand by season, including weather, crowd levels and prices for summer, autumn, winter and spring trips.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/new-zealand-visa.html">
+        <div class="blog-entry-img"><img alt="New Zealand Visa Guide 2025 – Requirements & Application Process" loading="lazy" src="../assets/images/new-zealand/new-zealand-visa.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa Guide</span>
+          <h3>New Zealand Visa Guide 2025 – Requirements & Application Process</h3>
+          <p>Step-by-step New Zealand visa guide covering visitor visa documents, NZeTA, fees and processing time for Indian travelers.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/nz-trip-cost.html">
+        <div class="blog-entry-img"><img alt="New Zealand Trip Cost 2025 – Budget Breakdown for Indian Travelers" loading="lazy" src="../assets/images/new-zealand/nz-trip-cost.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa & Cost Guide</span>
+          <h3>New Zealand Trip Cost 2025 – Budget Breakdown for Indian Travelers</h3>
+          <p>Detailed New Zealand trip cost breakdown including flights, visa, hotels, food and activities for a 10-day holiday from India.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/nz-travel-tips.html">
+        <div class="blog-entry-img"><img alt="New Zealand Travel Tips – 15 Things to Know Before You Go" loading="lazy" src="../assets/images/new-zealand/nz-travel-tips.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>New Zealand Travel Tips – 15 Things to Know Before You Go</h3>
+          <p>Essential New Zealand travel tips covering visas, currency, driving, safety and etiquette for first-time travelers.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/road-trip-guide.html">
+        <div class="blog-entry-img"><img alt="New Zealand Road Trip Guide – Best Routes & Tips" loading="lazy" src="../assets/images/new-zealand/road-trip-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>New Zealand Road Trip Guide – Best Routes & Tips</h3>
+          <p>Complete guide to planning a New Zealand road trip, including best routes, campervan tips and driving essentials.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/adventure-activities.html">
+        <div class="blog-entry-img"><img alt="New Zealand Adventure Activities Guide – Bungee, Skydiving & More" loading="lazy" src="../assets/images/activities/adventure-activities.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Adventure</span>
+          <h3>New Zealand Adventure Activities Guide – Bungee, Skydiving & More</h3>
+          <p>Complete guide to New Zealand's best adventure activities including bungee jumping, skydiving, jet boating and hiking.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/nz-food-guide.html">
+        <div class="blog-entry-img"><img alt="New Zealand Food Guide – Must-Try Dishes & Local Cuisine" loading="lazy" src="../assets/images/new-zealand/nz-food-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Food Guide</span>
+          <h3>New Zealand Food Guide – Must-Try Dishes & Local Cuisine</h3>
+          <p>Explore New Zealand's must-try dishes, from hangi feasts to fresh seafood and pavlova, in this complete food guide.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/nz-honeymoon-guide.html">
+        <div class="blog-entry-img"><img alt="New Zealand Honeymoon Guide – Best Romantic Destinations" loading="lazy" src="../assets/images/new-zealand/nz-honeymoon-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Honeymoon Guide</span>
+          <h3>New Zealand Honeymoon Guide – Best Romantic Destinations</h3>
+          <p>Discover the best New Zealand honeymoon destinations and experiences for couples, from Queenstown lake views to Milford Sound cruises.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/nz-shopping-guide.html">
+        <div class="blog-entry-img"><img alt="New Zealand Shopping Guide – Best Markets & Souvenirs" loading="lazy" src="../assets/images/new-zealand/nz-shopping-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Shopping Guide</span>
+          <h3>New Zealand Shopping Guide – Best Markets & Souvenirs</h3>
+          <p>Complete New Zealand shopping guide covering the best markets, malls and souvenirs like Manuka honey and Maori crafts.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/nz-faqs.html">
+        <div class="blog-entry-img"><img alt="New Zealand Travel FAQs – Common Questions Answered" loading="lazy" src="../assets/images/new-zealand/nz-faqs.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>New Zealand Travel FAQs – Common Questions Answered</h3>
+          <p>Answers to the most frequently asked questions about traveling to New Zealand, including visas, weather, safety and costs.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/auckland-guide.html">
+        <div class="blog-entry-img"><img alt="Auckland Travel Guide – Top Attractions & Best Itinerary" loading="lazy" src="../assets/images/new-zealand/auckland-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Auckland Travel Guide – Top Attractions & Best Itinerary</h3>
+          <p>Complete Auckland travel guide covering the Sky Tower, harbour, islands and a 2-day itinerary for first-time visitors.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/christchurch-guide.html">
+        <div class="blog-entry-img"><img alt="Christchurch Travel Guide – Gardens, Gothic Architecture & Itinerary" loading="lazy" src="../assets/images/new-zealand/christchurch-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Christchurch Travel Guide – Gardens, Gothic Architecture & Itinerary</h3>
+          <p>Complete Christchurch travel guide covering botanic gardens, architecture, punting and a 2-day itinerary.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/queenstown-guide.html">
+        <div class="blog-entry-img"><img alt="Queenstown Travel Guide – Adventure Capital of New Zealand" loading="lazy" src="../assets/images/new-zealand/queenstown-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Queenstown Travel Guide – Adventure Capital of New Zealand</h3>
+          <p>Complete Queenstown travel guide covering adventure activities, lake views, dining and a 3-day itinerary.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/rotorua-guide.html">
+        <div class="blog-entry-img"><img alt="Rotorua Travel Guide – Geothermal Wonders & Maori Culture" loading="lazy" src="../assets/images/new-zealand/rotorua-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide</span>
+          <h3>Rotorua Travel Guide – Geothermal Wonders & Maori Culture</h3>
+          <p>Complete Rotorua travel guide covering geothermal parks, Maori culture, hot springs and a 2-day itinerary.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/hobbiton-guide.html">
+        <div class="blog-entry-img"><img alt="Hobbiton Travel Guide – Movie Set Tour & Tips" loading="lazy" src="../assets/images/new-zealand/hobbiton-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Experience Guide</span>
+          <h3>Hobbiton Travel Guide – Movie Set Tour & Tips</h3>
+          <p>Complete Hobbiton travel guide covering the movie set tour, tips for visiting and how to combine it with other North Island stops.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="new-zealand/milford-sound-guide.html">
+        <div class="blog-entry-img"><img alt="Milford Sound Travel Guide – Cruises, Views & Best Time to Visit" loading="lazy" src="../assets/images/new-zealand/milford-sound-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Nature Guide</span>
+          <h3>Milford Sound Travel Guide – Cruises, Views & Best Time to Visit</h3>
+          <p>Complete Milford Sound travel guide covering scenic cruises, waterfalls, wildlife and the best time to visit this iconic fjord.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="switzerland">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="switzerland">Switzerland <span>2 guides</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('switzerland', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('switzerland', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-switzerland">
+  
+      <a class="blog-entry" href="switzerland/interlaken-guide.html">
+        <div class="blog-entry-img"><img alt="Interlaken Travel Guide – Adventure & Scenic Escapes" loading="lazy" src="../assets/images/switzerland/interlaken-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Adventure • Switzerland</span>
+          <h3>Interlaken Travel Guide – Adventure & Scenic Escapes</h3>
+          <p>Complete Interlaken travel guide covering adventure sports, lakes, mountain views and a 2-day itinerary in the Swiss Alps.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="switzerland/swiss-alps-guide.html">
+        <div class="blog-entry-img"><img alt="Swiss Alps Guide – Best Places to Visit & Things to Do" loading="lazy" src="../assets/images/switzerland/swiss-alps-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Nature Guide • Switzerland</span>
+          <h3>Swiss Alps Guide – Best Places to Visit & Things to Do</h3>
+          <p>Complete Swiss Alps travel guide covering top destinations, scenic train rides, hiking trails and best time to visit.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="france">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="france">France <span>1 guide</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('france', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('france', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-france">
+  
+      <a class="blog-entry" href="france/paris-travel-guide.html">
+        <div class="blog-entry-img"><img alt="Paris Travel Guide – Top Attractions, Tips & Itinerary" loading="lazy" src="../assets/images/france/paris-travel-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide • France</span>
+          <h3>Paris Travel Guide – Top Attractions, Tips & Itinerary</h3>
+          <p>Complete Paris travel guide covering the Eiffel Tower, Louvre, best neighborhoods, food and a 3-day itinerary for first-time visitors.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="italy">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="italy">Italy <span>2 guides</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('italy', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('italy', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-italy">
+  
+      <a class="blog-entry" href="italy/rome-travel-guide.html">
+        <div class="blog-entry-img"><img alt="Rome Travel Guide – Colosseum, Vatican & Best Itinerary" loading="lazy" src="../assets/images/italy/rome-travel-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide • Italy</span>
+          <h3>Rome Travel Guide – Colosseum, Vatican & Best Itinerary</h3>
+          <p>Explore Rome with this complete travel guide covering the Colosseum, Vatican City, Roman food and a perfect 3-day itinerary.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="italy/venice-guide.html">
+        <div class="blog-entry-img"><img alt="Venice Travel Guide – Canals, Gondolas & Best Itinerary" loading="lazy" src="../assets/images/italy/venice-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide • Italy</span>
+          <h3>Venice Travel Guide – Canals, Gondolas & Best Itinerary</h3>
+          <p>Complete Venice travel guide covering canal rides, St. Mark's Square, hidden gems and a 2-day itinerary for first-time visitors.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="spain">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="spain">Spain <span>1 guide</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('spain', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('spain', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-spain">
+  
+      <a class="blog-entry" href="spain/barcelona-guide.html">
+        <div class="blog-entry-img"><img alt="Barcelona Travel Guide – Sagrada Familia, Beaches & Itinerary" loading="lazy" src="../assets/images/spain/barcelona-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide • Spain</span>
+          <h3>Barcelona Travel Guide – Sagrada Familia, Beaches & Itinerary</h3>
+          <p>Complete Barcelona travel guide covering Sagrada Familia, Park Güell, beaches and a 3-day itinerary for first-time visitors.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="austria">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="austria">Austria <span>2 guides</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('austria', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('austria', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-austria">
+  
+      <a class="blog-entry" href="austria/hallstatt-guide.html">
+        <div class="blog-entry-img"><img alt="Hallstatt Travel Guide – Best Places to Visit & Photo Spots" loading="lazy" src="../assets/images/austria/hallstatt-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Hidden Gem • Austria</span>
+          <h3>Hallstatt Travel Guide – Best Places to Visit & Photo Spots</h3>
+          <p>Complete Hallstatt travel guide covering the lakeside village, salt mines, viewpoints and a 1-day itinerary.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="austria/vienna-guide.html">
+        <div class="blog-entry-img"><img alt="Vienna Travel Guide – Palaces, Music & Best Itinerary" loading="lazy" src="../assets/images/austria/vienna-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide • Austria</span>
+          <h3>Vienna Travel Guide – Palaces, Music & Best Itinerary</h3>
+          <p>Complete Vienna travel guide covering Schönbrunn Palace, classical music, cafes and a 2-day itinerary for first-time visitors.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="netherlands">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="netherlands">Netherlands <span>1 guide</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('netherlands', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('netherlands', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-netherlands">
+  
+      <a class="blog-entry" href="netherlands/amsterdam-guide.html">
+        <div class="blog-entry-img"><img alt="Amsterdam Travel Guide – Canals, Museums & Best Itinerary" loading="lazy" src="../assets/images/netherlands/amsterdam-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide • Netherlands</span>
+          <h3>Amsterdam Travel Guide – Canals, Museums & Best Itinerary</h3>
+          <p>Complete Amsterdam travel guide covering canal cruises, museums, neighborhoods and a 2-day itinerary for first-time visitors.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="greece">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="greece">Greece <span>1 guide</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('greece', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('greece', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-greece">
+  
+      <a class="blog-entry" href="greece/santorini-guide.html">
+        <div class="blog-entry-img"><img alt="Santorini Travel Guide – Best Places, Sunsets & Itinerary" loading="lazy" src="../assets/images/greece/santorini-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Island Guide • Greece</span>
+          <h3>Santorini Travel Guide – Best Places, Sunsets & Itinerary</h3>
+          <p>Complete Santorini travel guide covering Oia sunsets, best hotels, beaches and a 3-day itinerary for couples and honeymooners.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="iceland">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="iceland">Iceland <span>1 guide</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('iceland', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('iceland', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-iceland">
+  
+      <a class="blog-entry" href="iceland/iceland-guide.html">
+        <div class="blog-entry-img"><img alt="Iceland Travel Guide – Waterfalls, Glaciers & Best Itinerary" loading="lazy" src="../assets/images/iceland/iceland-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Country Guide • Iceland</span>
+          <h3>Iceland Travel Guide – Waterfalls, Glaciers & Best Itinerary</h3>
+          <p>Complete Iceland travel guide covering waterfalls, glaciers, the Golden Circle and a 5-day itinerary for first-time visitors.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="czech-republic">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="czech-republic">Czech Republic <span>1 guide</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('czech-republic', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('czech-republic', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-czech-republic">
+  
+      <a class="blog-entry" href="czech-republic/prague-guide.html">
+        <div class="blog-entry-img"><img alt="Prague Travel Guide – Old Town, Castle & Best Itinerary" loading="lazy" src="../assets/images/czech-republic/prague-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">City Guide • Czech Republic</span>
+          <h3>Prague Travel Guide – Old Town, Castle & Best Itinerary</h3>
+          <p>Complete Prague travel guide covering Prague Castle, Old Town Square, food and a 2-day itinerary for first-time visitors.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  <div class="blogs-row-container reveal" data-region="europe" data-country="europe-general">
+    <div class="row-header">
+      <h2 class="country-title" data-country-id="europe-general">Europe General <span>13 guides</span></h2>
+      <div class="scroll-arrows">
+        <button class="scroll-arrow" onclick="scrollRow('europe-general', -1)" aria-label="Scroll left">←</button>
+        <button class="scroll-arrow" onclick="scrollRow('europe-general', 1)" aria-label="Scroll right">→</button>
+      </div>
+    </div>
+    <div class="blogs-row-scroll" id="row-europe-general">
+  
+      <a class="blog-entry" href="europe/europe-travel-guide.html">
+        <div class="blog-entry-img"><img alt="Europe Travel Guide 2025 – Plan Your Perfect Trip" loading="lazy" src="../assets/images/europe/europe-travel-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>Europe Travel Guide 2025 – Plan Your Perfect Trip</h3>
+          <p>Complete Europe travel guide covering visas, budget, itineraries, best time to visit and top destinations for first-time travelers.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/europe-itinerary.html">
+        <div class="blog-entry-img"><img alt="Best Europe Itinerary – 10 to 15 Day Trip Plans" loading="lazy" src="../assets/images/europe/europe-itinerary.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Itinerary</span>
+          <h3>Best Europe Itinerary – 10 to 15 Day Trip Plans</h3>
+          <p>Ready-made Europe itinerary options for 10, 12 and 15 day trips covering top cities, travel routes and daily plans.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/best-time-to-visit-europe.html">
+        <div class="blog-entry-img"><img alt="Best Time to Visit Europe – Season-Wise Travel Guide" loading="lazy" src="../assets/images/europe/best-time-to-visit-europe.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>Best Time to Visit Europe – Season-Wise Travel Guide</h3>
+          <p>Find out the best time to visit Europe by season, including weather, crowd levels and prices for spring, summer, autumn and winter trips.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/europe-backpacking-guide.html">
+        <div class="blog-entry-img"><img alt="Europe Backpacking Guide – Budget Travel Tips 2025" loading="lazy" src="../assets/images/europe/europe-backpacking-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>Europe Backpacking Guide – Budget Travel Tips 2025</h3>
+          <p>Complete Europe backpacking guide with budget hostel tips, rail passes, must-see stops and money-saving hacks for solo travelers.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/europe-family-trip-guide.html">
+        <div class="blog-entry-img"><img alt="Europe Family Trip Guide – Best Destinations for Kids" loading="lazy" src="../assets/images/europe/europe-family-trip-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Family Travel</span>
+          <h3>Europe Family Trip Guide – Best Destinations for Kids</h3>
+          <p>Plan the perfect Europe family vacation with kid-friendly destinations, activities and travel tips for a stress-free trip with children.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/europe-honeymoon-guide.html">
+        <div class="blog-entry-img"><img alt="Europe Honeymoon Guide – Best Romantic Destinations 2025" loading="lazy" src="../assets/images/europe/europe-honeymoon-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Honeymoon Guide</span>
+          <h3>Europe Honeymoon Guide – Best Romantic Destinations 2025</h3>
+          <p>Discover the best Europe honeymoon destinations, packages and romantic experiences for couples, from Santorini sunsets to Swiss Alps escapes.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/europe-packing-guide.html">
+        <div class="blog-entry-img"><img alt="Europe Packing Guide – What to Pack for Every Season" loading="lazy" src="../assets/images/europe/europe-packing-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>Europe Packing Guide – What to Pack for Every Season</h3>
+          <p>Complete Europe packing checklist covering clothing, essentials and travel gadgets for spring, summer, autumn and winter trips.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/europe-train-travel-guide.html">
+        <div class="blog-entry-img"><img alt="Europe Train Travel Guide – Rail Passes & Best Routes" loading="lazy" src="../assets/images/europe/europe-train-travel-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>Europe Train Travel Guide – Rail Passes & Best Routes</h3>
+          <p>Complete guide to train travel in Europe covering rail passes, scenic routes, booking tips and how to plan a multi-country rail trip.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/europe-travel-tips.html">
+        <div class="blog-entry-img"><img alt="Europe Travel Tips – 15 Things to Know Before You Go" loading="lazy" src="../assets/images/europe/europe-travel-tips.webp"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Planning Guide</span>
+          <h3>Europe Travel Tips – 15 Things to Know Before You Go</h3>
+          <p>Essential Europe travel tips covering visas, currency, transport, safety and etiquette to help first-time travelers avoid common mistakes.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/europe-trip-cost.html">
+        <div class="blog-entry-img"><img alt="Europe Trip Cost 2025 – Budget Breakdown for Indian Travelers" loading="lazy" src="../assets/images/europe/europe-trip-cost.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa & Cost Guide</span>
+          <h3>Europe Trip Cost 2025 – Budget Breakdown for Indian Travelers</h3>
+          <p>Detailed Europe trip cost breakdown including flights, visa, hotels, food and local transport for a 10-day Europe holiday from India.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/europe-visa-guide.html">
+        <div class="blog-entry-img"><img alt="Europe Visa Guide 2025 – Schengen Visa Requirements & Process" loading="lazy" src="../assets/images/europe/europe-visa-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa Guide</span>
+          <h3>Europe Visa Guide 2025 – Schengen Visa Requirements & Process</h3>
+          <p>Step-by-step Europe visa guide covering Schengen visa documents, fees, processing time and application tips for Indian travelers.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/schengen-visa-faqs.html">
+        <div class="blog-entry-img"><img alt="Schengen Visa FAQs – Common Questions Answered" loading="lazy" src="../assets/images/europe/schengen-visa-faqs.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Visa Guide</span>
+          <h3>Schengen Visa FAQs – Common Questions Answered</h3>
+          <p>Answers to the most frequently asked questions about the Schengen visa, including validity, documents, rejection reasons and processing time.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+      <a class="blog-entry" href="europe/northern-lights-guide.html">
+        <div class="blog-entry-img"><img alt="Northern Lights Guide – Best Places & Time to See Aurora" loading="lazy" src="../assets/images/europe/northern-lights-guide.jpg"/></div>
+        <div class="blog-entry-body">
+          <span class="tag">Experience Guide</span>
+          <h3>Northern Lights Guide – Best Places & Time to See Aurora</h3>
+          <p>Complete guide to seeing the Northern Lights in Europe, including best destinations, timing and photography tips.</p>
+          <span class="readmore">Read Guide →</span>
+        </div>
+      </a>
+    
+    </div>
+  </div>
+  
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--ink);padding:80px 0;text-align:center;color:var(--cream);">
+<div class="wrap">
+<div class="eyebrow" style="color:var(--amber);justify-content:center;">Plan Your Europe Trip</div>
+<h2 style="font-size:clamp(32px,5vw,52px);max-width:700px;margin:0 auto;color:var(--cream);">Ready to turn your <em>Europe dream into a plan?</em></h2>
+<p style="max-width:480px;margin:22px auto 34px;color:rgba(243,238,225,0.7);font-size:16px;">Our team has planned Europe trips for thousands of Indian travellers. Let us do the same for you.</p>
+<a class="btn btn-primary magnetic reveal" href="../index.html#contact">Get a Custom Quote →</a>
+</div>
+</section>
+<!-- FOOTER -->
+<footer style="background: var(--ink-2); color: var(--cream); padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.05);">
+<div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
+<div class="foot-logo">
+<img alt="The Falcon Tour" class="logo-img" src="../assets/images/logo.png"/>
+<span class="logo-text">The <em>Falcon</em> Tour<small>Adventure &amp; Travel Co.</small></span>
+</div>
+<nav style="display:flex;gap:24px;flex-wrap:wrap;">
+<a href="../destinations/index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Destinations</a>
+<a href="../packages/index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Packages</a>
+<a href="../activities/index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Activities</a>
+<a href="../why-us/index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Why Us</a>
+<a href="index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Blog</a>
+<a href="../index.html#contact" style="color:rgba(243,238,225,0.65);font-size:13px;">Contact</a>
+</nav>
+<span style="color:rgba(243,238,225,0.4);font-size:12px;">© 2026 The Falcon Tour</span>
+</div>
+</footer>
+<a aria-label="Chat on WhatsApp" class="wa-float" href="https://wa.me/918679343402">
+<svg viewbox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.6 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+</a>
+<script>
+  // Horizontal Scroll Function
+  window.scrollRow = function(rowId, direction) {
+    const container = document.getElementById('row-' + rowId);
+    if (container) {
+      const scrollAmount = 384; // scroll width of one card + gap approx
+      container.scrollBy({
+        left: direction * scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 40); });
+  
+  const burger = document.getElementById('burgerBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  burger.addEventListener('click', () => { const open = mobileNav.style.display === 'block'; mobileNav.style.display = open ? 'none' : 'block'; });
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.style.display = 'none'));
+
+  // Filtering Logic
+  let activeRegion = 'all';
+  let activeCountry = 'all';
+
+  const regionPills = document.querySelectorAll('#regionFilters .filter-pill');
+  const countryPills = document.querySelectorAll('#countryQuickLinks .filter-pill');
+  const rowContainers = document.querySelectorAll('.blogs-row-container');
+
+  // Handle load time query parameters (e.g. ?region=europe)
+  const params = new URLSearchParams(window.location.search);
+  const regionParam = params.get('region');
+  if (regionParam && ['europe', 'newzealand', 'asia', 'oceania', 'americas'].includes(regionParam)) {
+    activeRegion = regionParam;
+  }
+  const countryParam = params.get('country');
+  if (countryParam) {
+    activeCountry = countryParam;
+  }
+
+  // Update pill active classes based on initial values
+  regionPills.forEach(pill => {
+    pill.classList.toggle('active', pill.getAttribute('data-filter-region') === activeRegion);
+  });
+  countryPills.forEach(pill => {
+    pill.classList.toggle('active', pill.getAttribute('data-filter-country') === activeCountry);
+  });
+
+  function filterBlogs() {
+    rowContainers.forEach(row => {
+      const rowRegion = row.getAttribute('data-region');
+      const rowCountry = row.getAttribute('data-country');
+      
+      const matchRegion = (activeRegion === 'all' || rowRegion === activeRegion);
+      const matchCountry = (activeCountry === 'all' || rowCountry === activeCountry);
+
+      if (matchRegion && matchCountry) {
+        row.style.display = 'block';
+        setTimeout(() => {
+          row.style.opacity = '1';
+          row.style.transform = 'translateY(0)';
+        }, 50);
+      } else {
+        row.style.opacity = '0';
+        row.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          row.style.display = 'none';
+        }, 200);
+      }
+    });
+  }
+
+  regionPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      regionPills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeRegion = pill.getAttribute('data-filter-region');
+      
+      // Reset country filter if switching regions to avoid no results
+      if (activeRegion !== 'all') {
+        const matchingCountries = Array.from(rowContainers)
+          .filter(r => r.getAttribute('data-region') === activeRegion)
+          .map(r => r.getAttribute('data-country'));
+        if (activeCountry !== 'all' && !matchingCountries.includes(activeCountry)) {
+          activeCountry = 'all';
+          countryPills.forEach(cp => {
+            cp.classList.toggle('active', cp.getAttribute('data-filter-country') === 'all');
+          });
+        }
+      }
+      filterBlogs();
+    });
+  });
+
+  countryPills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      countryPills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeCountry = pill.getAttribute('data-filter-country');
+      
+      // Auto-switch region pill if a specific country is clicked
+      if (activeCountry !== 'all') {
+        const correspondingRow = document.querySelector(`.blogs-row-container[data-country="${activeCountry}"]`);
+        if (correspondingRow) {
+          activeRegion = correspondingRow.getAttribute('data-region');
+          regionPills.forEach(rp => {
+            rp.classList.toggle('active', rp.getAttribute('data-filter-region') === activeRegion);
+          });
+        }
+      }
+      filterBlogs();
+    });
+  });
+
+  // Clicking Country Title focusing/filtering
+  document.querySelectorAll('.country-title').forEach(title => {
+    title.addEventListener('click', () => {
+      const countryId = title.getAttribute('data-country-id');
+      countryPills.forEach(p => {
+        const isTarget = p.getAttribute('data-filter-country') === countryId;
+        p.classList.toggle('active', isTarget);
+      });
+      activeCountry = countryId;
+      
+      const correspondingRow = document.querySelector(`.blogs-row-container[data-country="${countryId}"]`);
+      if (correspondingRow) {
+        activeRegion = correspondingRow.getAttribute('data-region');
+        regionPills.forEach(rp => {
+          rp.classList.toggle('active', rp.getAttribute('data-filter-region') === activeRegion);
+        });
+      }
+      filterBlogs();
+      
+      // Smooth scroll to top of matching row
+      const targetRow = document.getElementById('row-' + countryId);
+      if (targetRow) {
+        targetRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  });
+
+  // Run filter on load
+  filterBlogs();
+
+  // Reveal Animations
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }); }, { threshold: 0.1 });
+  revealEls.forEach(el => io.observe(el));
+  
+  const scrollProgress = document.getElementById('scrollProgress');
+  window.addEventListener('scroll', () => { const h = document.documentElement; const s = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100; scrollProgress.style.width = s + '%'; });
+  
+  const cursorDot = document.getElementById('cursorDot');
+  const cursorRing = document.getElementById('cursorRing');
+  let mx=0,my=0,rx=0,ry=0;
+  window.addEventListener('mousemove', (e) => { mx=e.clientX;my=e.clientY;cursorDot.style.left=mx+'px';cursorDot.style.top=my+'px'; });
+  (function loop(){ rx+=(mx-rx)*.16;ry+=(my-ry)*.16;cursorRing.style.left=rx+'px';cursorRing.style.top=ry+'px';requestAnimationFrame(loop); })();
+  document.querySelectorAll('a,button,.magnetic').forEach(el => { el.addEventListener('mouseenter',()=>cursorRing.classList.add('grow')); el.addEventListener('mouseleave',()=>cursorRing.classList.remove('grow')); });
+  document.querySelectorAll('.magnetic').forEach(btn => { btn.addEventListener('mousemove',(e)=>{const r=btn.getBoundingClientRect();const relX=e.clientX-r.left-r.width/2;const relY=e.clientY-r.top-r.height/2;btn.style.transform=`translate(${relX*0.18}px,${relY*0.35}px)`;});btn.addEventListener('mouseleave',()=>{btn.style.transform='';}); });
+
+  // Premium Social Contact Modal JS
+  window.openSocialContactModal = function() {
+    const modal = document.getElementById('socialContactModal');
+    if (modal) {
+      modal.style.display = 'flex';
+      // Trigger browser reflow for CSS transition
+      modal.offsetHeight;
+      modal.classList.add('is-active');
+    }
+  };
+
+  window.closeSocialContactModal = function() {
+    const modal = document.getElementById('socialContactModal');
+    if (modal) {
+      modal.classList.remove('is-active');
+      setTimeout(() => {
+        modal.style.display = 'none';
+      }, 300);
+    }
+  };
+
+  // Intercept all contact link clicks and route them to the new modal
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('a[href*="#contact"]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        // Only trigger modal on non-form elements
+        if (el.classList.contains('btn-primary') && el.closest('.foot-contact')) {
+          // If it's the footer button to plan trip, let it go to default popup inquiry
+          e.preventDefault();
+          openInquiryModal();
+        } else {
+          e.preventDefault();
+          openSocialContactModal();
+        }
+      });
+    });
+  });
+
+</script>
