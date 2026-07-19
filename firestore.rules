@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ---- Helper: checks if the currently signed-in user is one of the
+    // admin accounts (kept in sync with window.ADMIN_EMAILS in firebase-config.js) ----
+    function isAdmin() {
+      return request.auth != null &&
+             request.auth.token.email in [
+               'nikhil2005114@gmail.com',
+               'manishrawat2636@gmail.com',
+               'thefalcontour@gmail.com'
+             ];
+    }
+
+    // ---- USERS (created automatically on Google Sign-In) ----
+    match /users/{userId} {
+      // A user can read their own profile; admins can read everyone (needed for the admin "Logins" tab)
+      allow read: if request.auth != null &&
+                  (request.auth.uid == userId || isAdmin());
+      // A user can only create/update their own profile document
+      allow write: if request.auth != null &&
+                   request.auth.uid == userId;
+      // Only admins can delete a user record (admin panel delete button)
+      allow delete: if isAdmin();
+    }
+
+    // ---- SUBMISSIONS (Trip Inquiry form) ----
+    match /submissions/{subId} {
+      // Anyone (including logged-out visitors) can submit the inquiry form
+      allow create: if true;
+      // Only admins can view or delete the inquiry list
+      allow read: if isAdmin();
+      allow update: if isAdmin();
+      allow delete: if isAdmin();
+    }
+
+    // ---- REVIEWS (new — homepage review system) ----
+    match /reviews/{reviewId} {
+      // Any signed-in visitor can submit a review; it starts as "pending"
+      allow create: if request.auth != null &&
+                    request.resource.data.status == 'pending';
+      // Public can read only approved reviews; admins can read everything (including pending, for moderation)
+      allow read: if resource.data.status == 'approved' || isAdmin();
+      // Only admins can approve/edit a review (e.g. change status to "approved")
+      allow update: if isAdmin();
+      // Only admins can delete a review
+      allow delete: if isAdmin();
+    }
+  }
+}

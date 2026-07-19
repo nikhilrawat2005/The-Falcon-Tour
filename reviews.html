@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-BPXGKYKBXD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BPXGKYKBXD');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Traveller Reviews | The Falcon Tour</title>
+<link href="https://thefalcontour.com/reviews.html" rel="canonical"/>
+<link href="assets/images/logo.png" rel="icon" type="image/png"/>
+<link href="assets/images/logo.png" rel="apple-touch-icon"/>
+<meta content="Read genuine reviews from travellers who've booked adventure and leisure trips with The Falcon Tour." name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="The Falcon Tour" name="author"/>
+<meta content="#D9A441" name="theme-color"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="assets/css/journal.css" rel="stylesheet"/>
+<link href="assets/css/motion.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="grain"></div>
+<header class="scrolled" id="siteHeader">
+<div class="wrap">
+<a class="logo" href="index.html">
+<img alt="The Falcon Tour" class="logo-img" src="assets/images/logo.png"/>
+<span class="logo-text">The <em>Falcon</em> Tour<small>ADVENTURE &amp; TRAVEL CO.</small></span>
+</a>
+<nav class="mainnav">
+<a href="destinations/index.html">Destinations</a>
+<a href="packages/index.html">Packages</a>
+<a href="activities/index.html">Activities</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+<div class="header-right">
+<a class="btn btn-outline" href="index.html#submitReview">Write a Review</a>
+</div>
+</div>
+</header>
+
+<section style="padding:150px 0 30px; text-align:center;">
+<div class="wrap" style="max-width:640px;">
+<div class="eyebrow">Traveller Stories</div>
+<h1 style="font-family:'Fraunces',serif; font-size:44px; margin-top:10px;">All Reviews</h1>
+<p style="color:var(--text-mute); margin-top:14px;">Every review here comes from a real traveller who booked with The Falcon Tour.</p>
+</div>
+</section>
+
+<section style="padding:20px 0 100px;">
+<div class="wrap">
+<div id="allReviewsGrid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:26px;">
+<p style="text-align:center; color:var(--text-mute); grid-column:1/-1;">Loading reviews...</p>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: var(--ink-2); color: var(--cream); padding: 60px 0 30px; border-top: 1px solid rgba(255,255,255,0.05);">
+<div class="wrap" style="text-align:center;">
+<img alt="The Falcon Tour" src="assets/images/logo.png" style="height:40px; margin-bottom:16px;"/>
+<p style="font-size:12px; color:var(--text-mute);">&copy; 2026 The Falcon Tour. All rights reserved.</p>
+</div>
+</footer>
+
+<!-- ============ FIREBASE SDK COMPAT ============ -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+<script src="assets/js/firebase-config.js"></script>
+<script>
+  function escapeHtml(str) {
+    return String(str || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+  function starsHtml(rating) {
+    return '★'.repeat(rating) + '☆'.repeat(5 - rating);
+  }
+  function formatDate(ts) {
+    if (!ts || !ts.seconds) return '';
+    return new Date(ts.seconds * 1000).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' });
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    var grid = document.getElementById('allReviewsGrid');
+    if (typeof firebase === 'undefined' || !window.db) {
+      grid.innerHTML = '<p style="text-align:center;color:var(--text-mute);grid-column:1/-1;">Reviews unavailable right now.</p>';
+      return;
+    }
+    window.db.collection('reviews')
+      .where('status', '==', 'approved')
+      .orderBy('timestamp', 'desc')
+      .get()
+      .then(function(snapshot){
+        if (snapshot.empty) {
+          grid.innerHTML = '<p style="text-align:center;color:var(--text-mute);grid-column:1/-1;">No reviews yet — be the first to share your trip!</p>';
+          return;
+        }
+        grid.innerHTML = snapshot.docs.map(function(doc){
+          var r = doc.data();
+          var name = escapeHtml(r.name || 'Traveller');
+          var text = escapeHtml(r.text || '');
+          var rating = r.rating || 5;
+          var date = formatDate(r.timestamp);
+          return '<div style="background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:26px 22px;">' +
+                 '<div style="color:var(--amber);font-size:18px;letter-spacing:2px;margin-bottom:10px;">' + starsHtml(rating) + '</div>' +
+                 '<p style="font-size:14.5px;color:var(--text-dark);line-height:1.65;margin:0 0 16px;">' + text + '</p>' +
+                 '<div style="display:flex;justify-content:space-between;align-items:center;">' +
+                 '<span style="font-family:\'JetBrains Mono\',monospace;font-size:12px;color:var(--text-mute);text-transform:uppercase;letter-spacing:.04em;">— ' + name + '</span>' +
+                 '<span style="font-size:11px;color:var(--text-mute);">' + date + '</span>' +
+                 '</div></div>';
+        }).join('');
+      })
+      .catch(function(err){
+        grid.innerHTML = '<p style="text-align:center;color:var(--text-mute);grid-column:1/-1;">Could not load reviews right now.</p>';
+        console.warn('Reviews load error:', err.message);
+      });
+  });
+</script>
+<script src="assets/js/motion/navbar.js"></script>
+</body>
+</html>

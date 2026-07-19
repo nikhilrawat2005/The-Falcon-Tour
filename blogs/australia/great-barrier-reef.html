@@ -54,6 +54,7 @@
   .blog-faq h2 { font-family: 'Fraunces', serif; font-size: 28px; color: var(--ink); margin-bottom: 24px; border-bottom: 2px solid var(--line); padding-bottom: 12px; }
   .blog-faq details { margin-bottom: 10px; }
 </style>
+<link href="../../assets/css/motion.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -71,7 +72,7 @@
 <a href="../../destinations/index.html">Destinations</a>
 <a href="../../packages/index.html">Packages</a>
 <a href="../../activities/index.html">Activities</a>
-<a href="../../index.html#contact">Contact</a>
+<a href="javascript:void(0)" onclick="openSocialContactModal()">Contact</a>
 </nav>
 <div class="header-right">
 <a class="btn btn-outline" href="../../index.html#contact">Plan My Trip</a>
@@ -85,7 +86,7 @@
 <li><a href="../../destinations/index.html" style="color:#F3EEE1;font-family:'Fraunces',serif;font-size:26px;">Destinations</a></li>
 <li><a href="../../packages/index.html" style="color:#F3EEE1;font-family:'Fraunces',serif;font-size:26px;">Packages</a></li>
 <li><a href="../../activities/index.html" style="color:#F3EEE1;font-family:'Fraunces',serif;font-size:26px;">Activities</a></li>
-<li><a href="../../index.html#contact" style="color:#F3EEE1;font-family:'Fraunces',serif;font-size:26px;">Contact</a></li>
+<li><a href="javascript:void(0)" onclick="openSocialContactModal()" style="color:#F3EEE1;font-family:'Fraunces',serif;font-size:26px;">Contact</a></li>
 </ul>
 </nav>
 
@@ -97,25 +98,44 @@
     <h1>Great Barrier Reef Guide</h1>
   </div>
 
-  <ul class="blog-nav">
-    
-  </ul>
+  <ul class="blog-nav"><li><a href="australia-wildlife-guide.html">Australia Wildlife Guide</a></li><li><a href="australia-travel-guide.html">Australia Travel Guide</a></li><li><a href="best-time-to-visit-australia.html">Best Time to Visit</a></li></ul>
 
-  <img class="blog-hero-img" src="" alt="Great Barrier Reef Guide"/>
+  <img class="blog-hero-img" src="../../assets/images/australia/great-barrier-reef.jpg" alt="Great Barrier Reef aerial view"/>
 
   <article class="blog-content">
-    <div class="blog-img-row"><figure><img class="blog-inline-img" src="../../assets/images/australia/australia-budget.jpg" alt="Australia travel photo"/><figcaption>Australia Budget</figcaption></figure><figure><img class="blog-inline-img" src="../../assets/images/australia/australia-family-guide.jpg" alt="Australia travel photo"/><figcaption>Australia Family Guide</figcaption></figure></div>
+    <div class="blog-img-row"><figure><img class="blog-inline-img" src="../../assets/images/australia/great-barrier-reef.jpg" alt="Coral reef and marine life"/><figcaption>Coral reef and marine life</figcaption></figure><figure><img class="blog-inline-img" src="../../assets/images/australia/australia-wildlife-guide.jpg" alt="Reef marine wildlife"/><figcaption>Reef marine wildlife</figcaption></figure></div>
+    <h2>Why Visit the Great Barrier Reef</h2>
+    <p>The Great Barrier Reef is the world's largest coral reef system, stretching over 2,300km along Queensland's coast. It's one of the few places on earth where you can snorkel or dive among coral gardens, turtles and reef sharks in a single morning.</p>
+    <h2>Where to Access the Reef</h2>
+    <p>Cairns and Port Douglas are the main gateway towns, both offering day-trip boats to the outer reef. The Whitsundays, further south, combine reef access with island-hopping and the famous Whitehaven Beach.</p>
+    <p>Green Island and the Low Isles are good options for families or first-time snorkellers, with calmer, shallower water than the outer reef.</p>
+    <h2>Snorkelling vs Diving</h2>
+    <p>Snorkelling is enough to see most of the reef's colour and marine life and needs no certification. Certified divers can go deeper for wall dives and better visibility, and short introductory dives are available for beginners on most boats.</p>
+    <h2>Best Time to Go</h2>
+    <p>June to October offers the best visibility and coolest, driest weather. Stinger season (roughly November to May) means wearing a protective suit while swimming, which most tour operators provide.</p>
   </article>
 
   <div class="blog-faq">
     <h2>Frequently Asked Questions</h2>
     
+              <details class="faq-item">
+      <summary>Do I need to know how to swim to see the reef?</summary>
+      <p>Basic swimming ability is recommended; most boats also offer glass-bottom viewing and flotation aids for non-swimmers.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is the Great Barrier Reef dying?</summary>
+      <p>Parts have been affected by coral bleaching, but large, healthy sections remain and are actively protected — it's still very much worth visiting.</p>
+    </details>
   </div>
 
   <div class="blog-related">
     <h4>Related Guides</h4>
     <ul>
       
+                      <li><a href="australia-wildlife-guide.html">Australia Wildlife Guide</a></li>
+      <li><a href="best-time-to-visit-australia.html">Best Time to Visit Australia</a></li>
+      <li><a href="australia-travel-guide.html">Australia Travel Guide</a></li>
+      <li><a href="brisbane-guide.html">Brisbane Guide</a></li>
     </ul>
   </div>
 </div>
@@ -129,21 +149,75 @@
 </div>
 </section>
 
-<footer style="background: var(--ink-2); color: var(--cream); padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.05);">
-<div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;">
-<div class="foot-logo">
-<img alt="The Falcon Tour" class="logo-img" src="../../assets/images/logo.png"/>
-<span class="logo-text">The <em>Falcon</em> Tour<small>Adventure &amp; Travel Co.</small></span>
-</div>
-<nav style="display:flex;gap:24px;flex-wrap:wrap;">
-<a href="../../destinations/index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Destinations</a>
-<a href="../../packages/index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Packages</a>
-<a href="../../activities/index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Activities</a>
-<a href="../../why-us/index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Why Us</a>
-<a href="../index.html" style="color:rgba(243,238,225,0.65);font-size:13px;">Blog</a>
-<a href="../../index.html#contact" style="color:rgba(243,238,225,0.65);font-size:13px;">Contact</a>
-</nav>
-<span style="color:rgba(243,238,225,0.4);font-size:12px;">© 2026 The Falcon Tour</span>
+<footer id="contact" style="background: var(--ink-2); color: var(--cream); padding: 80px 0 30px; border-top: 1px solid rgba(255,255,255,0.05);">
+<div class="wrap">
+  <div class="foot-grid">
+    <div class="foot-about">
+      <div class="foot-logo">
+        <img alt="The Falcon Tour" class="logo-img" src="../../assets/images/logo.png"/>
+        <span class="logo-text">The <em>Falcon</em> Tour<small>Adventure &amp; Travel Co.</small></span>
+      </div>
+      <p>Hand-planned adventure holidays across deserts, coastlines and mountain passes. From the team that plans every trip like it's their own.</p>
+      <div class="foot-social">
+        <a aria-label="Instagram" href="https://www.instagram.com/thefalcontour/" rel="noopener noreferrer" target="_blank">
+          <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+        <a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61590039310904" rel="noopener noreferrer" target="_blank">
+          <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a aria-label="WhatsApp" href="https://wa.me/918679343402" rel="noopener noreferrer" target="_blank">
+          <svg fill="currentColor" height="16" viewbox="0 0 24 24" width="16"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.1L2 22l5.1-1.3C8.6 21.5 10.3 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3C4.4 14.9 4 13.5 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
+        </a>
+      </div>
+    </div>
+    
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="../../destinations/index.html">Destinations</a></li>
+        <li><a href="../../packages/index.html">Featured Trips</a></li>
+        <li><a href="../../activities/index.html">Activities</a></li>
+        <li><a href="../../why-us/index.html">Why Book With Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Travel Blogs</h4>
+      <ul>
+        <li><a href="../../blogs/index.html">All Guides</a></li>
+        <li><a href="../../blogs/index.html?region=europe">Europe Blogs</a></li>
+        <li><a href="../../blogs/index.html?region=asia">Japan Blogs</a></li>
+        <li><a href="../../blogs/index.html?region=oceania">Australia Blogs</a></li>
+        <li><a href="../../blogs/index.html?region=americas">USA Blogs</a></li>
+        <li><a href="../../blogs/index.html?region=newzealand">New Zealand Blogs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Top Destinations</h4>
+      <ul>
+        <li><a href="../../destinations/destination-dubai.html">Dubai</a></li>
+        <li><a href="../../destinations/destination-turkey.html">Turkey</a></li>
+        <li><a href="../../destinations/destination-singapore.html">Singapore</a></li>
+        <li><a href="../../destinations/destination-europe.html">Europe</a></li>
+        <li><a href="../../destinations/destination-sri-lanka.html">Sri Lanka</a></li>
+        <li><a href="../../destinations/destination-azerbaijan.html">Azerbaijan</a></li>
+        <li><a href="../../destinations/destination-malaysia.html">Malaysia</a></li>
+        <li><a href="../../destinations/destination-new-zealand.html">New Zealand</a></li>
+      </ul>
+    </div>
+    <div class="foot-contact">
+      <h4>Get In Touch</h4>
+      <ul>
+        <li><strong>WhatsApp</strong>+91 86793 43402</li>
+        <li><strong>Email</strong>thefalcontour@gmail.com</li>
+        <li><strong>Based In</strong>Ranikhet, Uttarakhand, India</li>
+        <li style="margin-top:18px;"><a class="btn btn-primary" href="../../index.html#contact" style="font-size:12px;padding:12px 20px;">Plan My Trip</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 The Falcon Tour. All rights reserved. Built for travellers who chase the view.</span>
+    <span>Ranikhet, Uttarakhand — Since Basecamp Zero</span>
+  </div>
 </div>
 </footer>
 
@@ -174,5 +248,92 @@
   (function loop(){ rx+=(mx-rx)*.16;ry+=(my-ry)*.16;cursorRing.style.left=rx+'px';cursorRing.style.top=ry+'px';requestAnimationFrame(loop); })();
   document.querySelectorAll('a,button,.magnetic').forEach(el => { el.addEventListener('mouseenter',()=>cursorRing.classList.add('grow')); el.addEventListener('mouseleave',()=>cursorRing.classList.remove('grow')); });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="../../assets/js/motion/gsap-init.js"></script>
+<script src="../../assets/js/motion/navbar.js"></script>
+<script src="../../assets/js/motion/footer.js"></script>
+<script src="../../assets/js/motion/buttons.js"></script>
+<script src="../../assets/js/motion/images.js"></script>
+<script src="../../assets/js/motion/counters.js"></script>
+<script src="../../assets/js/motion/blog-article.js"></script>
+
+<!-- ============ SOCIAL CONTACT MODAL ============ -->
+<div id="socialContactModal" class="social-modal-overlay" onclick="if(event.target===this) closeSocialContactModal()">
+  <div class="social-modal-card">
+    <button class="social-modal-close" onclick="closeSocialContactModal()">&times;</button>
+    <h3 style="font-family:'Fraunces',serif; font-size:28px; margin-bottom:6px; color:var(--cream); margin-top:0; text-align:center;">Connect with <em>Falcons</em></h3>
+    <p style="text-align:center; font-size:14px; color:rgba(243,238,225,0.7); margin-top:0; margin-bottom:28px;">Pick your preferred channel for queries & bookings — we usually reply within a few hours.</p>
+
+    <div class="social-grid">
+      <a href="https://wa.me/918679343402" target="_blank" rel="noopener noreferrer" class="social-item whatsapp">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.963C16.59 2.012 14.12 1.01 11.49 1.01c-5.442 0-9.866 4.372-9.87 9.802 0 1.764.476 3.49 1.38 5.02L1.995 21.87l6.19-1.616c1.554.896 3.129 1.34 4.767 1.343h-.005v-.001zm9.362-6.52c-.287-.143-1.696-.837-1.958-.933-.263-.095-.454-.143-.645.143-.191.286-.74.933-.907 1.12-.167.19-.335.21-.622.072-.287-.143-1.21-.447-2.308-1.427-.854-.761-1.431-1.702-1.6-1.988-.167-.286-.018-.44.126-.582.129-.128.287-.335.43-.502.143-.167.191-.286.287-.477.095-.19.048-.358-.024-.502-.072-.143-.645-1.552-.885-2.124-.233-.56-.47-.482-.645-.491l-.55-.009c-.191 0-.501.072-.763.358-.263.286-1 1.002-1.002 2.443 0 1.441 1.049 2.836 1.192 3.028.143.19 2.064 3.152 5.002 4.428.699.303 1.246.484 1.671.62.703.223 1.342.191 1.848.116.564-.084 1.696-.692 1.935-1.36.239-.668.239-1.24.167-1.36-.072-.12-.263-.263-.55-.405z"/></svg>
+        </div>
+        <div class="social-info">
+          <h5>WhatsApp Chat</h5>
+          <p>+91 86793 43402</p>
+        </div>
+        <span class="social-action-arrow">&rarr;</span>
+      </a>
+
+      <a href="https://www.instagram.com/thefalcontour/" target="_blank" rel="noopener noreferrer" class="social-item instagram">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.666-.057 1.643-.069 4.848-.069zm0-2.163c-3.263 0-3.67.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </div>
+        <div class="social-info">
+          <h5>Instagram DM</h5>
+          <p>@thefalcontour</p>
+        </div>
+        <span class="social-action-arrow">&rarr;</span>
+      </a>
+
+      <a href="https://www.facebook.com/profile.php?id=61590039310904" target="_blank" rel="noopener noreferrer" class="social-item facebook">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </div>
+        <div class="social-info">
+          <h5>Facebook Page</h5>
+          <p>The Falcon Tour</p>
+        </div>
+        <span class="social-action-arrow">&rarr;</span>
+      </a>
+
+      <a href="mailto:thefalcontour@gmail.com" class="social-item email">
+        <div class="social-icon">
+          <svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 3.937v-8.193l4.623 4.256zm1.45 1.334l3.927 3.618 3.927-3.618 4.636 5.737h-17.126l4.636-5.737zm8.175-1.334l4.623-4.256v8.193l-4.623-3.937zm-7.748-1.782l-6.5-6h17.1l-6.5 6-2.05 1.889-2.05-1.889z"/></svg>
+        </div>
+        <div class="social-info">
+          <h5>Email</h5>
+          <p>thefalcontour@gmail.com</p>
+        </div>
+        <span class="social-action-arrow">&rarr;</span>
+      </a>
+    </div>
+
+    <div style="text-align:center; margin-top:32px;">
+      <a href="../../index.html#contact" style="font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--amber); text-transform:uppercase; letter-spacing:0.05em; text-decoration:underline;">Or Fill Travel Inquiry Form &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.openSocialContactModal = function() {
+    const modal = document.getElementById('socialContactModal');
+    if (modal) {
+      modal.style.display = 'flex';
+      modal.offsetHeight;
+      modal.classList.add('is-active');
+    }
+  };
+  window.closeSocialContactModal = function() {
+    const modal = document.getElementById('socialContactModal');
+    if (modal) {
+      modal.classList.remove('is-active');
+      setTimeout(() => { modal.style.display = 'none'; }, 300);
+    }
+  };
+</script>
+
 </body>
 </html>

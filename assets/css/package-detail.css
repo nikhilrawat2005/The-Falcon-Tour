@@ -241,11 +241,15 @@
 }
 .tl-accordion-content {
   overflow: hidden;
-  max-height: 0;
+  height: 0;
   opacity: 0;
-  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease, margin-top 0.4s ease;
+  margin-top: 0;
+  /* height/opacity are driven by GSAP (assets/js/motion/package-detail.js);
+     this transition is a no-JS / no-GSAP fallback only. */
+  transition: opacity 0.3s ease, margin-top 0.3s ease;
 }
 .tl-day-accordion.is-expanded .tl-accordion-content {
+  height: auto;
   margin-top: 14px;
   opacity: 1;
 }

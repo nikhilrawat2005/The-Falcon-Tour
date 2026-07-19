@@ -1,1030 +1,1263 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://thefalcontour.com/</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/activities/index.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/blogs/index.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/destinations/index.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/index.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/why-us/index.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-atv-ride.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-cable-car-ride.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-desert-safari.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-dune-buggy.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-jet-ski-ride.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-quad-biking.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-scuba-diving.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-skyline-luge.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-snorkeling.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/activities/activity-universal-studios.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://thefalcontour.com/activities/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-budget.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-family-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-faqs.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-food-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-honeymoon-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-packing-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-road-trip-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-shopping-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-travel-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-travel-tips.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-visa.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/australia-wildlife-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/best-time-to-visit-australia.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/brisbane-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/gold-coast-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/great-barrier-reef.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/great-ocean-road.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/melbourne-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/sydney-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/australia/tasmania-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/austria/hallstatt-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/austria/vienna-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/czech-republic/prague-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/best-time-to-visit-europe.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-backpacking-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-family-trip-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-honeymoon-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-itinerary.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-packing-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-train-travel-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-travel-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-travel-tips.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-trip-cost.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/europe-visa-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/northern-lights-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/europe/schengen-visa-faqs.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/france/paris-travel-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/greece/santorini-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/iceland/iceland-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://thefalcontour.com/blogs/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://thefalcontour.com/blogs/italy/rome-travel-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/italy/venice-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/anime-places-japan.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/best-time-to-visit-japan.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/cherry-blossom-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/disneyland-japan.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-family-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-faqs.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-honeymoon-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-itinerary.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-rail-pass-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-shopping-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-travel-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-travel-tips.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-trip-cost.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japan-visa-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/japanese-food-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/kyoto-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/mount-fuji-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/nara-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/osaka-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/japan/tokyo-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/netherlands/amsterdam-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/adventure-activities.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/auckland-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/best-time-to-visit-nz.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/christchurch-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/hobbiton-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/milford-sound-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/new-zealand-travel-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/new-zealand-visa.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/nz-10-days-itinerary.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/nz-faqs.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/nz-food-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/nz-honeymoon-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/nz-shopping-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/nz-travel-tips.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/nz-trip-cost.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/queenstown-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/road-trip-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/new-zealand/rotorua-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/spain/barcelona-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/switzerland/interlaken-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/switzerland/swiss-alps-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/best-time-to-visit-usa.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/disney-world-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/east-coast-vs-west-coast.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/grand-canyon-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/las-vegas-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/los-angeles-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/miami-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/national-parks-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/new-york-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/orlando-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/route-66-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/san-francisco-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-budget-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-family-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-faqs.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-food-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-honeymoon-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-packing-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-shopping-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-travel-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-travel-tips.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-trip-cost.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/usa-visa-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/washington-dc-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/blogs/usa/yellowstone-guide.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/destinations/destination-azerbaijan.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/destinations/destination-dubai.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/destinations/destination-europe.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/destinations/destination-malaysia.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/destinations/destination-new-zealand.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/destinations/destination-phu-quoc.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/destinations/destination-singapore.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/destinations/destination-sri-lanka.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/destinations/destination-turkey.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://thefalcontour.com/destinations/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://thefalcontour.com/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://thefalcontour.com/packages/</loc>
-    <lastmod>2026-07-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-alpine-elegance-switzerland.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-australia-new-zealand-combo.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-best-of-sri-lanka.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-classic-australia.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-classic-dubai.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-classic-scandinavia.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-classic-sri-lanka.html</loc>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-complete-sri-lanka-experience.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-discover-australia.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-discover-dubai.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-discover-melbourne.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-discover-singapore-value.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-dubai-premium-escape.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-east-coast-usa.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-essence-of-australia.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-essence-of-europe.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-explore-america.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-grand-european-odyssey.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-iceland.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-japan-alpine.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-japan-f1-adventure.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-japan-first-impressions.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-japan.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-journey-through-japan.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-new-zealand-shared-journey.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-new-zealand-uncovered.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-new-zealand.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-scandinavia-northern-lights.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-scandinavia-unveiled.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-scenic-new-zealand.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-singapore-highlights.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-singapore-malaysia.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-sri-lanka-escape.html</loc>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-swiss-paris.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-uk-scotland.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-ultimate-dubai-luxury.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-ultimate-singapore-luxury.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/package-west-coast-usa.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/trip-adventure-tour.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/trip-family-packages.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/trip-fixed-group-tour.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/trip-honeymoon-packages.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/trip-luxury-holidays.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://thefalcontour.com/packages/trip-weekend-trips.html</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thefalcontour.com/why-us/</loc>
-    <lastmod>2026-07-17</lastmod>
+    <loc>https://thefalcontour.com/packages/package-almaty-city-escape.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-almaty-complete-experience.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-bali-essentials.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-bali-ultimate.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-bali-unveiled.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-best-of-almaty.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-best-of-bhutan.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-best-of-kashmir.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-bhutan-complete-experience.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-bhutan-serenity.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-classic-almaty.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-classic-bali.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-classic-bhutan.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-classic-kashmir.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-classic-thailand.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-classic-vietnam.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-kashmir-complete-experience.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-kashmir-delight.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-kerala-complete-experience.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-kerala-escape.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-kerala-gods-own-country.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-kerala-highlights.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-ladakh-classic.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-ladakh-getaway.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-ladakh-lakes-valleys.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-ladakh-ultimate.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-thailand-essentials.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-thailand-phuket-krabi.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-thailand-ultimate.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-vietnam-best.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-vietnam-essentials.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/packages/package-vietnam-ultimate.html</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://thefalcontour.com/reviews.html</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>

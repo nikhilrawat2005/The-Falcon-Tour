@@ -73,18 +73,64 @@
     gap: 12px;
   }
 
-  .pkgs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 28px;
+  .pkgs-row-wrap {
+    position: relative;
     margin-bottom: 30px;
+  }
+  .pkgs-grid {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    padding-bottom: 12px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  .pkgs-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+  .pkgs-grid::-webkit-scrollbar-thumb {
+    background: rgba(19,27,34,.18);
+    border-radius: 6px;
+  }
+  .pkgs-carousel-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .pkgs-carousel-nav button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(19,27,34,.15);
+    background: var(--cream, #fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background .25s ease, transform .25s ease;
+  }
+  .pkgs-carousel-nav button:hover {
+    background: rgba(217,164,65,.15);
+    transform: scale(1.05);
+  }
+  .pkgs-carousel-nav button svg {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2;
   }
 
   /* Shared card aesthetics mapping homepage styling */
   .pkg-card-list {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    flex: 0 0 300px;
+    width: 300px;
+    scroll-snap-align: start;
     aspect-ratio: 3 / 4;
     border-radius: var(--radius-card, 6px);
     transition: transform .4s cubic-bezier(.4,0,.2,1), box-shadow .4s cubic-bezier(.4,0,.2,1), opacity .3s ease;
@@ -255,26 +301,19 @@
   /* === RESPONSIVE === */
   @media (max-width: 680px) {
     .pkgs-grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
+      gap: 16px;
     }
     .pkg-card-list {
-      max-width: 400px;
-      margin: 0 auto;
+      flex: 0 0 78vw;
+      width: 78vw;
+      max-width: 340px;
     }
     .country-heading {
       font-size: 20px;
       margin: 28px 0 14px;
     }
-  }
-  @media (min-width: 681px) and (max-width: 1024px) {
-    .pkgs-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media (min-width: 1400px) {
-    .pkgs-grid {
-      grid-template-columns: repeat(4, 1fr);
+    .pkgs-carousel-nav {
+      display: none;
     }
   }
 </style>
@@ -334,6 +373,7 @@
     <button class="filter-pill" onclick="filterPackages('usa', this)">USA</button>
     <button class="filter-pill" onclick="filterPackages('dubai', this)">Dubai</button>
     <button class="filter-pill" onclick="filterPackages('southeast-asia', this)">SE Asia</button>
+    <button class="filter-pill" onclick="filterPackages('sri-lanka', this)">Sri Lanka</button>
     <button class="filter-pill" onclick="filterPackages('honeymoon', this)">Honeymoon</button>
     <button class="filter-pill" onclick="filterPackages('adventure', this)">Adventure</button>
   </div>
@@ -341,7 +381,11 @@
   <!-- 🇪🇺 Europe & Switzerland Section -->
   <div class="pkg-section-group" id="sec-europe">
     <h2 class="country-heading">🇪🇺 Europe & Switzerland</h2>
-    <div class="pkgs-grid">
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-europe').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-europe').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-europe">
     <a class="pkg-card-list reveal" data-categories="europe" href="package-essence-of-europe.html" class="pkg-card-link">
       <div class="img-slot"><img alt="Essence of Europe" loading="lazy" src="../assets/images/europe/1.jpg"/></div>
       <div class="pkg-days-badge">8D / 7N</div>
@@ -433,7 +477,11 @@
   <!-- ❄️ Scandinavia & Iceland Section -->
   <div class="pkg-section-group" id="sec-scandinavia">
     <h2 class="country-heading">❄️ Scandinavia & Iceland</h2>
-    <div class="pkgs-grid">
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-scandinavia').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-scandinavia').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-scandinavia">
     <a class="pkg-card-list reveal" data-categories="europe scandinavia adventure" href="package-scandinavia-northern-lights.html" class="pkg-card-link">
       <div class="img-slot"><img alt="Discover Scandinavia | Chasing the Northern Lights" loading="lazy" src="../assets/images/europe/northern-lights-guide.jpg"/></div>
       <div class="pkg-days-badge">9D / 8N</div>
@@ -516,7 +564,11 @@
   <!-- 🇯🇵 Japan Section -->
   <div class="pkg-section-group" id="sec-japan">
     <h2 class="country-heading">🇯🇵 Japan</h2>
-    <div class="pkgs-grid">
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-japan').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-japan').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-japan">
     <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-japan.html" class="pkg-card-link">
       <div class="img-slot"><img alt="Japan for First Timers" loading="lazy" src="../assets/images/japan/mount-fuji-guide.jpg"/></div>
       <div class="pkg-days-badge">9D / 8N</div>
@@ -608,7 +660,11 @@
   <!-- 🇳🇿 New Zealand Section -->
   <div class="pkg-section-group" id="sec-new-zealand">
     <h2 class="country-heading">🇳🇿 New Zealand</h2>
-    <div class="pkgs-grid">
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-new-zealand').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-new-zealand').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-new-zealand">
     <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-new-zealand.html" class="pkg-card-link">
       <div class="img-slot"><img alt="New Zealand Discovery" loading="lazy" src="../assets/images/new-zealand/queenstown-guide.jpg"/></div>
       <div class="pkg-days-badge">8D / 7N</div>
@@ -683,7 +739,11 @@
   <!-- 🇦🇺 Australia Section -->
   <div class="pkg-section-group" id="sec-australia">
     <h2 class="country-heading">🇦🇺 Australia</h2>
-    <div class="pkgs-grid">
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-australia').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-australia').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-australia">
     <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-discover-australia.html" class="pkg-card-link">
       <div class="img-slot"><img alt="Discover Australia" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
       <div class="pkg-days-badge">9D / 8N</div>
@@ -758,7 +818,11 @@
   <!-- 🇳🇿 🇦🇺 Australia & New Zealand Combo Section -->
   <div class="pkg-section-group" id="sec-anz-combo">
     <h2 class="country-heading">🇳🇿 🇦🇺 Australia & New Zealand Combo</h2>
-    <div class="pkgs-grid">
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-anz-combo').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-anz-combo').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-anz-combo">
     <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-australia-new-zealand-combo.html" class="pkg-card-link">
       <div class="img-slot"><img alt="Discover Australia & NZ" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
       <div class="pkg-days-badge">15D / 14N</div>
@@ -782,7 +846,11 @@
   <!-- 🇺🇸 United States (USA) Section -->
   <div class="pkg-section-group" id="sec-usa">
     <h2 class="country-heading">🇺🇸 United States (USA)</h2>
-    <div class="pkgs-grid">
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-usa').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-usa').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-usa">
     <a class="pkg-card-list reveal" data-categories="usa adventure" href="package-west-coast-usa.html" class="pkg-card-link">
       <div class="img-slot"><img alt="West Coast USA Highlights" loading="lazy" src="../assets/images/usa/grand-canyon-guide.jpg"/></div>
       <div class="pkg-days-badge">8D / 7N</div>
@@ -840,7 +908,11 @@
   <!-- 🇸🇬 🇲🇾 Southeast Asia (SE Asia) Section -->
   <div class="pkg-section-group" id="sec-southeast-asia">
     <h2 class="country-heading">🇸🇬 🇲🇾 Southeast Asia (SE Asia)</h2>
-    <div class="pkgs-grid">
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-southeast-asia').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-southeast-asia').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-southeast-asia">
     <a class="pkg-card-list reveal" data-categories="southeast-asia" href="package-singapore-malaysia.html" class="pkg-card-link">
       <div class="img-slot"><img alt="Singapore & Malaysia Escape" loading="lazy" src="../assets/images/singapore/1.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
@@ -913,9 +985,92 @@
   </div>
 
   <!-- 🇦🇪 Dubai Section -->
+  <!-- 🇱🇰 Sri Lanka Section -->
+  <div class="pkg-section-group" id="sec-sri-lanka">
+    <h2 class="country-heading">🇱🇰 Sri Lanka</h2>
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-sri-lanka').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-sri-lanka').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-sri-lanka">
+    <a class="pkg-card-list reveal" data-categories="asia sri-lanka" href="package-sri-lanka-escape.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Sri Lanka Escape Beaches and Heritage" loading="lazy" src="../assets/images/sri-lanka/1.jpg"/></div>
+      <div class="pkg-days-badge">4D / 3N</div>
+      <div class="pkg-region-badge">🇱🇰 Sri Lanka</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Colombo · Bentota</span>
+        <h3>Sri Lanka Escape | Beaches &amp; Heritage</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Colombo City Tour &amp; Gangaramaya Temple</div><div class="pkg-hl-item-str">Madu River Boat Safari</div><div class="pkg-hl-item-str">Bentota Beach &amp; Turtle Hatchery</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹23,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="asia sri-lanka" href="package-classic-sri-lanka.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Sri Lanka" loading="lazy" src="../assets/images/sri-lanka/2.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇱🇰 Sri Lanka</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Kandy · Bentota</span>
+        <h3>Classic Sri Lanka</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Temple of the Tooth Relic</div><div class="pkg-hl-item-str">Royal Botanical Garden &amp; Gem Museum</div><div class="pkg-hl-item-str">Madu River Safari &amp; Turtle Hatchery</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹28,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="asia sri-lanka" href="package-best-of-sri-lanka.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Best of Sri Lanka" loading="lazy" src="../assets/images/sri-lanka/3.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇱🇰 Sri Lanka</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Kandy · Nuwara Eliya · Bentota</span>
+        <h3>Best of Sri Lanka</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Tea Plantation &amp; Factory Visit</div><div class="pkg-hl-item-str">Ramboda Waterfall &amp; Gregory Lake</div><div class="pkg-hl-item-str">Scenic Train Journey (Subject to Availability)</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹37,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="pkg-card-list reveal" data-categories="asia sri-lanka" href="package-complete-sri-lanka-experience.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Complete Sri Lanka Experience" loading="lazy" src="../assets/images/sri-lanka/4.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇱🇰 Sri Lanka</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Kandy · Nuwara Eliya · Bentota · Colombo</span>
+        <h3>Complete Sri Lanka Experience</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Temple of the Tooth &amp; Tea Estates</div><div class="pkg-hl-item-str">Bentota Beach &amp; Madu River Safari</div><div class="pkg-hl-item-str">Colombo City Tour &amp; Shopping</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹44,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
   <div class="pkg-section-group" id="sec-dubai">
     <h2 class="country-heading">🇦🇪 Dubai</h2>
-    <div class="pkgs-grid">
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-dubai').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-dubai').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-dubai">
     <a class="pkg-card-list reveal" data-categories="dubai" href="package-discover-dubai.html" class="pkg-card-link">
       <div class="img-slot"><img alt="Discover Dubai Essentials" loading="lazy" src="../assets/images/dubai/1.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
@@ -946,6 +1101,606 @@
         <div class="pkg-card-footer">
           <div class="pkg-price-str">₹89,999<small>per person onwards</small></div>
           <span class="pkg-cta-btn">View Detail →</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <div class="pkg-section-group" id="sec-thailand">
+    <h2 class="country-heading">🇹🇭 Thailand</h2>
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-thailand').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-thailand').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-thailand">
+    <a class="pkg-card-list reveal" data-categories="thailand asia" href="package-thailand-essentials.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Discover Thailand | Beaches, Temples & City Lights" loading="lazy" src="../assets/images/thailand/1.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇹🇭 Thailand essentials</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Pattaya &middot; Bangkok</span>
+        <h3>Discover Thailand | Beaches, Temples & City Lights</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Alcazar Cabaret Show</div><div class="pkg-hl-item-str">Coral Island Tour</div><div class="pkg-hl-item-str">Bangkok City &amp; Temple Tour</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹18,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="thailand asia" href="package-classic-thailand.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Thailand | Pattaya, Bangkok & Island Adventures" loading="lazy" src="../assets/images/thailand/2.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇹🇭 Thailand classic</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Pattaya &middot; Bangkok</span>
+        <h3>Classic Thailand | Pattaya, Bangkok & Island Adventures</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Coral Island Tour</div><div class="pkg-hl-item-str">Chao Phraya Dinner Cruise</div><div class="pkg-hl-item-str">Safari World &amp; Marine Park</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹29,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="thailand asia" href="package-thailand-phuket-krabi.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Explore Southern Thailand | Phuket & Krabi" loading="lazy" src="../assets/images/thailand/3.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇹🇭 Phuket &amp; Krabi</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Phuket &middot; Krabi</span>
+        <h3>Explore Southern Thailand | Phuket & Krabi</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Phi Phi Island Tour</div><div class="pkg-hl-item-str">Four Islands Tour</div><div class="pkg-hl-item-str">Ao Nang Beach Leisure</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹24,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="thailand asia" href="package-thailand-ultimate.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Thailand Unveiled | Islands, Beaches & City Wonders" loading="lazy" src="../assets/images/thailand/4.jpg"/></div>
+      <div class="pkg-days-badge">8D / 7N</div>
+      <div class="pkg-region-badge">🇹🇭 Thailand grand tour</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Phuket &middot; Krabi &middot; Bangkok</span>
+        <h3>Thailand Unveiled | Islands, Beaches & City Wonders</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">James Bond Island Tour</div><div class="pkg-hl-item-str">Four Islands Tour</div><div class="pkg-hl-item-str">Chao Phraya Dinner Cruise</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹34,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <div class="pkg-section-group" id="sec-vietnam">
+    <h2 class="country-heading">🇻🇳 Vietnam</h2>
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-vietnam').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-vietnam').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-vietnam">
+    <a class="pkg-card-list reveal" data-categories="vietnam asia" href="package-vietnam-essentials.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Discover Vietnam | Hanoi & Halong Bay Escape" loading="lazy" src="../assets/images/vietnam/1.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇻🇳 Vietnam essentials</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Hanoi &middot; Halong Bay</span>
+        <h3>Discover Vietnam | Hanoi & Halong Bay Escape</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Overnight Halong Bay Cruise</div><div class="pkg-hl-item-str">Hanoi City Tour</div><div class="pkg-hl-item-str">Cave Visit &amp; Kayaking</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹32,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="vietnam asia" href="package-classic-vietnam.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Vietnam | Heritage, Beaches & Bay Cruises" loading="lazy" src="../assets/images/vietnam/2.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇻🇳 Vietnam classic</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Hanoi &middot; Halong Bay &middot; Da Nang</span>
+        <h3>Classic Vietnam | Heritage, Beaches & Bay Cruises</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Halong Bay Overnight Cruise</div><div class="pkg-hl-item-str">Ba Na Hills &amp; Golden Bridge</div><div class="pkg-hl-item-str">Marble Mountains</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹62,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="vietnam asia" href="package-vietnam-best.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Vietnam Unveiled | From Heritage Streets to Coastal Wonders" loading="lazy" src="../assets/images/vietnam/3.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇻🇳 Best of Vietnam</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Hanoi &middot; Halong Bay &middot; Da Nang</span>
+        <h3>Vietnam Unveiled | From Heritage Streets to Coastal Wonders</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Hoi An Ancient Town</div><div class="pkg-hl-item-str">Ba Na Hills &amp; Golden Bridge</div><div class="pkg-hl-item-str">Coconut Village Basket Boat</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹57,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="vietnam asia" href="package-vietnam-ultimate.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="The Ultimate Vietnam | Culture, Coastlines & City Life" loading="lazy" src="../assets/images/vietnam/4.jpg"/></div>
+      <div class="pkg-days-badge">9D / 8N</div>
+      <div class="pkg-region-badge">🇻🇳 Vietnam grand tour</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Hanoi &middot; Da Nang &middot; Ho Chi Minh City</span>
+        <h3>The Ultimate Vietnam | Culture, Coastlines & City Life</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Hoi An Ancient Town</div><div class="pkg-hl-item-str">Mekong Delta &amp; Cu Chi Tunnels</div><div class="pkg-hl-item-str">Ba Na Hills &amp; Golden Bridge</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹89,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <div class="pkg-section-group" id="sec-bali">
+    <h2 class="country-heading">🇮🇩 Bali</h2>
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-bali').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-bali').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-bali">
+    <a class="pkg-card-list reveal" data-categories="bali asia" href="package-bali-essentials.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Discover Bali | Island of Gods" loading="lazy" src="../assets/images/bali/1.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇮🇩 Bali essentials</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Kuta</span>
+        <h3>Discover Bali | Island of Gods</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Kintamani Volcano Tour</div><div class="pkg-hl-item-str">Tanah Lot Temple Sunset</div><div class="pkg-hl-item-str">Uluwatu Temple &amp; Kecak Dance</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹29,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="bali asia" href="package-classic-bali.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Bali | Beaches, Temples & Rice Terraces" loading="lazy" src="../assets/images/bali/2.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇮🇩 Bali classic</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Kuta &middot; Ubud</span>
+        <h3>Classic Bali | Beaches, Temples & Rice Terraces</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Tegallalang Rice Terrace</div><div class="pkg-hl-item-str">Uluwatu Temple &amp; Kecak Dance</div><div class="pkg-hl-item-str">Tanah Lot Temple</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹42,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="bali asia" href="package-bali-unveiled.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Bali Unveiled | Temples, Beaches & Island Adventures" loading="lazy" src="../assets/images/bali/3.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇮🇩 Best of Bali</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Kuta &middot; Ubud</span>
+        <h3>Bali Unveiled | Temples, Beaches & Island Adventures</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">West Nusa Penida Tour</div><div class="pkg-hl-item-str">Bali Swing</div><div class="pkg-hl-item-str">Tirta Empul Temple</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹54,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="bali asia" href="package-bali-ultimate.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="The Ultimate Bali | Luxury, Culture & Island Bliss" loading="lazy" src="../assets/images/bali/4.jpg"/></div>
+      <div class="pkg-days-badge">8D / 7N</div>
+      <div class="pkg-region-badge">🇮🇩 Bali luxury</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Seminyak &middot; Ubud &middot; Nusa Penida</span>
+        <h3>The Ultimate Bali | Luxury, Culture & Island Bliss</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Nusa Penida Island Tours</div><div class="pkg-hl-item-str">Bali Swing</div><div class="pkg-hl-item-str">Beach Club Experience</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹82,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <div class="pkg-section-group" id="sec-kerala">
+    <h2 class="country-heading">🇮🇳 Kerala</h2>
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-kerala').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-kerala').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-kerala">
+    <a class="pkg-card-list reveal" data-categories="kerala india" href="package-kerala-escape.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Kerala Escape | Munnar & Alleppey" loading="lazy" src="../assets/images/kerala/1.jpg"/></div>
+      <div class="pkg-days-badge">4D / 3N</div>
+      <div class="pkg-region-badge">🇮🇳 Kerala escape</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Munnar &middot; Alleppey</span>
+        <h3>Kerala Escape | Munnar & Alleppey</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Tea Gardens of Munnar</div><div class="pkg-hl-item-str">Mattupetty Dam</div><div class="pkg-hl-item-str">Alleppey Backwaters</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹18,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="kerala india" href="package-kerala-gods-own-country.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="God's Own Country | Munnar, Thekkady & Alleppey" loading="lazy" src="../assets/images/kerala/2.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇮🇳 Kerala classic</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Munnar &middot; Thekkady &middot; Alleppey</span>
+        <h3>God's Own Country | Munnar, Thekkady & Alleppey</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Periyar Wildlife Sanctuary</div><div class="pkg-hl-item-str">Spice Plantation Tour</div><div class="pkg-hl-item-str">Alleppey Backwaters</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹24,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="kerala india" href="package-kerala-highlights.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Kerala Highlights | Munnar, Thekkady, Alleppey & Kochi" loading="lazy" src="../assets/images/kerala/3.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇮🇳 Kerala highlights</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Munnar &middot; Thekkady &middot; Alleppey &middot; Kochi</span>
+        <h3>Kerala Highlights | Munnar, Thekkady, Alleppey & Kochi</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Alleppey Houseboat Experience</div><div class="pkg-hl-item-str">Fort Kochi</div><div class="pkg-hl-item-str">Chinese Fishing Nets</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹29,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="kerala india" href="package-kerala-complete-experience.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Complete Kerala Experience | Munnar, Thekkady, Alleppey & Kovalam" loading="lazy" src="../assets/images/kerala/4.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇮🇳 Complete Kerala</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Munnar &middot; Thekkady &middot; Alleppey &middot; Kovalam</span>
+        <h3>Complete Kerala Experience | Munnar, Thekkady, Alleppey & Kovalam</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Premium Houseboat Stay</div><div class="pkg-hl-item-str">Kovalam Beach</div><div class="pkg-hl-item-str">Thekkady Wildlife</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹37,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <div class="pkg-section-group" id="sec-ladakh">
+    <h2 class="country-heading">🇮🇳 Ladakh</h2>
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-ladakh').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-ladakh').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-ladakh">
+    <a class="pkg-card-list reveal" data-categories="ladakh india" href="package-ladakh-getaway.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Leh Getaway | Land of High Passes" loading="lazy" src="../assets/images/ladakh/1.jpg"/></div>
+      <div class="pkg-days-badge">4D / 3N</div>
+      <div class="pkg-region-badge">🇮🇳 Ladakh getaway</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Leh</span>
+        <h3>Leh Getaway | Land of High Passes</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Shanti Stupa</div><div class="pkg-hl-item-str">Magnetic Hill</div><div class="pkg-hl-item-str">Sangam Point</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹13,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="ladakh india" href="package-ladakh-classic.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Ladakh Adventure" loading="lazy" src="../assets/images/ladakh/2.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇮🇳 Ladakh classic</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Leh &middot; Nubra Valley</span>
+        <h3>Classic Ladakh Adventure</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Khardung La Pass</div><div class="pkg-hl-item-str">Nubra Valley</div><div class="pkg-hl-item-str">Hunder Sand Dunes</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹28,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="ladakh india" href="package-ladakh-lakes-valleys.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Best of Ladakh | Lakes & Valleys" loading="lazy" src="../assets/images/ladakh/3.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇮🇳 Best of Ladakh</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Leh &middot; Nubra Valley &middot; Pangong Lake</span>
+        <h3>Best of Ladakh | Lakes & Valleys</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Khardung La Pass</div><div class="pkg-hl-item-str">Pangong Lake</div><div class="pkg-hl-item-str">Nubra Valley</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹35,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="ladakh india" href="package-ladakh-ultimate.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Ultimate Ladakh Expedition" loading="lazy" src="../assets/images/ladakh/4.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇮🇳 Ladakh expedition</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Leh &middot; Nubra Valley &middot; Pangong Lake</span>
+        <h3>Ultimate Ladakh Expedition</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Turtuk Village Excursion</div><div class="pkg-hl-item-str">Pangong Lake</div><div class="pkg-hl-item-str">Khardung La Pass</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹38,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <div class="pkg-section-group" id="sec-kashmir">
+    <h2 class="country-heading">🇮🇳 Kashmir</h2>
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-kashmir').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-kashmir').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-kashmir">
+    <a class="pkg-card-list reveal" data-categories="kashmir india" href="package-kashmir-delight.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Kashmir Delight | Srinagar Escape" loading="lazy" src="../assets/images/kashmir/1.jpg"/></div>
+      <div class="pkg-days-badge">4D / 3N</div>
+      <div class="pkg-region-badge">🇮🇳 Kashmir delight</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Srinagar &middot; Houseboat</span>
+        <h3>Kashmir Delight | Srinagar Escape</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Dal Lake Shikara Ride</div><div class="pkg-hl-item-str">Mughal Gardens</div><div class="pkg-hl-item-str">Houseboat Stay</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹14,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="kashmir india" href="package-classic-kashmir.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Kashmir" loading="lazy" src="../assets/images/kashmir/2.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇮🇳 Kashmir classic</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Srinagar &middot; Gulmarg &middot; Houseboat</span>
+        <h3>Classic Kashmir</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Gulmarg Gondola</div><div class="pkg-hl-item-str">Strawberry Valley</div><div class="pkg-hl-item-str">Houseboat Experience</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹18,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="kashmir india" href="package-best-of-kashmir.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Best of Kashmir" loading="lazy" src="../assets/images/kashmir/3.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇮🇳 Best of Kashmir</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Srinagar &middot; Gulmarg &middot; Pahalgam &middot; Houseboat</span>
+        <h3>Best of Kashmir</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Betaab Valley</div><div class="pkg-hl-item-str">Aru Valley</div><div class="pkg-hl-item-str">Chandanwari</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹23,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="kashmir india" href="package-kashmir-complete-experience.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Complete Kashmir Experience" loading="lazy" src="../assets/images/kashmir/4.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇮🇳 Complete Kashmir</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Srinagar &middot; Gulmarg &middot; Pahalgam &middot; Houseboat</span>
+        <h3>Complete Kashmir Experience</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Gulmarg Gondola Base Area</div><div class="pkg-hl-item-str">Betaab &amp; Aru Valley</div><div class="pkg-hl-item-str">Overnight Houseboat Stay</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹29,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <div class="pkg-section-group" id="sec-bhutan">
+    <h2 class="country-heading">🇧🇹 Bhutan</h2>
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-bhutan').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-bhutan').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-bhutan">
+    <a class="pkg-card-list reveal" data-categories="bhutan asia" href="package-bhutan-serenity.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Bhutan Serenity | Gateway to the Himalayas" loading="lazy" src="../assets/images/bhutan/1.jpg"/></div>
+      <div class="pkg-days-badge">4D / 3N</div>
+      <div class="pkg-region-badge">🇧🇹 Bhutan serenity</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Phuentsholing &middot; Thimphu</span>
+        <h3>Bhutan Serenity | Gateway to the Himalayas</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Buddha Dordenma Statue</div><div class="pkg-hl-item-str">Tashichho Dzong</div><div class="pkg-hl-item-str">Scenic Himalayan Drive</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹21,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="bhutan asia" href="package-classic-bhutan.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Bhutan" loading="lazy" src="../assets/images/bhutan/2.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇧🇹 Bhutan classic</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Phuentsholing &middot; Thimphu &middot; Paro</span>
+        <h3>Classic Bhutan</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Dochula Pass</div><div class="pkg-hl-item-str">Paro Dzong</div><div class="pkg-hl-item-str">National Museum</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹27,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="bhutan asia" href="package-best-of-bhutan.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Best of Bhutan" loading="lazy" src="../assets/images/bhutan/3.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇧🇹 Best of Bhutan</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Phuentsholing &middot; Thimphu &middot; Paro</span>
+        <h3>Best of Bhutan</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Chele La Pass</div><div class="pkg-hl-item-str">Tiger's Nest Monastery Viewpoint</div><div class="pkg-hl-item-str">Paro Rinpung Dzong</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹38,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="bhutan asia" href="package-bhutan-complete-experience.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Complete Bhutan Experience" loading="lazy" src="../assets/images/bhutan/4.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇧🇹 Complete Bhutan</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Phuentsholing &middot; Thimphu &middot; Punakha &middot; Paro</span>
+        <h3>Complete Bhutan Experience</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Punakha Dzong &amp; Suspension Bridge</div><div class="pkg-hl-item-str">Tiger's Nest Monastery Trek</div><div class="pkg-hl-item-str">Chele La Pass</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹45,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    </div>
+  </div>
+
+  <div class="pkg-section-group" id="sec-almaty">
+    <h2 class="country-heading">🇰🇿 Almaty</h2>
+    <div class="pkgs-carousel-nav">
+      <button aria-label="Scroll left" onclick="document.getElementById('grid-sec-almaty').scrollBy({left:-320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <button aria-label="Scroll right" onclick="document.getElementById('grid-sec-almaty').scrollBy({left:320,behavior:'smooth'})"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="pkgs-grid" id="grid-sec-almaty">
+    <a class="pkg-card-list reveal" data-categories="almaty asia" href="package-almaty-city-escape.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Almaty City Escape" loading="lazy" src="../assets/images/almaty/1.jpg"/></div>
+      <div class="pkg-days-badge">4D / 3N</div>
+      <div class="pkg-region-badge">🇰🇿 Almaty escape</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Almaty</span>
+        <h3>Almaty City Escape</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Panfilov Park</div><div class="pkg-hl-item-str">Zenkov Cathedral</div><div class="pkg-hl-item-str">Kok Tobe Hill Cable Car</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹25,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="almaty asia" href="package-classic-almaty.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Classic Almaty" loading="lazy" src="../assets/images/almaty/2.jpg"/></div>
+      <div class="pkg-days-badge">5D / 4N</div>
+      <div class="pkg-region-badge">🇰🇿 Almaty classic</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Almaty</span>
+        <h3>Classic Almaty</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Medeu Ice Skating Rink</div><div class="pkg-hl-item-str">Shymbulak Ski Resort</div><div class="pkg-hl-item-str">Rakhat Chocolate Factory</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹34,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="almaty asia" href="package-best-of-almaty.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Best of Almaty" loading="lazy" src="../assets/images/almaty/3.jpg"/></div>
+      <div class="pkg-days-badge">6D / 5N</div>
+      <div class="pkg-region-badge">🇰🇿 Best of Almaty</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Almaty</span>
+        <h3>Best of Almaty</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Charyn Canyon</div><div class="pkg-hl-item-str">Kolsai Lake</div><div class="pkg-hl-item-str">Kaindy Lake (Optional)</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹44,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
+        </div>
+      </div>
+    </a>
+    <a class="pkg-card-list reveal" data-categories="almaty asia" href="package-almaty-complete-experience.html" class="pkg-card-link">
+      <div class="img-slot"><img alt="Complete Almaty Experience" loading="lazy" src="../assets/images/almaty/4.jpg"/></div>
+      <div class="pkg-days-badge">7D / 6N</div>
+      <div class="pkg-region-badge">🇰🇿 Complete Almaty</div>
+      <div class="pkg-card-body">
+        <span class="pkg-route-str">Almaty</span>
+        <h3>Complete Almaty Experience</h3>
+        <div class="pkg-highlights-list">
+          <div class="pkg-hl-item-str">Charyn &amp; Black Canyon</div><div class="pkg-hl-item-str">Kolsai Lake</div><div class="pkg-hl-item-str">Saty Village</div>
+        </div>
+        <div class="pkg-card-footer">
+          <div class="pkg-price-str">₹56,999<small>per person onwards</small></div>
+          <span class="pkg-cta-btn">View Detail &rarr;</span>
         </div>
       </div>
     </a>
@@ -1000,19 +1755,22 @@
     }));
   }
 
-  // Motion Dev Integration
+  // Motion Dev Integration (used for tilt cards & filter animations below)
   const { animate, stagger, spring } = Motion;
 
-  // Premium scroll reveal for package listing
-  document.querySelectorAll('.pkgs-grid').forEach(grid => {
-    Motion.inView(grid, () => {
-      animate(
-        grid.querySelectorAll('.reveal'),
-        { opacity: [0, 1], y: [20, 0] },
-        { delay: stagger(0.05), duration: 0.5, easing: spring({ stiffness: 120, damping: 15 }) }
-      );
-    });
-  });
+  // Scroll reveal for package listing (robust IntersectionObserver, no external lib dependency)
+  const revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => io.observe(el));
+  }
 
   const scrollProgress = document.getElementById('scrollProgress');
   if (scrollProgress && CSS && !CSS.supports('animation-timeline', 'scroll()')) {

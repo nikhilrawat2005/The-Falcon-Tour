@@ -52,8 +52,98 @@
   .logo-admin .logo-text small{font-size:9px;display:block;line-height:normal;margin-top:6px;}
   .admin-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 40px;
+    grid-template-columns: 260px 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+  .admin-sidebar {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    padding: 14px;
+    position: sticky;
+    top: 120px;
+  }
+  .admin-nav-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: none;
+    border: none;
+    border-radius: 6px;
+    color: rgba(243, 238, 225, 0.75);
+    font-family: 'Manrope', sans-serif;
+    font-size: 14.5px;
+    font-weight: 600;
+    padding: 13px 14px;
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 4px;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .admin-nav-btn:hover {
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--cream);
+  }
+  .admin-nav-btn.is-active {
+    background: rgba(217, 164, 65, 0.14);
+    color: var(--amber);
+  }
+  .admin-nav-badge {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--cream);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+    flex-shrink: 0;
+  }
+  .admin-nav-btn.is-active .admin-nav-badge {
+    background: var(--amber);
+    color: var(--ink);
+  }
+  .admin-panel {
+    display: none;
+  }
+  .admin-panel.is-active {
+    display: block;
+  }
+  .admin-delete-btn {
+    margin-top: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 80, 80, 0.1);
+    color: #ff8a8a;
+    border: 1px solid rgba(255, 80, 80, 0.35);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 9px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  .admin-delete-btn:hover {
+    background: rgba(255, 80, 80, 0.22);
+    border-color: #ff6b6b;
+    color: #fff;
+  }
+  .admin-delete-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
+  @media (max-width: 900px) {
+    .admin-grid { grid-template-columns: 1fr; }
+    .admin-sidebar {
+      position: static;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px;
+    }
+    .admin-nav-btn { white-space: nowrap; margin-bottom: 0; }
   }
   .admin-card {
     background: rgba(255, 255, 255, 0.02);
@@ -306,18 +396,37 @@
 </div>
 </div>
 <div class="admin-grid">
-<!-- Left: Users Count & List -->
-<div class="admin-card">
-<h2>Registered Users <span class="stat-badge" id="usersCount">0</span></h2>
-<div class="admin-list" id="usersList" style="max-height: 500px; overflow-y: auto;">
+<!-- Sidebar Navigation -->
+<div class="admin-sidebar">
+<button class="admin-nav-btn is-active" data-panel="loginsPanel" onclick="switchAdminTab(this)" type="button">
+<span>Logins</span><span class="admin-nav-badge" id="usersCount">0</span>
+</button>
+<button class="admin-nav-btn" data-panel="inquiriesPanel" onclick="switchAdminTab(this)" type="button">
+<span>Trip Inquiries</span><span class="admin-nav-badge" id="subsCount">0</span>
+</button>
+<button class="admin-nav-btn" data-panel="reviewsPanel" onclick="switchAdminTab(this)" type="button">
+<span>Reviews</span><span class="admin-nav-badge" id="reviewsCount">0</span>
+</button>
+</div>
+<!-- Content Panels -->
+<div>
+<div class="admin-card admin-panel is-active" id="loginsPanel">
+<h2>Registered Users <span class="stat-badge" id="usersCountCard">0</span></h2>
+<div class="admin-list" id="usersList" style="max-height: 600px; overflow-y: auto;">
 <p class="admin-empty">Loading user accounts...</p>
 </div>
 </div>
-<!-- Right: Submissions List -->
-<div class="admin-card">
-<h2>Trip Inquiries <span class="stat-badge" id="subsCount">0</span></h2>
-<div class="admin-list" id="subsList" style="max-height: 500px; overflow-y: auto;">
+<div class="admin-card admin-panel" id="inquiriesPanel">
+<h2>Trip Inquiries <span class="stat-badge" id="subsCountCard">0</span></h2>
+<div class="admin-list" id="subsList" style="max-height: 600px; overflow-y: auto;">
 <p class="admin-empty">Loading submission log...</p>
+</div>
+</div>
+<div class="admin-card admin-panel" id="reviewsPanel">
+<h2>Reviews <span class="stat-badge" id="reviewsCountCard">0</span></h2>
+<div class="admin-list" id="reviewsList" style="max-height: 600px; overflow-y: auto;">
+<p class="admin-empty">Loading reviews...</p>
+</div>
 </div>
 </div>
 </div>
@@ -359,6 +468,7 @@
 
   function loadAdminDashboardData() {
     const CHEVRON = `<svg class="admin-list-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
+    const TRASH = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"></path><path d="M10 11v6"></path><path d="M14 11v6"></path><path d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"></path></svg>`;
 
     function escapeHtml(str) {
       return String(str || '')
@@ -383,6 +493,16 @@
       });
     }
 
+    // ---- Sidebar tab switching ----
+    window.switchAdminTab = function(btn) {
+      const panelId = btn.getAttribute('data-panel');
+      document.querySelectorAll('.admin-nav-btn').forEach((b) => b.classList.remove('is-active'));
+      document.querySelectorAll('.admin-panel').forEach((p) => p.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      document.getElementById(panelId).classList.add('is-active');
+    };
+
+    // ---- Expand / collapse a row ----
     window.toggleAdminItem = function(btn) {
       const item = btn.closest('.admin-list-item');
       const isOpen = item.classList.contains('is-open');
@@ -394,12 +514,20 @@
       btn.setAttribute('aria-expanded', !isOpen ? 'true' : 'false');
     };
 
-    // 1. Load users
-    window.db.collection('users').orderBy('joined', 'desc').onSnapshot((snapshot) => {
-      const countBadge = document.getElementById('usersCount');
-      const listContainer = document.getElementById('usersList');
+    // ---- Delete a document from any collection ----
+    window.deleteAdminDoc = function(collection, docId, label) {
+      const ok = window.confirm(`Delete this ${label}? This action cannot be undone.`);
+      if (!ok) return;
+      window.db.collection(collection).doc(docId).delete().catch((err) => {
+        alert('Could not delete: ' + err.message);
+      });
+    };
 
-      countBadge.textContent = snapshot.size;
+    // 1. Load users (Logins tab)
+    window.db.collection('users').orderBy('joined', 'desc').onSnapshot((snapshot) => {
+      document.getElementById('usersCount').textContent = snapshot.size;
+      document.getElementById('usersCountCard').textContent = snapshot.size;
+      const listContainer = document.getElementById('usersList');
 
       if (snapshot.empty) {
         listContainer.innerHTML = `<p class="admin-empty">No registered user accounts found.</p>`;
@@ -419,7 +547,7 @@
               <span class="admin-list-num">${num}</span>
               <span class="admin-list-main">
                 <span class="admin-list-name">${name}</span>
-                <span class="admin-list-meta">Signed in user</span>
+                <span class="admin-list-meta">Joined ${joined}</span>
               </span>
               ${CHEVRON}
             </button>
@@ -433,21 +561,21 @@
                 <span>${email}</span>
               </div>
               <div class="admin-detail-row">
-                <label>Joined On</label>
+                <label>Joined On (Date &amp; Time)</label>
                 <span>${joined}</span>
               </div>
+              <button type="button" class="admin-delete-btn" onclick="deleteAdminDoc('users', '${doc.id}', 'user')">${TRASH} Delete</button>
             </div>
           </div>
         `;
       }).join('');
     });
 
-    // 2. Load submissions
+    // 2. Load submissions (Trip Inquiries tab)
     window.db.collection('submissions').orderBy('timestamp', 'desc').onSnapshot((snapshot) => {
-      const countBadge = document.getElementById('subsCount');
+      document.getElementById('subsCount').textContent = snapshot.size;
+      document.getElementById('subsCountCard').textContent = snapshot.size;
       const listContainer = document.getElementById('subsList');
-
-      countBadge.textContent = snapshot.size;
 
       if (snapshot.empty) {
         listContainer.innerHTML = `<p class="admin-empty">No inquiries submitted yet.</p>`;
@@ -461,6 +589,7 @@
         const phone = escapeHtml(s.phone || '—');
         const destination = escapeHtml(s.destination || '—');
         const message = escapeHtml(s.message || '—');
+        const submittedFull = formatDate(s.timestamp);
         const submittedShort = formatDateShort(s.timestamp);
         const num = String(index + 1).padStart(2, '0');
         const displayPhone = s.countryCode && s.localPhone
@@ -517,6 +646,72 @@
                 <label>Message</label>
                 <span>${message}</span>
               </div>
+              <div class="admin-detail-row">
+                <label>Submitted On (Date &amp; Time)</label>
+                <span>${submittedFull}</span>
+              </div>
+              <button type="button" class="admin-delete-btn" onclick="deleteAdminDoc('submissions', '${doc.id}', 'inquiry')">${TRASH} Delete</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    });
+
+    // 3. Load reviews (Reviews tab) — collection will populate once the review
+    // submission form (a later step) starts writing to Firestore.
+    window.db.collection('reviews').orderBy('timestamp', 'desc').onSnapshot((snapshot) => {
+      document.getElementById('reviewsCount').textContent = snapshot.size;
+      document.getElementById('reviewsCountCard').textContent = snapshot.size;
+      const listContainer = document.getElementById('reviewsList');
+
+      if (snapshot.empty) {
+        listContainer.innerHTML = `<p class="admin-empty">No reviews submitted yet.</p>`;
+        return;
+      }
+
+      listContainer.innerHTML = snapshot.docs.map((doc, index) => {
+        const r = doc.data();
+        const name = escapeHtml(r.name || 'Anonymous');
+        const rating = r.rating ? '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating) : '—';
+        const text = escapeHtml(r.text || '—');
+        const status = escapeHtml(r.status || 'pending');
+        const submittedFull = formatDate(r.timestamp);
+        const submittedShort = formatDateShort(r.timestamp);
+        const num = String(index + 1).padStart(2, '0');
+
+        return `
+          <div class="admin-list-item">
+            <button type="button" class="admin-list-trigger" onclick="toggleAdminItem(this)" aria-expanded="false">
+              <span class="admin-list-num">${num}</span>
+              <span class="admin-list-main">
+                <span class="admin-list-name">${name} <span style="color:var(--amber);">${rating}</span></span>
+                <span class="admin-list-meta">${status} · ${submittedShort}</span>
+              </span>
+              ${CHEVRON}
+            </button>
+            <div class="admin-list-dropdown">
+              <div class="admin-detail-row">
+                <label>Reviewer Name</label>
+                <span>${name}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Rating</label>
+                <span style="color:var(--amber);">${rating}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Review Text</label>
+                <span>${text}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Status</label>
+                <span class="highlight">${status}</span>
+              </div>
+              <div class="admin-detail-row">
+                <label>Submitted On (Date &amp; Time)</label>
+                <span>${submittedFull}</span>
+              </div>
+              ${status !== 'approved' ? `<button type="button" class="admin-delete-btn" style="background:rgba(120,200,120,.1);color:#8fd88f;border-color:rgba(120,200,120,.35);margin-right:8px;" onclick="window.db.collection('reviews').doc('${doc.id}').update({status:'approved'})">Approve</button>` : ''}
+              <button type="button" class="admin-delete-btn" onclick="deleteAdminDoc('reviews', '${doc.id}', 'review')">${TRASH} Delete</button>
             </div>
           </div>
         `;
@@ -524,5 +719,6 @@
     });
   }
 </script>
+
 </body>
 </html>

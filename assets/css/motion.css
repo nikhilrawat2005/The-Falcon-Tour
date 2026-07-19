@@ -1,0 +1,122 @@
+/* ==========================================================================
+   The Falcon Tour — Motion Foundation CSS
+   Stage 1: Foundation & Hardening
+   --------------------------------------------------------------------------
+   Pure safety-net rules only. No new visual treatments are introduced here;
+   this file exists so that later stages have a guaranteed, tested hook for
+   turning motion off cleanly for reduced-motion / touch / save-data users.
+   ========================================================================== */
+
+/* When JS has determined the user prefers reduced motion, kill CSS-driven
+   transitions/animations for anything explicitly opted into this system.
+   Scoped to [data-motion] so it never touches unrelated existing CSS
+   animations elsewhere on the site. */
+html.motion-reduced [data-motion],
+html.motion-reduced [data-motion] * {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Decorative-only fx (parallax/tilt/magnetic/cursor) get a dedicated flag
+   so they can be disabled on touch/save-data even when reduced-motion is
+   NOT set, without affecting base reveal animations. */
+html.motion-fx-off [data-motion-fx] {
+  transform: none !important;
+}
+
+/* Respect OS-level setting even before JS runs (belt & suspenders) */
+@media (prefers-reduced-motion: reduce) {
+  [data-motion],
+  [data-motion] * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   Stage 2: Global Components
+   --------------------------------------------------------------------------
+   GSAP sets initial hidden state in JS (gsap.set) right before animating —
+   transform/opacity only, so no layout shift and no CSS hidden-by-default
+   needed for .img-slot / footer themselves (avoids flash-of-hidden-content
+   if a script is slow/blocked).
+   ========================================================================== */
+
+.btn-primary,
+.btn-outline,
+.btn-dark,
+.magnetic {
+  will-change: transform;
+}
+
+/* Burger icon morph — pure CSS driven by .is-open class toggled in navbar.js */
+#burgerBtn span {
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+#burgerBtn.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+#burgerBtn.is-open span:nth-child(2) { opacity: 0; }
+#burgerBtn.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile nav panel base hidden state before JS runs (matches legacy default) */
+#mobileNav { display: none; }
+
+/* Reduced-motion / fx-off safety for Stage 2 additions specifically */
+html.motion-fx-off #heroParallax { transform: none !important; }
+html.motion-reduced .img-slot,
+html.motion-reduced footer { opacity: 1 !important; transform: none !important; }
+
+/* ==========================================================================
+   Stage 3: Package Detail Pages
+   ========================================================================== */
+
+/* Accordion trigger is JS-built (assets/js/motion/package-detail.js); make
+   it obviously interactive and keyboard-focusable. */
+.tl-accordion-trigger { outline-offset: 4px; }
+.tl-accordion-trigger:focus-visible { outline: 2px solid var(--amber); }
+.tl-accordion-head { flex: 1; }
+
+html.motion-fx-off .pkg-hero-bg { transform: none !important; }
+html.motion-reduced .tl-day-accordion,
+html.motion-reduced .inc-item,
+html.motion-reduced .gallery-grid .g-item,
+html.motion-reduced .pkg-sidebar .sidebar-card,
+html.motion-reduced .pkg-hero-bg {
+  opacity: 1 !important;
+  transform: none !important;
+}
+html.motion-reduced .tl-accordion-content { transition: none !important; }
+
+/* ==========================================================================
+   Stage 5: Blog/Journal + Final QA
+   --------------------------------------------------------------------------
+   These targets come from plain CSS classes already defined in journal.css
+   (`.reveal`, `.tilt`, `#cursorDot`, `#cursorRing`), not the `[data-motion]`
+   attribute system, so they need their own explicit reduced-motion /
+   fx-off rules rather than relying on the generic Stage 1 hooks above.
+   ========================================================================== */
+
+html.motion-reduced .reveal {
+  transition: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+html.motion-reduced .blog-hero-img,
+html.motion-reduced .blog-related,
+html.motion-reduced .blog-faq {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Custom cursor: hidden whenever fx are off (touch/reduced-motion/save-data),
+   not just on touch — the pre-existing journal.css media query only covers
+   the touch/narrow-viewport case. */
+html.motion-fx-off #cursorDot,
+html.motion-fx-off #cursorRing {
+  display: none !important;
+}

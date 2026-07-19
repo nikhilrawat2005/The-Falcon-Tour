@@ -24,6 +24,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
 <link href="../assets/css/journal.css" rel="stylesheet"/>
 <link href="../assets/css/package-detail.css" rel="stylesheet"/>
+<link href="../assets/css/motion.css" rel="stylesheet"/>
 </head>
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
@@ -115,7 +116,7 @@
       </div>
       <div class="overview-pill">
         <div class="op-label">Starts At</div>
-        <div class="op-value">?1,50,000</div>
+        <div class="op-value">₹1,50,000</div>
       </div>
     </div>
   </div>
@@ -294,31 +295,31 @@
             <h3>What's Included <span class="badge badge-green">Inclusions</span></h3>
             <div class="inc-list">
               <div class="inc-item">
-                <span class="inc-icon inc-icon-yes">?</span>
+                <span class="inc-icon inc-icon-yes">✓</span>
                 Return international airfare (economy class)
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-yes">?</span>
+                <span class="inc-icon inc-icon-yes">✓</span>
                 8 nights accommodation in premium hotels & Ryokan
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-yes">?</span>
+                <span class="inc-icon inc-icon-yes">✓</span>
                 Daily breakfast & special Japanese farewell dinner
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-yes">?</span>
+                <span class="inc-icon inc-icon-yes">✓</span>
                 7-day JR Pass (Ordinary Car) for high-speed bullet trains
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-yes">?</span>
+                <span class="inc-icon inc-icon-yes">✓</span>
                 Mt. Fuji 5th Station & Lake Ashi cruise entry fees
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-yes">?</span>
+                <span class="inc-icon inc-icon-yes">✓</span>
                 Nara Todai-ji Temple & Osaka Castle entry
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-yes">?</span>
+                <span class="inc-icon inc-icon-yes">✓</span>
                 Private airport & local AC coach transfers
               </div>
             </div>
@@ -327,23 +328,23 @@
             <h3>What's Excluded <span class="badge badge-red">Exclusions</span></h3>
             <div class="inc-list">
               <div class="inc-item">
-                <span class="inc-icon inc-icon-no">?</span>
+                <span class="inc-icon inc-icon-no">✗</span>
                 Japan visa processing fees
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-no">?</span>
+                <span class="inc-icon inc-icon-no">✗</span>
                 Travel insurance (strongly recommended)
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-no">?</span>
+                <span class="inc-icon inc-icon-no">✗</span>
                 Lunches & dinners (except farewell dinner)
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-no">?</span>
+                <span class="inc-icon inc-icon-no">✗</span>
                 teamLab Planets entry tickets (optional)
               </div>
               <div class="inc-item">
-                <span class="inc-icon inc-icon-no">?</span>
+                <span class="inc-icon inc-icon-no">✗</span>
                 Personal expenses, tips & shopping
               </div>
             </div>
@@ -352,11 +353,18 @@
 
       </div>
 
+      
+        <!-- IMPORTANT NOTE -->
+        <div style="margin-top:40px;padding:20px 24px;background:rgba(217,164,65,.07);border:1px solid rgba(217,164,65,.25);border-radius:6px;">
+          <p style="margin:0;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:10px;">Important Note</p>
+          <p style="margin:0;font-size:13.5px;color:var(--text-mute);line-height:1.75;">The prices mentioned are starting prices and are for reference purposes only. They are based on current market rates for 3&#9733;/4&#9733; hotels on a double-sharing basis and may vary due to hotel availability, peak-season surcharges, transportation costs, exchange rate fluctuations, government taxes, or supplier price revisions. The final package price will be confirmed only after booking confirmation and receipt of the advance payment.</p>
+        </div>
+
       <!-- RIGHT COLUMN (STICKY SIDEBAR) -->
       <div class="pkg-sidebar">
         <div class="sidebar-card">
           <div class="sidebar-price-label">Starting Price</div>
-          <div class="sidebar-price">?1,50,000</div>
+          <div class="sidebar-price">₹1,50,000</div>
           <div class="sidebar-price-note">Per Person / Twin Sharing Basis</div>
           
           <div class="sidebar-divider"></div>
@@ -540,6 +548,15 @@
     document.getElementById('lightboxOverlay').classList.remove('open');
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="../assets/js/motion/gsap-init.js"></script>
+<script src="../assets/js/motion/navbar.js"></script>
+<script src="../assets/js/motion/footer.js"></script>
+<script src="../assets/js/motion/buttons.js"></script>
+<script src="../assets/js/motion/images.js"></script>
+<script src="../assets/js/motion/counters.js"></script>
+<script src="../assets/js/motion/package-detail.js"></script>
 </body>
 </html>
 
