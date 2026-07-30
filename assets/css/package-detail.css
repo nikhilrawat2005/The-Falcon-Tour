@@ -1,11 +1,11 @@
 /* ================================================================
-   PACKAGE DETAIL PAGE � The Falcon Tour
+   PACKAGE DETAIL PAGE • The Falcon Tour
    Shared stylesheet for all 5 NexusDMC package pages
    ================================================================ */
 
 :root {
   --pkg-hero-h: min(92vh, 720px);
-  --timeline-line: rgba(217,164,65,.35);
+  --timeline-line: rgba(212,175,55,.25);
 }
 
 .pkg-hero {
@@ -22,13 +22,13 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 8s ease;
+  transition: transform 8s cubic-bezier(0.25, 1, 0.5, 1);
 }
 .pkg-hero:hover .pkg-hero-bg { transform: scale(1.04); }
 .pkg-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(217,164,65,.08) 0%, rgba(19,27,34,.62) 50%, rgba(19,27,34,.98) 100%);
+  background: linear-gradient(180deg, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.6) 50%, #0A0A0A 100%);
 }
 .pkg-hero-content {
   position: relative;
@@ -53,20 +53,20 @@
   letter-spacing: .12em;
   text-transform: uppercase;
   color: var(--amber);
-  background: rgba(217,164,65,.15);
-  border: 1px solid rgba(217,164,65,.35);
+  background: rgba(212,175,55,.1);
+  border: 1px solid rgba(212,175,55,.3);
   padding: 5px 14px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 .pkg-tag.pkg-tag-white {
-  color: rgba(243,238,225,.85);
-  background: rgba(243,238,225,.08);
-  border-color: rgba(243,238,225,.22);
+  color: var(--cream);
+  background: rgba(245,245,244,.08);
+  border-color: rgba(245,245,244,.2);
 }
 .pkg-hero-content h1 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: clamp(38px, 5.5vw, 74px);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--cream);
   line-height: 1.05;
   letter-spacing: -.02em;
@@ -88,7 +88,7 @@
   align-items: center;
   gap: 7px;
   font-size: 14px;
-  color: rgba(243,238,225,.75);
+  color: rgba(245,245,244,.75);
   font-family: 'Manrope', sans-serif;
 }
 .pkg-hero-meta svg {
@@ -100,45 +100,45 @@
 
 .pkg-body-layout {
   display: grid;
-  grid-template-columns: 1fr 360px;
-  gap: 60px;
+  grid-template-columns: 1fr minmax(280px, 360px);
+  gap: clamp(24px, 4.5vw, 60px);
   align-items: start;
 }
 @media (max-width: 1060px) {
   .pkg-body-layout { grid-template-columns: 1fr; }
-  .pkg-sidebar { order: -1; }
 }
 
-.pkg-section { padding: 80px 0; }
+.pkg-section { padding: clamp(40px, 7vw, 80px) 0; }
 .pkg-section + .pkg-section { padding-top: 0; }
 
 .overview-strip {
-  background: var(--ink);
+  background: var(--ink-2);
   padding: 36px 0;
+  border-bottom: 1px solid rgba(212,175,55,.12);
 }
 .overview-pills {
   display: flex;
   gap: 0;
   flex-wrap: wrap;
-  border-left: 1px solid rgba(243,238,225,.08);
+  border-left: 1px solid rgba(245,245,244,.08);
 }
 .overview-pill {
   flex: 1 1 160px;
   padding: 22px 28px;
-  border-right: 1px solid rgba(243,238,225,.08);
-  border-top: 1px solid rgba(243,238,225,.08);
-  border-bottom: 1px solid rgba(243,238,225,.08);
+  border-right: 1px solid rgba(245,245,244,.08);
+  border-top: 1px solid rgba(245,245,244,.08);
+  border-bottom: 1px solid rgba(245,245,244,.08);
 }
 .overview-pill .op-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: rgba(243,238,225,.45);
+  color: rgba(245,245,244,.45);
   margin-bottom: 6px;
 }
 .overview-pill .op-value {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 20px;
   color: var(--cream);
   font-weight: 500;
@@ -167,12 +167,12 @@
   flex-shrink: 0;
   position: relative;
   z-index: 1;
-  box-shadow: 0 0 0 4px rgba(217,164,65,.18);
+  box-shadow: 0 0 0 4px rgba(212,175,55,.18);
   transition: transform .25s, box-shadow .25s;
 }
 .tl-day:hover .tl-num {
   transform: scale(1.08);
-  box-shadow: 0 0 0 8px rgba(217,164,65,.22);
+  box-shadow: 0 0 0 8px rgba(212,175,55,.25);
 }
 .tl-connector {
   width: 1px;
@@ -188,7 +188,7 @@
   font-size: 11px;
   letter-spacing: .12em;
   text-transform: uppercase;
-  color: var(--rust);
+  color: var(--amber);
   margin-bottom: 4px;
   display: flex;
   align-items: center;
@@ -196,16 +196,16 @@
   padding-top: 11px;
 }
 .tl-title {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 22px;
-  color: var(--ink);
+  color: var(--cream);
   font-weight: 500;
   margin-bottom: 10px;
   line-height: 1.2;
 }
 .tl-desc {
   font-size: 15px;
-  color: var(--text-mute);
+  color: var(--cream-2);
   line-height: 1.75;
   margin: 0 0 12px;
 }
@@ -213,26 +213,28 @@
 .tl-hl {
   font-size: 12px;
   font-family: 'JetBrains Mono', monospace;
-  background: var(--cream-2);
-  color: var(--ink);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(212,175,55,.2);
+  color: var(--cream);
   padding: 4px 12px;
-  border-radius: 2px;
+  border-radius: 4px;
   letter-spacing: .04em;
 }
 
 /* Accordion Itinerary Styles */
 .tl-day-accordion {
-  border: 1px solid var(--line);
+  border: 1px solid rgba(212,175,55,0.15);
   background: rgba(255, 255, 255, 0.02);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 18px 24px;
   margin-bottom: 12px;
   cursor: pointer;
-  transition: background 0.25s ease, border-color 0.25s ease;
+  transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 .tl-day-accordion:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
   border-color: var(--amber);
+  box-shadow: 0 4px 20px rgba(212,175,55,0.1);
 }
 .tl-accordion-trigger {
   display: flex;
@@ -244,8 +246,6 @@
   height: 0;
   opacity: 0;
   margin-top: 0;
-  /* height/opacity are driven by GSAP (assets/js/motion/package-detail.js);
-     this transition is a no-JS / no-GSAP fallback only. */
   transition: opacity 0.3s ease, margin-top 0.3s ease;
 }
 .tl-day-accordion.is-expanded .tl-accordion-content {
@@ -257,22 +257,22 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(212,175,55,0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-mute);
+  color: var(--amber);
   font-size: 16px;
   font-family: 'JetBrains Mono', monospace;
   transition: transform 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
 .tl-day-accordion:hover .tl-accordion-icon {
-  color: var(--amber);
+  color: var(--cream);
   border-color: var(--amber);
 }
 .tl-day-accordion.is-expanded .tl-accordion-icon {
   transform: rotate(45deg);
-  color: var(--amber);
+  color: var(--cream);
   border-color: var(--amber);
 }
 
@@ -280,7 +280,7 @@
 @media (max-width: 700px) { .inc-exc { grid-template-columns: 1fr; } }
 .inc-col h3 {
   font-size: 16px;
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   margin-bottom: 18px;
   display: flex;
   align-items: center;
@@ -290,11 +290,11 @@
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
   padding: 3px 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   letter-spacing: .08em;
   text-transform: uppercase;
 }
-.inc-col h3 .badge-green { background: rgba(62,86,65,.12); color: var(--forest); }
+.inc-col h3 .badge-green { background: rgba(46,204,113,.12); color: var(--success); }
 .inc-col h3 .badge-red { background: rgba(193,96,43,.12); color: var(--rust); }
 .inc-list { display: flex; flex-direction: column; gap: 12px; }
 .inc-item {
@@ -302,7 +302,7 @@
   align-items: flex-start;
   gap: 12px;
   font-size: 14.5px;
-  color: var(--text-dark);
+  color: var(--cream-2);
   line-height: 1.6;
 }
 .inc-icon {
@@ -315,24 +315,24 @@
   flex-shrink: 0;
   margin-top: 2px;
 }
-.inc-icon-yes { background: rgba(62,86,65,.15); color: var(--forest); }
+.inc-icon-yes { background: rgba(46,204,113,.15); color: var(--success); }
 .inc-icon-no  { background: rgba(193,96,43,.12); color: var(--rust); }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 240px;
-  gap: 10px;
+  gap: 12px;
 }
-.gallery-grid .g-item { overflow: hidden; border-radius: 4px; cursor: zoom-in; }
+.gallery-grid .g-item { overflow: hidden; border-radius: 8px; border: 1px solid rgba(212,175,55,0.15); cursor: zoom-in; }
 .gallery-grid .g-item:first-child { grid-column: span 2; grid-row: span 2; }
 .gallery-grid .g-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform .5s cubic-bezier(.4,0,.2,1);
+  transition: transform .6s cubic-bezier(.25,1,.5,1);
 }
-.gallery-grid .g-item:hover img { transform: scale(1.06); }
+.gallery-grid .g-item:hover img { transform: scale(1.05); }
 @media (max-width: 640px) {
   .gallery-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 180px; }
   .gallery-grid .g-item:first-child { grid-column: span 2; grid-row: span 1; }
@@ -340,24 +340,25 @@
 
 .pkg-sidebar { position: sticky; top: 110px; }
 .sidebar-card {
-  background: var(--ink);
-  border-radius: 10px;
+  background: var(--ink-2);
+  border-radius: 12px;
   padding: 32px 28px;
   color: var(--cream);
-  box-shadow: 0 24px 60px rgba(19,27,34,.22);
+  border: 1px solid rgba(212,175,55,0.25);
+  box-shadow: 0 24px 60px rgba(10,10,10,.6);
 }
 .sidebar-price-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: rgba(243,238,225,.45);
+  color: rgba(245,245,244,.45);
   margin-bottom: 6px;
 }
 .sidebar-price {
-  font-family: 'Fraunces', serif;
+  font-family: 'Playfair Display', serif;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--amber);
   line-height: 1;
   margin-bottom: 4px;
@@ -365,11 +366,11 @@
 .sidebar-price sup { font-size: 22px; vertical-align: super; }
 .sidebar-price-note {
   font-size: 12px;
-  color: rgba(243,238,225,.45);
+  color: rgba(245,245,244,.45);
   margin-bottom: 24px;
   font-family: 'JetBrains Mono', monospace;
 }
-.sidebar-divider { height: 1px; background: rgba(243,238,225,.1); margin: 24px 0; }
+.sidebar-divider { height: 1px; background: rgba(212,175,55,.15); margin: 24px 0; }
 .sidebar-meta-row {
   display: flex;
   align-items: center;
@@ -378,7 +379,7 @@
   font-size: 13.5px;
 }
 .sidebar-meta-row .sm-label {
-  color: rgba(243,238,225,.5);
+  color: rgba(245,245,244,.5);
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px;
   letter-spacing: .06em;
@@ -389,11 +390,11 @@
 .sidebar-trust {
   margin-top: 20px;
   padding: 16px;
-  background: rgba(217,164,65,.07);
-  border: 1px solid rgba(217,164,65,.2);
+  background: rgba(212,175,55,.05);
+  border: 1px solid rgba(212,175,55,.2);
   border-radius: 6px;
   font-size: 12px;
-  color: rgba(243,238,225,.6);
+  color: rgba(245,245,244,.6);
   text-align: center;
   line-height: 1.6;
 }
@@ -496,11 +497,11 @@
    Part 3 — shared package-detail component classes
    (previously duplicated as inline styles across all 32 detail pages)
    ========================================================================== */
-.pkg-section-title{font-size:32px;margin-bottom:12px;}
-.pkg-section-subtitle{color:var(--text-mute);margin-bottom:40px;font-size:15px;}
-.pkg-section-alt{background:var(--cream-2);border-top:1px solid rgba(19,27,34,.08);}
-.pkg-section-base{background:var(--cream);}
-.btn-on-dark{border-color:rgba(243,238,225,.3);color:var(--cream);}
+.pkg-section-title{font-size:32px;margin-bottom:12px;color:var(--cream);}
+.pkg-section-subtitle{color:var(--cream-2);margin-bottom:40px;font-size:15px;}
+.pkg-section-alt{background:var(--ink-2);border-top:1px solid rgba(212,175,55,.15);}
+.pkg-section-base{background:var(--ink);color:var(--cream);}
+.btn-on-dark{border-color:rgba(245,245,244,.3);color:var(--cream);}
 
 .pkg-footer{background:var(--ink-2);color:var(--cream);padding:40px 0;border-top:1px solid rgba(255,255,255,.05);}
 .pkg-footer-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}

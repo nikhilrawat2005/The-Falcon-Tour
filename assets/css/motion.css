@@ -120,3 +120,20 @@ html.motion-fx-off #cursorDot,
 html.motion-fx-off #cursorRing {
   display: none !important;
 }
+
+/* ==========================================================================
+   Letter-Reveal Headings System
+   ========================================================================== */
+.char-reveal {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(18px) rotateX(-45deg);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  will-change: opacity, transform;
+}
+.is-visible .char-reveal,
+.char-reveal.is-in-view {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg);
+}
+

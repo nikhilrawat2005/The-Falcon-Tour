@@ -23,9 +23,10 @@
     font-family: 'Manrope', sans-serif;
   }
   .admin-wrap {
-    max-width: 1200px;
-    margin: 120px auto 60px;
-    padding: 0 24px;
+    max-width: min(94vw, 1440px);
+    margin: clamp(80px, 10vw, 140px) auto 60px;
+    padding: 0 var(--gutter);
+    width: 100%;
   }
   .admin-header {
     display: flex;
@@ -45,16 +46,19 @@
   }
   .admin-title h1 {
     font-family: 'Fraunces', serif;
-    font-size: 38px;
+    font-size: clamp(26px, 4vw, 42px);
     margin: 0;
   }
   .logo-admin .logo-text{font-size:0;line-height:1;}
   .logo-admin .logo-text small{font-size:9px;display:block;line-height:normal;margin-top:6px;}
   .admin-grid {
     display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 32px;
+    grid-template-columns: minmax(220px, 260px) 1fr;
+    gap: clamp(20px, 3vw, 36px);
     align-items: start;
+  }
+  @media (max-width: 860px) {
+    .admin-grid { grid-template-columns: 1fr; }
   }
   .admin-sidebar {
     background: rgba(255, 255, 255, 0.02);

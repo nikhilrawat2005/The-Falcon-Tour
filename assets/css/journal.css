@@ -1,37 +1,76 @@
 
   :root{
-    --ink:#131B22;
-    --ink-2:#1B2530;
-    --cream:#F3EEE1;
-    --cream-2:#EAE2CE;
-    --amber:#D9A441;
-    --amber-2:#F0C070;
+    --ink:#0A0A0A;
+    --ink-2:#111827;
+    --charcoal:#1C1C1C;
+    --cream:#F5F5F4;
+    --cream-2:#E5E5E5;
+    --amber:#D4AF37;
+    --amber-2:#E4C462;
+    --success:#2ECC71;
     --rust:#C1602B;
     --slate:#46607A;
     --forest:#3E5641;
     --text-dark:#1B1F23;
     --text-mute:#5B6570;
-    --line: rgba(19,27,34,.12);
-    --line-light: rgba(243,238,225,.18);
+    --line: rgba(10,10,10,.12);
+    --line-light: rgba(245,245,244,.14);
     /* Shape Consistency Lock: cards=6px, pills=30px, buttons=4px, inputs=4px */
     --radius-card: 6px;
     --radius-pill: 30px;
     --radius-btn: 4px;
     --radius-input: 4px;
-    --maxw: 1240px;
+    
+    /* Fluid Container & Responsive Spacing Token Architecture */
+    --maxw: min(94vw, 1440px);
+    --gutter: clamp(16px, 3.5vw, 48px);
+    
+    /* Fluid Spacing Scale */
+    --space-xs: clamp(6px, 1vw, 12px);
+    --space-sm: clamp(10px, 1.5vw, 18px);
+    --space-md: clamp(16px, 2.5vw, 32px);
+    --space-lg: clamp(24px, 3.8vw, 48px);
+    --space-xl: clamp(36px, 5.5vw, 72px);
+    --space-2xl: clamp(48px, 7.5vw, 96px);
+    --space-3xl: clamp(64px, 9.5vw, 128px);
+    
+    /* Fluid Typography Engine Scale */
+    --font-h1: clamp(36px, 6.5vw, 96px);
+    --font-h2: clamp(26px, 4.2vw, 54px);
+    --font-h3: clamp(20px, 2.5vw, 32px);
+    --font-h4: clamp(17px, 1.8vw, 24px);
+    --font-body: clamp(14px, 1.1vw, 16px);
+    --font-eyebrow: clamp(10px, 0.9vw, 11.5px);
   }
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  /* ===== DOUBLE SCROLLBAR PERMANENT FIX =====
+     The ONLY correct scroll architecture on Windows Chrome/Edge:
+     - html: clips horizontally, allows vertical scroll naturally
+     - body: position:relative creates the stacking context for fixed children
+     - NO overflow on body (body overflow + html scroll = double bar)
+  ============================================ */
+  html{
+    scroll-behavior:smooth;
+    overflow-x:clip; /* clip is safer than hidden — no stacking context side-effect */
+  }
   body{
     margin:0;
     background:var(--cream);
     color:var(--text-dark);
     font-family:'Manrope',sans-serif;
-    font-size:16px;
+    font-size:var(--font-body);
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
+    position:relative;
+    /* overflow must NOT be set on body — that creates a second scroll root */
   }
-  img{max-width:100%;display:block;}
+  /* Belt-and-suspenders: block anything from ever overflowing horizontally */
+  *{ max-width:100%; }
+  /* Exceptions: fixed/absolute positioned elements and flex/grid parents */
+  [style*="position:fixed"],[style*="position: fixed"],
+  .wrap, header, .modal-wrap, #storyModal, #authModal, #inquiryModal,
+  .mobile-nav-panel { max-width:none; }
+  img{max-width:100%;height:auto;display:block;}
   a{color:inherit;text-decoration:none;}
   ul{margin:0;padding:0;list-style:none;}
   /* Headings: Fraunces is the brand choice — preserved as a justified editorial serif for this heritage travel brand */
@@ -44,7 +83,12 @@
     padding-bottom:3px;
     margin-bottom:-3px;
   }
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
+  .wrap{
+    max-width:var(--maxw);
+    margin:0 auto;
+    padding:0 var(--gutter);
+    width:100%;
+  }
   .eyebrow{
     font-family:'JetBrains Mono',monospace;
     font-size:11px;
@@ -251,15 +295,19 @@
 
   /* ===== SCROLL PROGRESS — CSS scroll-driven animation (no JS scroll listener) ===== */
   .scroll-progress{
-    position:fixed;top:0;left:0;height:3px;
+    position:fixed;
+    top:0;left:0;right:0; /* right:0 ensures it never adds width beyond viewport */
+    height:3px;
     background:linear-gradient(90deg,var(--amber),var(--amber-2));
     z-index:999;
-    width:100%;
+    width:100%; /* 100% of viewport, not 100vw */
     transform-origin:left;
     transform:scaleX(0);
     animation:scroll-progress-anim linear both;
     animation-timeline:scroll();
     box-shadow:0 0 10px rgba(217,164,65,.5);
+    /* Prevent this fixed bar from contributing to scroll width */
+    pointer-events:none;
   }
   @keyframes scroll-progress-anim{
     from{transform:scaleX(0);}
@@ -298,8 +346,18 @@
   .marquee-track span::after{content:"/";color:var(--amber);opacity:.7;font-weight:300;}
   @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 
-  /* ===== GRAIN OVERLAY ===== */
-  .grain{position:fixed;inset:0;z-index:1000;pointer-events:none;opacity:.03;mix-blend-mode:overlay;
+  /* ===== GRAIN OVERLAY =====
+     Using position:fixed with width/height instead of inset:0.
+     On Windows Chrome, `inset:0` on fixed elements can cause the browser
+     to recalculate scrollbar width, triggering a second scrollbar. */
+  .grain{
+    position:fixed;
+    top:0;left:0;
+    width:100%;height:100%;
+    z-index:1000;
+    pointer-events:none;
+    opacity:.03;
+    mix-blend-mode:overlay;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
@@ -389,7 +447,8 @@
     font-size:18px;
     color:var(--cream);
   }
-  .logo-text{font-family:'Fraunces',serif;font-size:22px;color:var(--cream);line-height:1.05;letter-spacing:-.01em;white-space:nowrap;}
+  .logo-text{font-family:'Playfair Display',serif;font-size:22px;color:var(--cream);line-height:1.05;letter-spacing:-.01em;white-space:nowrap;}
+  .logo-title{white-space:nowrap;}
   .logo-text em{font-style:italic;color:var(--amber);}
   .logo-text small{
     display:block;
@@ -425,15 +484,24 @@
   /* ===== HERO ===== */
   .hero{
     position:relative;
-    min-height:100dvh; /* iOS Safari viewport stability */
+    /* width must be exactly 100% of its parent — never wider */
+    width:100%;
+    max-width:100%;
+    /* Use 100vh for desktop Windows (no dvh overflow bug).
+       @supports block below applies dvh only for iOS Safari where it's needed. */
+    min-height:100vh;
     display:flex;flex-direction:column;justify-content:flex-end;
     color:var(--cream);
-    overflow:visible;
+    overflow:hidden;
   }
-  .hero .img-slot{position:absolute;inset:0;z-index:0;border:none;overflow:hidden;}
+  @supports (min-height: 100dvh) and (not (-webkit-touch-callout: none)) {
+    /* dvh only for non-iOS devices (Firefox/Chrome on Android) */
+    .hero { min-height: 100dvh; }
+  }
+  .hero .img-slot{position:absolute;inset:0;z-index:0;border:none;overflow:hidden;width:100%;height:100%;}
   .hero::after{
     content:"";position:absolute;inset:0;
-    background:linear-gradient(180deg, rgba(19,27,34,.3) 0%, rgba(19,27,34,.1) 28%, rgba(19,27,34,.88) 100%);
+    background:linear-gradient(180deg, rgba(8,12,16,.55) 0%, rgba(8,12,16,.08) 35%, rgba(8,12,16,.82) 100%);
     z-index:1;
   }
   /* Hero top padding: max 96px per SKILL.md cap */
@@ -710,8 +778,13 @@
   .foot-bottom{
     margin-top:56px;padding-top:22px;border-top:1px solid var(--line-light);
     display:flex;justify-content:space-between;font-size:12px;color:rgba(243,238,225,.45);
-    font-family:'JetBrains Mono',monospace;flex-wrap:wrap;gap:8px;
+    font-family:'JetBrains Mono',monospace;flex-wrap:wrap;gap:8px 24px;
   }
+  .foot-terms-link{
+    color:rgba(243,238,225,.45);font-size:12px;font-family:'JetBrains Mono',monospace;
+    letter-spacing:.03em;transition:color .2s ease;
+  }
+  .foot-terms-link:hover{color:var(--amber);}
 
   /* ===== WHATSAPP FLOAT ===== */
   .wa-float{
@@ -794,7 +867,7 @@ nav.mainnav a.active::after{width:100%;}
 
 .post-body{padding:96px 0 40px;}
 .post-wrap{max-width:800px;}
-.post-lede{font-family:'Fraunces',serif;font-size:22px;line-height:1.55;font-weight:400;font-style:italic;color:var(--ink);margin-bottom:48px;border-left:3px solid var(--amber);padding-left:24px;}
+.post-lede{font-family:'Playfair Display',serif;font-size:22px;line-height:1.55;font-weight:400;font-style:italic;color:var(--ink);margin-bottom:48px;border-left:3px solid var(--amber);padding-left:24px;}
 .post-section{margin-bottom:48px;}
 .post-section h2{font-size:clamp(24px,3vw,32px);margin-bottom:16px;}
 .post-section h2 em{color:var(--amber);font-style:italic;}
@@ -904,7 +977,7 @@ nav.mainnav a.active::after{width:100%;}
 .dp-sidebar{position:sticky;top:106px;align-self:start;}
 .sb-card{background:var(--ink);color:var(--cream);border-radius:var(--radius-card);padding:28px 24px;margin-bottom:18px;}
 .sb-card h4{color:var(--amber);font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-family:'JetBrains Mono',monospace;margin-bottom:14px;}
-.sb-card .price{font-family:'Fraunces',serif;font-size:30px;color:var(--cream);}
+.sb-card .price{font-family:'Playfair Display',serif;font-size:30px;color:var(--cream);}
 .sb-card .price small{font-family:'Manrope',sans-serif;font-size:12px;color:rgba(243,238,225,.52);}
 .sb-card p{color:rgba(243,238,225,.62);font-size:13px;margin:10px 0 18px;line-height:1.6;}
 .sb-list{background:var(--cream-2);border-radius:var(--radius-card);padding:24px;}
@@ -938,7 +1011,7 @@ nav.mainnav a.active::after{width:100%;}
 .ap-facts strong{display:block;font-family:'JetBrains Mono',monospace;font-size:10.5px;text-transform:uppercase;color:var(--text-mute);margin-bottom:6px;}
 .ap-facts span{font-size:15px;color:var(--ink);font-weight:600;}
 .faq-item{border-bottom:1px solid var(--line);padding:16px 0;}
-.faq-item summary{cursor:pointer;font-family:'Fraunces',serif;font-size:17px;list-style:none;display:flex;justify-content:space-between;align-items:center;}
+.faq-item summary{cursor:pointer;font-family:'Playfair Display',serif;font-size:17px;list-style:none;display:flex;justify-content:space-between;align-items:center;}
 .faq-item summary::-webkit-details-marker{display:none;}
 .faq-item summary::after{content:"+";font-family:'JetBrains Mono',monospace;font-size:20px;color:var(--amber);}
 .faq-item[open] summary::after{content:"−";}
@@ -961,9 +1034,30 @@ nav.mainnav a.active::after{width:100%;}
 /* ==========================================================================
    Part 5 — sitewide utility classes (mobile nav + common one-offs)
    ========================================================================== */
-.mobile-nav-panel{display:none;position:fixed;inset:0;z-index:99;background:#131B22;padding:112px 32px 40px;}
-.mobile-nav-list{display:flex;flex-direction:column;gap:24px;}
-.mobile-nav-link{color:#F3EEE1;font-family:'Fraunces',serif;font-size:24px;transition:color .2s;}
+.mobile-nav-panel{
+  display:none;position:fixed;inset:0;z-index:99;
+  background:var(--ink);padding:120px 32px 40px;
+  border-left:1px solid rgba(212,175,55,.1);
+}
+.mobile-nav-panel.is-open .mobile-nav-link{opacity:1;transform:translateY(0);}
+.mobile-nav-list{display:flex;flex-direction:column;gap:8px;list-style:none;margin:0;padding:0;}
+.mobile-nav-list li{border-bottom:1px solid rgba(245,245,244,.08);}
+.mobile-nav-list li:first-child{border-top:1px solid rgba(245,245,244,.08);}
+.mobile-nav-link{
+  display:flex;align-items:baseline;gap:16px;
+  padding:22px 2px;color:var(--cream);
+  font-family:'Playfair Display',serif;font-size:clamp(28px,7vw,40px);
+  transition:color .3s ease, opacity .5s ease, transform .5s ease;
+  opacity:0;transform:translateY(14px);
+}
+.mobile-nav-list li:nth-child(1) .mobile-nav-link{transition-delay:.05s;}
+.mobile-nav-list li:nth-child(2) .mobile-nav-link{transition-delay:.12s;}
+.mobile-nav-list li:nth-child(3) .mobile-nav-link{transition-delay:.19s;}
+.mobile-nav-list li:nth-child(4) .mobile-nav-link{transition-delay:.26s;}
+.mobile-nav-link .idx{
+  font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.06em;
+  color:var(--amber);
+}
 .mobile-nav-link:hover{color:var(--amber);}
 .text-amber{color:var(--amber);}
 .btn-full-center{width:100%;justify-content:center;}
@@ -1107,3 +1201,118 @@ nav.mainnav a.active::after{width:100%;}
 .social-info p { margin: 0; font-size: 11.5px; color: rgba(243, 238, 225, 0.56); font-family: 'JetBrains Mono', monospace; }
 .social-action-arrow { font-size: 15px; color: var(--amber); transition: transform 0.2s; }
 .social-item:hover .social-action-arrow { transform: translateX(3px); }
+
+/* ==========================================================================
+   Part 6 — Destination Page Dark-Gold Luxury Upgrade
+   Applied via .dp-* modifier classes added by upgrade_destinations.py
+   ========================================================================== */
+
+/* Hero eyebrow */
+.dp-eyebrow {
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  font-size: 10.5px;
+  letter-spacing: .18em;
+  color: var(--amber);
+}
+
+/* Glassmorphic stat pills bar */
+.dp-stats-bar {
+  margin-top: 28px;
+}
+.dp-stats-bar .dp-stats {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  background: rgba(10,10,10,0.55);
+  border: 1px solid rgba(212,175,55,0.22);
+  border-radius: 8px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow: hidden;
+}
+.dp-stats-bar .dp-stats > div {
+  flex: 1 1 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px 24px;
+  border-right: 1px solid rgba(212,175,55,0.14);
+  gap: 4px;
+}
+.dp-stats-bar .dp-stats > div:last-child { border-right: none; }
+.dp-stats-bar .dp-stats strong {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  color: var(--amber);
+  font-weight: 600;
+}
+.dp-stats-bar .dp-stats span {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: rgba(245,245,244,0.5);
+}
+
+/* Dark body section */
+.dp-body-dark {
+  background: var(--ink);
+  color: var(--cream);
+}
+.dp-body-dark h2 {
+  color: var(--cream);
+}
+.dp-body-dark p {
+  color: rgba(245,245,244,0.78);
+}
+.dp-overview-dark p {
+  color: rgba(245,245,244,0.78) !important;
+}
+.dp-overview-dark h2 {
+  color: var(--cream);
+}
+
+/* Dark highlights list */
+.dp-highlights-dark li {
+  background: rgba(212,175,55,0.06);
+  border: 1px solid rgba(212,175,55,0.18);
+  color: rgba(245,245,244,0.88);
+}
+.dp-highlights-dark li::before {
+  background: var(--amber);
+}
+
+/* Dark itin timeline */
+.itin-day-dark {
+  border-left-color: rgba(212,175,55,0.25);
+}
+.itin-day-dark::before {
+  background: var(--amber);
+  border-color: var(--ink);
+}
+.itin-day-dark h4 { color: var(--cream); }
+.itin-day-dark p  { color: rgba(245,245,244,0.6); }
+.itin-day-dark .day-num { color: var(--amber); }
+
+/* Dark review cards */
+.review-card-dark {
+  background: var(--ink-2) !important;
+  border: 1px solid rgba(212,175,55,0.15) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+.review-card-dark p  { color: var(--cream) !important; }
+.review-card-dark .who { color: rgba(245,245,244,0.5) !important; }
+
+/* Dark sidebar list */
+.sb-list-dark {
+  background: var(--ink-2) !important;
+  border: 1px solid rgba(212,175,55,0.15) !important;
+}
+.sb-list-dark h4 { color: var(--amber) !important; }
+.sb-list-dark a  { color: rgba(245,245,244,0.72) !important; border-bottom-color: rgba(212,175,55,0.12) !important; }
+.sb-list-dark a:hover { color: var(--amber) !important; }
+
+@media (max-width: 620px) {
+  .dp-stats-bar .dp-stats > div { flex: 1 1 50%; }
+}
+
