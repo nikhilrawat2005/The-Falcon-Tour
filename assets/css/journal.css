@@ -1108,6 +1108,28 @@ nav.mainnav a.active::after{width:100%;}
   box-shadow: 0 0 0 3px rgba(217, 164, 65, 0.15);
 }
 
+/* ===== MOST-READ TAG LINKS (homepage) ===== */
+.tag-link {
+  display: inline-block;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(19, 27, 34, 0.16);
+  background: rgba(255, 255, 255, 0.65);
+  font-family: 'Manrope', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink, #131B22);
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+.tag-link:hover {
+  background: var(--amber, #D9A441);
+  border-color: var(--amber, #D9A441);
+  color: #131B22;
+  transform: translateY(-2px);
+}
+
+
 /* ===== SOCIAL CONTACT MODAL (shared) ===== */
 .social-modal-overlay {
   display: none;

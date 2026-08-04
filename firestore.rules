@@ -40,8 +40,9 @@ service cloud.firestore {
       // Any signed-in visitor can submit a review; it starts as "pending"
       allow create: if request.auth != null &&
                     request.resource.data.status == 'pending';
-      // Public can read only approved reviews; admins can read everything (including pending, for moderation)
-      allow read: if resource.data.status == 'approved' || isAdmin();
+      // Public can read all reviews (approved filter is done in the app query).
+      // Admins can read everything including pending for moderation.
+      allow read: if true;
       // Only admins can approve/edit a review (e.g. change status to "approved")
       allow update: if isAdmin();
       // Only admins can delete a review

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>404 — Lost in Flight | The Falcon Tour</title>
+<link href="assets/images/logo.png" rel="icon" type="image/png"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="assets/css/journal.css" rel="stylesheet"/>
+<link href="assets/css/home.css" rel="stylesheet"/>
+<style>
+  body {
+    background: var(--ink);
+    color: var(--cream);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .error-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 40%, rgba(217,164,65,0.08), transparent 70%);
+    pointer-events: none;
+  }
+  .error-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(80px, 14vw, 160px);
+    font-weight: 700;
+    color: var(--amber);
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin: 0;
+    opacity: 0.85;
+    text-shadow: 0 0 40px rgba(217,164,65,0.2);
+  }
+  .error-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 44px);
+    margin: 16px 0 12px;
+  }
+  .error-desc {
+    font-family: 'Manrope', sans-serif;
+    color: rgba(243, 238, 225, 0.65);
+    max-width: 460px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 auto 32px;
+  }
+</style>
+</head>
+<body>
+<div class="error-bg"></div>
+<div class="grain"></div>
+
+<div style="position:relative; z-index:2;">
+  <a href="index.html" style="display:inline-block; margin-bottom:24px;">
+    <img width="1536" height="1024" src="assets/images/logo.png" alt="The Falcon Tour" style="height:48px; width:48px;"/>
+  </a>
+  <div class="error-code">404</div>
+  <h1 class="error-title">You've Flown Off the <em>Map</em></h1>
+  <p class="error-desc">
+    The destination or page you're searching for doesn't exist or has taken flight to a new location.
+  </p>
+  <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+    <a href="index.html" class="btn btn-primary">Return to Basecamp &rarr;</a>
+    <a href="packages/index.html" class="btn btn-outline">Explore Packages</a>
+  </div>
+</div>
+</body>
+</html>

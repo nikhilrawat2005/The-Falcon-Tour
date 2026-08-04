@@ -28,10 +28,31 @@
   /* ===== PACKAGES LISTING STYLES ===== */
   .filter-container {
     display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
     margin: 40px 0 50px;
+  }
+  .filter-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .filter-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--text-muted, #888);
+    white-space: nowrap;
+    padding-right: 4px;
+  }
+  .filter-divider {
+    width: 60px;
+    height: 1px;
+    background: rgba(19,27,34,.12);
   }
   .filter-pill {
     font-family: 'JetBrains Mono', monospace;
@@ -321,13 +342,13 @@
 </head>
 <body>
 <div class="scroll-progress" id="scrollProgress"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-<div class="cursor-dot" id="cursorDot"></div>
+
+
 <div class="grain"></div>
 <header class="scrolled" id="siteHeader">
 <div class="wrap">
 <a class="logo" href="../index.html">
-<img alt="The Falcon Tour" class="logo-img" src="../assets/images/logo.png"/>
+<img width="1536" height="1024" alt="The Falcon Tour" class="logo-img" src="../assets/images/logo.png"/>
 <span class="logo-text">The <em>Falcon</em> Tour<small>ADVENTURE &amp; TRAVEL CO.</small></span>
 </a>
 <nav class="mainnav">
@@ -365,18 +386,38 @@
 <div class="wrap">
   
     <div class="filter-container reveal">
-    <button class="filter-pill active" onclick="filterPackages('all', this)">All</button>
-    <button class="filter-pill" onclick="filterPackages('europe', this)">Europe</button>
-    <button class="filter-pill" onclick="filterPackages('scandinavia', this)">Scandinavia</button>
-    <button class="filter-pill" onclick="filterPackages('asia', this)">Asia</button>
-    <button class="filter-pill" onclick="filterPackages('oceania', this)">Oceania</button>
-    <button class="filter-pill" onclick="filterPackages('usa', this)">USA</button>
-    <button class="filter-pill" onclick="filterPackages('dubai', this)">Dubai</button>
-    <button class="filter-pill" onclick="filterPackages('southeast-asia', this)">SE Asia</button>
-    <button class="filter-pill" onclick="filterPackages('sri-lanka', this)">Sri Lanka</button>
-    <button class="filter-pill" onclick="filterPackages('honeymoon', this)">Honeymoon</button>
-    <button class="filter-pill" onclick="filterPackages('adventure', this)">Adventure</button>
-  </div>
+      <div class="filter-group">
+        <span class="filter-label">By Type</span>
+        <button class="filter-pill active" onclick="filterPackages('all', this)">All</button>
+        <button class="filter-pill" onclick="filterPackages('beach', this)">🏝️ Beaches &amp; Islands</button>
+        <button class="filter-pill" onclick="filterPackages('hills', this)">🏔️ Hills &amp; Mountains</button>
+        <button class="filter-pill" onclick="filterPackages('wildlife', this)">🐅 Wildlife &amp; Adventure</button>
+        <button class="filter-pill" onclick="filterPackages('culture', this)">🏛️ Heritage &amp; Cities</button>
+        <button class="filter-pill" onclick="filterPackages('honeymoon', this)">💑 Honeymoon</button>
+      </div>
+      <div class="filter-divider"></div>
+      <div class="filter-group">
+        <span class="filter-label">By Destination</span>
+        <button class="filter-pill" onclick="filterPackages('europe', this)">🇪🇺 Europe</button>
+        <button class="filter-pill" onclick="filterPackages('scandinavia', this)">❄️ Scandinavia</button>
+        <button class="filter-pill" onclick="filterPackages('japan', this)">🇯🇵 Japan</button>
+        <button class="filter-pill" onclick="filterPackages('new-zealand', this)">🇳🇿 New Zealand</button>
+        <button class="filter-pill" onclick="filterPackages('australia', this)">🇦🇺 Australia</button>
+        <button class="filter-pill" onclick="filterPackages('anz-combo', this)">🇦🇺🇳🇿 ANZ Combo</button>
+        <button class="filter-pill" onclick="filterPackages('usa', this)">🇺🇸 USA</button>
+        <button class="filter-pill" onclick="filterPackages('southeast-asia', this)">🇸🇬 SE Asia</button>
+        <button class="filter-pill" onclick="filterPackages('sri-lanka', this)">🇱🇰 Sri Lanka</button>
+        <button class="filter-pill" onclick="filterPackages('dubai', this)">🇦🇪 Dubai</button>
+        <button class="filter-pill" onclick="filterPackages('thailand', this)">🇹🇭 Thailand</button>
+        <button class="filter-pill" onclick="filterPackages('vietnam', this)">🇻🇳 Vietnam</button>
+        <button class="filter-pill" onclick="filterPackages('bali', this)">🇮🇩 Bali</button>
+        <button class="filter-pill" onclick="filterPackages('kerala', this)">🇮🇳 Kerala</button>
+        <button class="filter-pill" onclick="filterPackages('ladakh', this)">🏔️ Ladakh</button>
+        <button class="filter-pill" onclick="filterPackages('kashmir', this)">🌷 Kashmir</button>
+        <button class="filter-pill" onclick="filterPackages('bhutan', this)">🇧🇹 Bhutan</button>
+        <button class="filter-pill" onclick="filterPackages('almaty', this)">🇰🇿 Almaty</button>
+      </div>
+    </div>
 
   <!-- 🇪🇺 Europe & Switzerland Section -->
   <div class="pkg-section-group" id="sec-europe">
@@ -387,7 +428,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-europe">
     <a class="pkg-card-list reveal" data-categories="europe" href="package-essence-of-europe.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Essence of Europe" loading="lazy" src="../assets/images/europe/1.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1063" alt="Essence of Europe" loading="lazy" src="../assets/images/europe/1.jpg"/></div>
       <div class="pkg-days-badge">8D / 7N</div>
       <div class="pkg-region-badge">🇮🇹 🇨🇭 Europe</div>
       <div class="pkg-card-body">
@@ -404,7 +445,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="europe honeymoon" href="package-swiss-paris.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Swiss Paris at a Glance" loading="lazy" src="../assets/images/switzerland/swiss-alps-guide.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1066" alt="Swiss Paris at a Glance" loading="lazy" src="../assets/images/switzerland/swiss-alps-guide.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇨🇭 🇫🇷 Swiss + France</div>
       <div class="pkg-card-body">
@@ -421,7 +462,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="europe" href="package-uk-scotland.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Wonders of UK & Scotland" loading="lazy" src="../assets/images/europe/2.jpg"/></div>
+      <div class="img-slot"><img width="1225" height="1600" alt="Wonders of UK & Scotland" loading="lazy" src="../assets/images/europe/2.jpg"/></div>
       <div class="pkg-days-badge">8D / 7N</div>
       <div class="pkg-region-badge">🇬🇧 UK · Scotland</div>
       <div class="pkg-card-body">
@@ -438,7 +479,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="europe" href="package-grand-european-odyssey.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Grand European Odyssey" loading="lazy" src="../assets/images/europe/3.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1066" alt="Grand European Odyssey" loading="lazy" src="../assets/images/europe/3.jpg"/></div>
       <div class="pkg-days-badge">13D / 12N</div>
       <div class="pkg-region-badge">🇮🇹 🇨🇭 🇫🇷 🇳🇱 Europe</div>
       <div class="pkg-card-body">
@@ -455,7 +496,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="europe" href="package-alpine-elegance-switzerland.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Alpine Elegance Switzerland" loading="lazy" src="../assets/images/switzerland/swiss-alps-guide.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1066" alt="Alpine Elegance Switzerland" loading="lazy" src="../assets/images/switzerland/swiss-alps-guide.jpg"/></div>
       <div class="pkg-days-badge">10D / 9N</div>
       <div class="pkg-region-badge">🇨🇭 Switzerland</div>
       <div class="pkg-card-body">
@@ -483,7 +524,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-scandinavia">
     <a class="pkg-card-list reveal" data-categories="europe scandinavia adventure" href="package-scandinavia-northern-lights.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Discover Scandinavia | Chasing the Northern Lights" loading="lazy" src="../assets/images/europe/northern-lights-guide.jpg"/></div>
+      <div class="img-slot"><img width="713" height="429" alt="Discover Scandinavia | Chasing the Northern Lights" loading="lazy" src="../assets/images/europe/northern-lights-guide.jpg"/></div>
       <div class="pkg-days-badge">9D / 8N</div>
       <div class="pkg-region-badge">🇩🇰 🇳🇴 🇸🇪 🇫🇮 Scandinavia</div>
       <div class="pkg-card-body">
@@ -502,7 +543,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="europe scandinavia" href="package-classic-scandinavia.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Scandinavia | A Journey Through the Nordic World" loading="lazy" src="../assets/images/europe/europe-travel-guide.jpg"/></div>
+      <div class="img-slot"><img width="560" height="373" alt="Classic Scandinavia | A Journey Through the Nordic World" loading="lazy" src="../assets/images/europe/europe-travel-guide.jpg"/></div>
       <div class="pkg-days-badge">10D / 9N</div>
       <div class="pkg-region-badge">🇫🇮 🇸🇪 🇳🇴 🇩🇰 Scandinavia</div>
       <div class="pkg-card-body">
@@ -521,7 +562,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="europe scandinavia adventure" href="package-iceland.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Iceland Signature Journey | Nature's Greatest Masterpiece" loading="lazy" src="../assets/images/iceland/iceland-guide.jpg"/></div>
+      <div class="img-slot"><img width="711" height="431" alt="Iceland Signature Journey | Nature's Greatest Masterpiece" loading="lazy" src="../assets/images/iceland/iceland-guide.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇮🇸 Iceland</div>
       <div class="pkg-card-body">
@@ -540,7 +581,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="europe scandinavia adventure" href="package-scandinavia-unveiled.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Scandinavia Unveiled | Fjords, Mountains &amp; Nordic Wonders" loading="lazy" src="../assets/images/europe/europe-itinerary.jpg"/></div>
+      <div class="img-slot"><img width="554" height="554" alt="Scandinavia Unveiled | Fjords, Mountains &amp; Nordic Wonders" loading="lazy" src="../assets/images/europe/europe-itinerary.jpg"/></div>
       <div class="pkg-days-badge">10D / 9N</div>
       <div class="pkg-region-badge">🇸🇪 🇳🇴 🇩🇰 Sweden, Norway &amp; Denmark</div>
       <div class="pkg-card-body">
@@ -570,7 +611,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-japan">
     <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-japan.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Japan for First Timers" loading="lazy" src="../assets/images/japan/mount-fuji-guide.jpg"/></div>
+      <div class="img-slot"><img width="700" height="438" alt="Japan for First Timers" loading="lazy" src="../assets/images/japan/mount-fuji-guide.jpg"/></div>
       <div class="pkg-days-badge">9D / 8N</div>
       <div class="pkg-region-badge">🇯🇵 Japan · Asia</div>
       <div class="pkg-card-body">
@@ -587,7 +628,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-japan-alpine.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Alpine Majesty: Snow Walls" loading="lazy" src="../assets/images/japan/japan-itinerary.jpg"/></div>
+      <div class="img-slot"><img width="678" height="452" alt="Alpine Majesty: Snow Walls" loading="lazy" src="../assets/images/japan/japan-itinerary.jpg"/></div>
       <div class="pkg-days-badge">10D / 9N</div>
       <div class="pkg-region-badge">🇯🇵 Japan Alpine</div>
       <div class="pkg-card-body">
@@ -604,7 +645,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-journey-through-japan.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Journey Through Japan" loading="lazy" src="../assets/images/japan/cherry-blossom-guide.jpg"/></div>
+      <div class="img-slot"><img width="547" height="365" alt="Journey Through Japan" loading="lazy" src="../assets/images/japan/cherry-blossom-guide.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇯🇵 Japan Grand Tour</div>
       <div class="pkg-card-body">
@@ -621,7 +662,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-japan-first-impressions.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="First Impressions of Japan" loading="lazy" src="../assets/images/japan/tokyo-guide.jpg"/></div>
+      <div class="img-slot"><img width="678" height="452" alt="First Impressions of Japan" loading="lazy" src="../assets/images/japan/tokyo-guide.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇯🇵 Japan Golden Route</div>
       <div class="pkg-card-body">
@@ -638,7 +679,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="asia adventure" href="package-japan-f1-adventure.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="The Ultimate Japan F1 Adventure" loading="lazy" src="../assets/images/japan/osaka-guide.jpg"/></div>
+      <div class="img-slot"><img width="678" height="452" alt="The Ultimate Japan F1 Adventure" loading="lazy" src="../assets/images/japan/osaka-guide.jpg"/></div>
       <div class="pkg-days-badge">9D / 8N</div>
       <div class="pkg-region-badge">🇯🇵 Japan F1</div>
       <div class="pkg-card-body">
@@ -666,7 +707,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-new-zealand">
     <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-new-zealand.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="New Zealand Discovery" loading="lazy" src="../assets/images/new-zealand/queenstown-guide.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="900" alt="New Zealand Discovery" loading="lazy" src="../assets/images/new-zealand/queenstown-guide.jpg"/></div>
       <div class="pkg-days-badge">8D / 7N</div>
       <div class="pkg-region-badge">🇳🇿 New Zealand</div>
       <div class="pkg-card-body">
@@ -683,7 +724,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-new-zealand-uncovered.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="New Zealand Uncovered" loading="lazy" src="../assets/images/new-zealand/auckland-guide.jpg"/></div>
+      <div class="img-slot"><img width="738" height="414" alt="New Zealand Uncovered" loading="lazy" src="../assets/images/new-zealand/auckland-guide.jpg"/></div>
       <div class="pkg-days-badge">12D / 11N</div>
       <div class="pkg-region-badge">🇳🇿 North & South Islands</div>
       <div class="pkg-card-body">
@@ -700,7 +741,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-scenic-new-zealand.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Scenic New Zealand" loading="lazy" src="../assets/images/new-zealand/queenstown-guide.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="900" alt="Scenic New Zealand" loading="lazy" src="../assets/images/new-zealand/queenstown-guide.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇳🇿 New Zealand</div>
       <div class="pkg-card-body">
@@ -717,7 +758,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-new-zealand-shared-journey.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="NZ Scenic Shared Journey" loading="lazy" src="../assets/images/new-zealand/road-trip-guide.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1064" alt="NZ Scenic Shared Journey" loading="lazy" src="../assets/images/new-zealand/road-trip-guide.jpg"/></div>
       <div class="pkg-days-badge">14D / 13N</div>
       <div class="pkg-region-badge">🇳🇿 New Zealand</div>
       <div class="pkg-card-body">
@@ -745,7 +786,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-australia">
     <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-discover-australia.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Discover Australia" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
+      <div class="img-slot"><img width="547" height="365" alt="Discover Australia" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
       <div class="pkg-days-badge">9D / 8N</div>
       <div class="pkg-region-badge">🇦🇺 Australia</div>
       <div class="pkg-card-body">
@@ -762,7 +803,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="oceania honeymoon" href="package-essence-of-australia.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Essence of Australia" loading="lazy" src="../assets/images/australia/australia-honeymoon-guide.jpg"/></div>
+      <div class="img-slot"><img width="678" height="452" alt="Essence of Australia" loading="lazy" src="../assets/images/australia/australia-honeymoon-guide.jpg"/></div>
       <div class="pkg-days-badge">13D / 12N</div>
       <div class="pkg-region-badge">🇦🇺 Australia East & South</div>
       <div class="pkg-card-body">
@@ -779,7 +820,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="oceania" href="package-discover-melbourne.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Discover Melbourne" loading="lazy" src="../assets/images/australia/melbourne-guide.jpg"/></div>
+      <div class="img-slot"><img width="738" height="390" alt="Discover Melbourne" loading="lazy" src="../assets/images/australia/melbourne-guide.jpg"/></div>
       <div class="pkg-days-badge">4D / 3N</div>
       <div class="pkg-region-badge">🇦🇺 Melbourne CBD</div>
       <div class="pkg-card-body">
@@ -796,7 +837,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="oceania" href="package-classic-australia.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Australia Tour" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
+      <div class="img-slot"><img width="547" height="365" alt="Classic Australia Tour" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇦🇺 Sydney & Melbourne</div>
       <div class="pkg-card-body">
@@ -824,7 +865,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-anz-combo">
     <a class="pkg-card-list reveal" data-categories="oceania adventure" href="package-australia-new-zealand-combo.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Discover Australia & NZ" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
+      <div class="img-slot"><img width="547" height="365" alt="Discover Australia & NZ" loading="lazy" src="../assets/images/australia/sydney-guide.jpg"/></div>
       <div class="pkg-days-badge">15D / 14N</div>
       <div class="pkg-region-badge">🇦🇺 🇳🇿 AUS & NZ Combo</div>
       <div class="pkg-card-body">
@@ -852,7 +893,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-usa">
     <a class="pkg-card-list reveal" data-categories="usa adventure" href="package-west-coast-usa.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="West Coast USA Highlights" loading="lazy" src="../assets/images/usa/grand-canyon-guide.jpg"/></div>
+      <div class="img-slot"><img width="515" height="388" alt="West Coast USA Highlights" loading="lazy" src="../assets/images/usa/grand-canyon-guide.jpg"/></div>
       <div class="pkg-days-badge">8D / 7N</div>
       <div class="pkg-region-badge">🇺🇸 USA West Coast</div>
       <div class="pkg-card-body">
@@ -869,7 +910,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="usa adventure" href="package-east-coast-usa.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="East Coast Highlights" loading="lazy" src="../assets/images/usa/new-york-guide.jpg"/></div>
+      <div class="img-slot"><img width="538" height="538" alt="East Coast Highlights" loading="lazy" src="../assets/images/usa/new-york-guide.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇺🇸 USA East Coast</div>
       <div class="pkg-card-body">
@@ -886,7 +927,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="usa adventure" href="package-explore-america.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Explore America" loading="lazy" src="../assets/images/usa/grand-canyon-guide.jpg"/></div>
+      <div class="img-slot"><img width="515" height="388" alt="Explore America" loading="lazy" src="../assets/images/usa/grand-canyon-guide.jpg"/></div>
       <div class="pkg-days-badge">16D / 15N</div>
       <div class="pkg-region-badge">🇺🇸 USA Coast-to-Coast</div>
       <div class="pkg-card-body">
@@ -914,7 +955,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-southeast-asia">
     <a class="pkg-card-list reveal" data-categories="southeast-asia" href="package-singapore-malaysia.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Singapore & Malaysia Escape" loading="lazy" src="../assets/images/singapore/1.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1000" alt="Singapore & Malaysia Escape" loading="lazy" src="../assets/images/singapore/1.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇸🇬 🇲🇾 Twin Country</div>
       <div class="pkg-card-body">
@@ -931,7 +972,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="southeast-asia" href="package-singapore-highlights.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Singapore Highlights" loading="lazy" src="../assets/images/singapore/2.jpg"/></div>
+      <div class="img-slot"><img width="1200" height="1600" alt="Singapore Highlights" loading="lazy" src="../assets/images/singapore/2.jpg"/></div>
       <div class="pkg-days-badge">4D / 3N</div>
       <div class="pkg-region-badge">🇸🇬 Singapore</div>
       <div class="pkg-card-body">
@@ -948,7 +989,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="southeast-asia" href="package-discover-singapore-value.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Discover Singapore" loading="lazy" src="../assets/images/singapore/3.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1066" alt="Discover Singapore" loading="lazy" src="../assets/images/singapore/3.jpg"/></div>
       <div class="pkg-days-badge">4D / 3N</div>
       <div class="pkg-region-badge">🇸🇬 Singapore Value</div>
       <div class="pkg-card-body">
@@ -965,7 +1006,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="southeast-asia honeymoon" href="package-ultimate-singapore-luxury.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Ultimate Singapore Luxury" loading="lazy" src="../assets/images/singapore/4.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1200" alt="Ultimate Singapore Luxury" loading="lazy" src="../assets/images/singapore/4.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇸🇬 Singapore Luxury</div>
       <div class="pkg-card-body">
@@ -994,7 +1035,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-sri-lanka">
     <a class="pkg-card-list reveal" data-categories="asia sri-lanka" href="package-sri-lanka-escape.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Sri Lanka Escape Beaches and Heritage" loading="lazy" src="../assets/images/sri-lanka/1.jpg"/></div>
+      <div class="img-slot"><img width="1066" height="1600" alt="Sri Lanka Escape Beaches and Heritage" loading="lazy" src="../assets/images/sri-lanka/1.jpg"/></div>
       <div class="pkg-days-badge">4D / 3N</div>
       <div class="pkg-region-badge">🇱🇰 Sri Lanka</div>
       <div class="pkg-card-body">
@@ -1011,7 +1052,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="asia sri-lanka" href="package-classic-sri-lanka.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Sri Lanka" loading="lazy" src="../assets/images/sri-lanka/2.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1066" alt="Classic Sri Lanka" loading="lazy" src="../assets/images/sri-lanka/2.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇱🇰 Sri Lanka</div>
       <div class="pkg-card-body">
@@ -1028,7 +1069,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="asia sri-lanka" href="package-best-of-sri-lanka.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Best of Sri Lanka" loading="lazy" src="../assets/images/sri-lanka/3.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1066" alt="Best of Sri Lanka" loading="lazy" src="../assets/images/sri-lanka/3.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇱🇰 Sri Lanka</div>
       <div class="pkg-card-body">
@@ -1045,7 +1086,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="asia sri-lanka" href="package-complete-sri-lanka-experience.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Complete Sri Lanka Experience" loading="lazy" src="../assets/images/sri-lanka/4.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1066" alt="Complete Sri Lanka Experience" loading="lazy" src="../assets/images/sri-lanka/4.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇱🇰 Sri Lanka</div>
       <div class="pkg-card-body">
@@ -1072,7 +1113,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-dubai">
     <a class="pkg-card-list reveal" data-categories="dubai" href="package-discover-dubai.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Discover Dubai Essentials" loading="lazy" src="../assets/images/dubai/1.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1066" alt="Discover Dubai Essentials" loading="lazy" src="../assets/images/dubai/1.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇦🇪 Dubai essentials</div>
       <div class="pkg-card-body">
@@ -1089,7 +1130,7 @@
     </a>
 
     <a class="pkg-card-list reveal" data-categories="dubai honeymoon" href="package-ultimate-dubai-luxury.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Ultimate Dubai Luxury" loading="lazy" src="../assets/images/dubai/2.jpg"/></div>
+      <div class="img-slot"><img width="1600" height="1067" alt="Ultimate Dubai Luxury" loading="lazy" src="../assets/images/dubai/2.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇦🇪 Dubai luxury</div>
       <div class="pkg-card-body">
@@ -1116,7 +1157,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-thailand">
     <a class="pkg-card-list reveal" data-categories="thailand asia" href="package-thailand-essentials.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Discover Thailand | Beaches, Temples & City Lights" loading="lazy" src="../assets/images/thailand/1.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1080" alt="Discover Thailand | Beaches, Temples & City Lights" loading="lazy" src="../assets/images/thailand/1.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇹🇭 Thailand essentials</div>
       <div class="pkg-card-body">
@@ -1132,7 +1173,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="thailand asia" href="package-classic-thailand.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Thailand | Pattaya, Bangkok & Island Adventures" loading="lazy" src="../assets/images/thailand/2.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1440" alt="Classic Thailand | Pattaya, Bangkok & Island Adventures" loading="lazy" src="../assets/images/thailand/2.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇹🇭 Thailand classic</div>
       <div class="pkg-card-body">
@@ -1148,7 +1189,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="thailand asia" href="package-thailand-phuket-krabi.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Explore Southern Thailand | Phuket & Krabi" loading="lazy" src="../assets/images/thailand/3.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Explore Southern Thailand | Phuket & Krabi" loading="lazy" src="../assets/images/thailand/3.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇹🇭 Phuket &amp; Krabi</div>
       <div class="pkg-card-body">
@@ -1164,7 +1205,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="thailand asia" href="package-thailand-ultimate.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Thailand Unveiled | Islands, Beaches & City Wonders" loading="lazy" src="../assets/images/thailand/4.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1276" alt="Thailand Unveiled | Islands, Beaches & City Wonders" loading="lazy" src="../assets/images/thailand/4.jpg"/></div>
       <div class="pkg-days-badge">8D / 7N</div>
       <div class="pkg-region-badge">🇹🇭 Thailand grand tour</div>
       <div class="pkg-card-body">
@@ -1191,7 +1232,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-vietnam">
     <a class="pkg-card-list reveal" data-categories="vietnam asia" href="package-vietnam-essentials.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Discover Vietnam | Hanoi & Halong Bay Escape" loading="lazy" src="../assets/images/vietnam/1.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1440" alt="Discover Vietnam | Hanoi & Halong Bay Escape" loading="lazy" src="../assets/images/vietnam/1.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇻🇳 Vietnam essentials</div>
       <div class="pkg-card-body">
@@ -1207,7 +1248,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="vietnam asia" href="package-classic-vietnam.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Vietnam | Heritage, Beaches & Bay Cruises" loading="lazy" src="../assets/images/vietnam/2.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1440" alt="Classic Vietnam | Heritage, Beaches & Bay Cruises" loading="lazy" src="../assets/images/vietnam/2.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇻🇳 Vietnam classic</div>
       <div class="pkg-card-body">
@@ -1223,7 +1264,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="vietnam asia" href="package-vietnam-best.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Vietnam Unveiled | From Heritage Streets to Coastal Wonders" loading="lazy" src="../assets/images/vietnam/3.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1290" alt="Vietnam Unveiled | From Heritage Streets to Coastal Wonders" loading="lazy" src="../assets/images/vietnam/3.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇻🇳 Best of Vietnam</div>
       <div class="pkg-card-body">
@@ -1239,7 +1280,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="vietnam asia" href="package-vietnam-ultimate.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="The Ultimate Vietnam | Culture, Coastlines & City Life" loading="lazy" src="../assets/images/vietnam/4.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1279" alt="The Ultimate Vietnam | Culture, Coastlines & City Life" loading="lazy" src="../assets/images/vietnam/4.jpg"/></div>
       <div class="pkg-days-badge">9D / 8N</div>
       <div class="pkg-region-badge">🇻🇳 Vietnam grand tour</div>
       <div class="pkg-card-body">
@@ -1266,7 +1307,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-bali">
     <a class="pkg-card-list reveal" data-categories="bali asia" href="package-bali-essentials.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Discover Bali | Island of Gods" loading="lazy" src="../assets/images/bali/1.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1276" alt="Discover Bali | Island of Gods" loading="lazy" src="../assets/images/bali/1.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇮🇩 Bali essentials</div>
       <div class="pkg-card-body">
@@ -1282,7 +1323,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="bali asia" href="package-classic-bali.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Bali | Beaches, Temples & Rice Terraces" loading="lazy" src="../assets/images/bali/2.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Classic Bali | Beaches, Temples & Rice Terraces" loading="lazy" src="../assets/images/bali/2.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇮🇩 Bali classic</div>
       <div class="pkg-card-body">
@@ -1298,7 +1339,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="bali asia" href="package-bali-unveiled.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Bali Unveiled | Temples, Beaches & Island Adventures" loading="lazy" src="../assets/images/bali/3.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1279" alt="Bali Unveiled | Temples, Beaches & Island Adventures" loading="lazy" src="../assets/images/bali/3.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇮🇩 Best of Bali</div>
       <div class="pkg-card-body">
@@ -1314,7 +1355,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="bali asia" href="package-bali-ultimate.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="The Ultimate Bali | Luxury, Culture & Island Bliss" loading="lazy" src="../assets/images/bali/4.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="The Ultimate Bali | Luxury, Culture & Island Bliss" loading="lazy" src="../assets/images/bali/4.jpg"/></div>
       <div class="pkg-days-badge">8D / 7N</div>
       <div class="pkg-region-badge">🇮🇩 Bali luxury</div>
       <div class="pkg-card-body">
@@ -1341,7 +1382,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-kerala">
     <a class="pkg-card-list reveal" data-categories="kerala india" href="package-kerala-escape.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Kerala Escape | Munnar & Alleppey" loading="lazy" src="../assets/images/kerala/1.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1440" alt="Kerala Escape | Munnar & Alleppey" loading="lazy" src="../assets/images/kerala/1.jpg"/></div>
       <div class="pkg-days-badge">4D / 3N</div>
       <div class="pkg-region-badge">🇮🇳 Kerala escape</div>
       <div class="pkg-card-body">
@@ -1357,7 +1398,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="kerala india" href="package-kerala-gods-own-country.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="God's Own Country | Munnar, Thekkady & Alleppey" loading="lazy" src="../assets/images/kerala/2.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="God's Own Country | Munnar, Thekkady & Alleppey" loading="lazy" src="../assets/images/kerala/2.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇮🇳 Kerala classic</div>
       <div class="pkg-card-body">
@@ -1373,7 +1414,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="kerala india" href="package-kerala-highlights.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Kerala Highlights | Munnar, Thekkady, Alleppey & Kochi" loading="lazy" src="../assets/images/kerala/3.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1080" alt="Kerala Highlights | Munnar, Thekkady, Alleppey & Kochi" loading="lazy" src="../assets/images/kerala/3.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇮🇳 Kerala highlights</div>
       <div class="pkg-card-body">
@@ -1389,7 +1430,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="kerala india" href="package-kerala-complete-experience.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Complete Kerala Experience | Munnar, Thekkady, Alleppey & Kovalam" loading="lazy" src="../assets/images/kerala/4.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Complete Kerala Experience | Munnar, Thekkady, Alleppey & Kovalam" loading="lazy" src="../assets/images/kerala/4.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇮🇳 Complete Kerala</div>
       <div class="pkg-card-body">
@@ -1416,7 +1457,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-ladakh">
     <a class="pkg-card-list reveal" data-categories="ladakh india" href="package-ladakh-getaway.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Leh Getaway | Land of High Passes" loading="lazy" src="../assets/images/ladakh/1.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Leh Getaway | Land of High Passes" loading="lazy" src="../assets/images/ladakh/1.jpg"/></div>
       <div class="pkg-days-badge">4D / 3N</div>
       <div class="pkg-region-badge">🇮🇳 Ladakh getaway</div>
       <div class="pkg-card-body">
@@ -1432,7 +1473,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="ladakh india" href="package-ladakh-classic.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Ladakh Adventure" loading="lazy" src="../assets/images/ladakh/2.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Classic Ladakh Adventure" loading="lazy" src="../assets/images/ladakh/2.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇮🇳 Ladakh classic</div>
       <div class="pkg-card-body">
@@ -1448,7 +1489,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="ladakh india" href="package-ladakh-lakes-valleys.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Best of Ladakh | Lakes & Valleys" loading="lazy" src="../assets/images/ladakh/3.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1440" alt="Best of Ladakh | Lakes & Valleys" loading="lazy" src="../assets/images/ladakh/3.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇮🇳 Best of Ladakh</div>
       <div class="pkg-card-body">
@@ -1464,7 +1505,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="ladakh india" href="package-ladakh-ultimate.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Ultimate Ladakh Expedition" loading="lazy" src="../assets/images/ladakh/4.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Ultimate Ladakh Expedition" loading="lazy" src="../assets/images/ladakh/4.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇮🇳 Ladakh expedition</div>
       <div class="pkg-card-body">
@@ -1491,7 +1532,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-kashmir">
     <a class="pkg-card-list reveal" data-categories="kashmir india" href="package-kashmir-delight.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Kashmir Delight | Srinagar Escape" loading="lazy" src="../assets/images/kashmir/1.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Kashmir Delight | Srinagar Escape" loading="lazy" src="../assets/images/kashmir/1.jpg"/></div>
       <div class="pkg-days-badge">4D / 3N</div>
       <div class="pkg-region-badge">🇮🇳 Kashmir delight</div>
       <div class="pkg-card-body">
@@ -1507,7 +1548,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="kashmir india" href="package-classic-kashmir.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Kashmir" loading="lazy" src="../assets/images/kashmir/2.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1282" alt="Classic Kashmir" loading="lazy" src="../assets/images/kashmir/2.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇮🇳 Kashmir classic</div>
       <div class="pkg-card-body">
@@ -1523,7 +1564,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="kashmir india" href="package-best-of-kashmir.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Best of Kashmir" loading="lazy" src="../assets/images/kashmir/3.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Best of Kashmir" loading="lazy" src="../assets/images/kashmir/3.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇮🇳 Best of Kashmir</div>
       <div class="pkg-card-body">
@@ -1539,7 +1580,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="kashmir india" href="package-kashmir-complete-experience.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Complete Kashmir Experience" loading="lazy" src="../assets/images/kashmir/4.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1440" alt="Complete Kashmir Experience" loading="lazy" src="../assets/images/kashmir/4.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇮🇳 Complete Kashmir</div>
       <div class="pkg-card-body">
@@ -1566,7 +1607,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-bhutan">
     <a class="pkg-card-list reveal" data-categories="bhutan asia" href="package-bhutan-serenity.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Bhutan Serenity | Gateway to the Himalayas" loading="lazy" src="../assets/images/bhutan/1.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1440" alt="Bhutan Serenity | Gateway to the Himalayas" loading="lazy" src="../assets/images/bhutan/1.jpg"/></div>
       <div class="pkg-days-badge">4D / 3N</div>
       <div class="pkg-region-badge">🇧🇹 Bhutan serenity</div>
       <div class="pkg-card-body">
@@ -1582,7 +1623,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="bhutan asia" href="package-classic-bhutan.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Bhutan" loading="lazy" src="../assets/images/bhutan/2.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Classic Bhutan" loading="lazy" src="../assets/images/bhutan/2.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇧🇹 Bhutan classic</div>
       <div class="pkg-card-body">
@@ -1598,7 +1639,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="bhutan asia" href="package-best-of-bhutan.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Best of Bhutan" loading="lazy" src="../assets/images/bhutan/3.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Best of Bhutan" loading="lazy" src="../assets/images/bhutan/3.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇧🇹 Best of Bhutan</div>
       <div class="pkg-card-body">
@@ -1614,7 +1655,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="bhutan asia" href="package-bhutan-complete-experience.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Complete Bhutan Experience" loading="lazy" src="../assets/images/bhutan/4.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Complete Bhutan Experience" loading="lazy" src="../assets/images/bhutan/4.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇧🇹 Complete Bhutan</div>
       <div class="pkg-card-body">
@@ -1641,7 +1682,7 @@
     </div>
     <div class="pkgs-grid" id="grid-sec-almaty">
     <a class="pkg-card-list reveal" data-categories="almaty asia" href="package-almaty-city-escape.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Almaty City Escape" loading="lazy" src="../assets/images/almaty/1.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Almaty City Escape" loading="lazy" src="../assets/images/almaty/1.jpg"/></div>
       <div class="pkg-days-badge">4D / 3N</div>
       <div class="pkg-region-badge">🇰🇿 Almaty escape</div>
       <div class="pkg-card-body">
@@ -1657,7 +1698,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="almaty asia" href="package-classic-almaty.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Classic Almaty" loading="lazy" src="../assets/images/almaty/2.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1280" alt="Classic Almaty" loading="lazy" src="../assets/images/almaty/2.jpg"/></div>
       <div class="pkg-days-badge">5D / 4N</div>
       <div class="pkg-region-badge">🇰🇿 Almaty classic</div>
       <div class="pkg-card-body">
@@ -1673,7 +1714,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="almaty asia" href="package-best-of-almaty.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Best of Almaty" loading="lazy" src="../assets/images/almaty/3.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1440" alt="Best of Almaty" loading="lazy" src="../assets/images/almaty/3.jpg"/></div>
       <div class="pkg-days-badge">6D / 5N</div>
       <div class="pkg-region-badge">🇰🇿 Best of Almaty</div>
       <div class="pkg-card-body">
@@ -1689,7 +1730,7 @@
       </div>
     </a>
     <a class="pkg-card-list reveal" data-categories="almaty asia" href="package-almaty-complete-experience.html" class="pkg-card-link">
-      <div class="img-slot"><img alt="Complete Almaty Experience" loading="lazy" src="../assets/images/almaty/4.jpg"/></div>
+      <div class="img-slot"><imgwidth="1920"height="1079" alt="Complete Almaty Experience" loading="lazy" src="../assets/images/almaty/4.jpg"/></div>
       <div class="pkg-days-badge">7D / 6N</div>
       <div class="pkg-region-badge">🇰🇿 Complete Almaty</div>
       <div class="pkg-card-body">
@@ -1715,7 +1756,7 @@
 <footer class="pkg-footer">
 <div class="wrap pkg-footer-row">
 <div class="foot-logo">
-<img alt="The Falcon Tour" class="logo-img" src="../assets/images/logo.png"/>
+<img width="1536" height="1024" alt="The Falcon Tour" class="logo-img" src="../assets/images/logo.png"/>
 <span class="logo-text">The <em>Falcon</em> Tour<small>Adventure &amp; Travel Co.</small></span>
 </div>
 <nav class="pkg-footer-nav">
@@ -1768,8 +1809,14 @@
           io.unobserve(e.target);
         }
       });
-    }, { threshold: 0.1 });
-    revealEls.forEach(el => io.observe(el));
+    }, { threshold: 0.05 });
+    revealEls.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < (window.innerHeight || document.documentElement.clientHeight) + 100) {
+        el.classList.add('is-visible');
+      }
+      io.observe(el);
+    });
   }
 
   const scrollProgress = document.getElementById('scrollProgress');
@@ -1781,12 +1828,8 @@
     }, { passive: true });
   }
 
-  const cursorDot = document.getElementById('cursorDot');
-  const cursorRing = document.getElementById('cursorRing');
-  let mx=0,my=0,rx=0,ry=0;
-  window.addEventListener('mousemove', (e) => { mx=e.clientX;my=e.clientY;cursorDot.style.left=mx+'px';cursorDot.style.top=my+'px'; });
-  (function loop(){ rx+=(mx-rx)*.16;ry+=(my-ry)*.16;cursorRing.style.left=rx+'px';cursorRing.style.top=ry+'px';requestAnimationFrame(loop); })();
-  document.querySelectorAll('a,button,.tilt').forEach(el => { el.addEventListener('mouseenter',()=>cursorRing.classList.add('grow')); el.addEventListener('mouseleave',()=>cursorRing.classList.remove('grow')); });
+
+
 
   // Spring based 3D tilt cards
   document.querySelectorAll('.tilt').forEach(card => {
@@ -1814,8 +1857,22 @@
       const toHide = [];
 
       cards.forEach(card => {
-        const cats = card.getAttribute('data-categories').split(' ');
-        if (category === 'all' || cats.includes(category)) {
+        const cats = (card.getAttribute('data-categories') || '').split(' ');
+        let isMatch = (category === 'all') || cats.includes(category);
+        if (!isMatch) {
+          // Terrain/type filters
+          if (category === 'beach' && (cats.includes('romance') || cats.includes('honeymoon') || cats.includes('beach') || cats.includes('bali') || cats.includes('thailand') || cats.includes('southeast-asia'))) isMatch = true;
+          if (category === 'hills' && (cats.includes('adventure') || cats.includes('hills') || cats.includes('scandinavia') || cats.includes('ladakh') || cats.includes('bhutan') || cats.includes('kashmir'))) isMatch = true;
+          if (category === 'wildlife' && (cats.includes('adventure') || cats.includes('wildlife') || cats.includes('new-zealand') || cats.includes('oceania'))) isMatch = true;
+          if (category === 'culture' && (cats.includes('culture') || cats.includes('dubai') || cats.includes('europe') || cats.includes('vietnam') || cats.includes('japan') || cats.includes('almaty'))) isMatch = true;
+          if (category === 'honeymoon' && (cats.includes('honeymoon') || cats.includes('romance'))) isMatch = true;
+          // Destination-specific: map section-level categories
+          if (category === 'japan' && cats.includes('asia') && cats.includes('adventure') && sec.id === 'sec-japan') isMatch = true;
+          if (category === 'new-zealand' && cats.includes('oceania') && sec.id === 'sec-new-zealand') isMatch = true;
+          if (category === 'australia' && cats.includes('oceania') && (sec.id === 'sec-australia')) isMatch = true;
+          if (category === 'anz-combo' && sec.id === 'sec-anz-combo') isMatch = true;
+        }
+        if (isMatch) {
           toShow.push(card);
           visibleCount++;
         } else {
@@ -1846,17 +1903,31 @@
         );
       }
 
-      // Smooth section collapse
+      // Section visibility toggle
       if (visibleCount > 0) {
         sec.style.display = 'block';
-        animate(sec, { opacity: 1, height: "auto" }, { duration: 0.35, easing: "ease-out" });
+        sec.style.opacity = '1';
+        sec.style.height = 'auto';
       } else {
-        animate(sec, { opacity: 0, height: 0 }, { duration: 0.25, easing: "ease-in" }).then(() => {
-          sec.style.display = 'none';
-        });
+        sec.style.display = 'none';
       }
     });
   }
+
+  // Auto-trigger filter if mood or category parameter is in URL
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const moodParam = params.get('mood') || params.get('category');
+    if (moodParam) {
+      const matchPill = Array.from(document.querySelectorAll('.filter-pill')).find(pill => {
+        const onclickAttr = pill.getAttribute('onclick') || '';
+        return onclickAttr.includes(`'${moodParam}'`);
+      });
+      if (matchPill) {
+        filterPackages(moodParam, matchPill);
+      }
+    }
+  });
 </script>
 </body>
 </html>
