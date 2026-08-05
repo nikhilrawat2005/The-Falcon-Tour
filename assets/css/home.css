@@ -22,17 +22,7 @@
     object-fit:cover!important;object-position:center!important;
     transform:scale(1.15);
   }
-  /* Video sits on top and only reveals itself once it actually has data,
-     so a missing/slow file never shows a blank or broken frame. */
-  .hero-video{
-    position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;
-    object-fit:cover!important;object-position:center!important;
-    opacity:0;transition:opacity 1.1s ease;
-    display:none;
-  }
-  .hero-parallax.video-ready .hero-video{display:block!important;opacity:1!important;}
-  .hero-parallax.video-ready #heroFallbackImg{opacity:0!important;transition:opacity 1.1s ease;}
-  .hero-parallax.video-off .hero-video{display:none!important;}
+  
 
   /* Top-gradient vignette — helps navbar text stay readable over bright images */
   .hero-top-vignette{
