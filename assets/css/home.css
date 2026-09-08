@@ -95,6 +95,7 @@
   }
 
   /* ===== PACKAGE CARD (carousel cards on homepage) ===== */
+  a.pkg-card{display:block;color:inherit;}
   .pkg-card .img-slot img{transition:transform .7s cubic-bezier(.4,0,.2,1);}
   .pkg-card:hover .img-slot img{transform:scale(1.1);}
 

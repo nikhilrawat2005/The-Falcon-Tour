@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -100,7 +100,7 @@
     <li><a href="../europe/europe-trip-cost.html">Trip Cost</a> </li>
   </ul>
 
-  <img width="560" height="373" class="blog-hero-img" src="../../assets/images/europe/europe-travel-guide.jpg" alt="Europe travel guide"/>
+  <img width="560" height="373" class="blog-hero-img" src="../../assets/images/europe/europe-travel-guide.webp" alt="Europe travel guide"/>
 
   <article class="blog-content">
     <p>Planning a trip to Europe can feel overwhelming with so many countries, cultures and cities to choose from. This complete guide breaks down how to plan an itinerary, budget realistically and book with confidence.</p>
@@ -271,15 +271,15 @@
   document.querySelectorAll('a,button,.magnetic').forEach(el => { el.addEventListener('mouseenter',()=>cursorRing.classList.add('grow')); el.addEventListener('mouseleave',()=>cursorRing.classList.remove('grow')); });
   document.querySelectorAll('.magnetic').forEach(btn => { btn.addEventListener('mousemove',(e)=>{const r=btn.getBoundingClientRect();const relX=e.clientX-r.left-r.width/2;const relY=e.clientY-r.top-r.height/2;btn.style.transform=`translate(${relX*0.18}px,${relY*0.35}px)`;});btn.addEventListener('mouseleave',()=>{btn.style.transform='';}); });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="../../assets/js/motion/gsap-init.js"></script>
-<script src="../../assets/js/motion/navbar.js"></script>
-<script src="../../assets/js/motion/footer.js"></script>
-<script src="../../assets/js/motion/buttons.js"></script>
-<script src="../../assets/js/motion/images.js"></script>
-<script src="../../assets/js/motion/counters.js"></script>
-<script src="../../assets/js/motion/blog-article.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="../../assets/js/motion/gsap-init.js" defer></script>
+<script src="../../assets/js/motion/navbar.js" defer></script>
+<script src="../../assets/js/motion/footer.js" defer></script>
+<script src="../../assets/js/motion/buttons.js" defer></script>
+<script src="../../assets/js/motion/images.js" defer></script>
+<script src="../../assets/js/motion/counters.js" defer></script>
+<script src="../../assets/js/motion/blog-article.js" defer></script>
 
 <!-- ============ SOCIAL CONTACT MODAL ============ -->
 <div id="socialContactModal" class="social-modal-overlay" onclick="if(event.target===this) closeSocialContactModal()">
@@ -358,6 +358,6 @@
   };
 </script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Europe Travel Guide 2025 – Plan Your Perfect Trip", "description": "Complete Europe travel guide covering visas, budget, itineraries, best time to visit and top destinations for first-time travelers.", "image": "https://thefalcontour.com/assets/images/europe/europe-travel-guide.jpg", "datePublished": "2026-07-18", "dateModified": "2026-07-18", "author": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "publisher": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "mainEntityOfPage": "https://thefalcontour.com/blogs/europe/europe-travel-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Europe Travel Guide 2025 – Plan Your Perfect Trip", "description": "Complete Europe travel guide covering visas, budget, itineraries, best time to visit and top destinations for first-time travelers.", "image": "https://thefalcontour.com/assets/images/europe/europe-travel-guide.webp", "datePublished": "2026-07-18", "dateModified": "2026-07-18", "author": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "publisher": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "mainEntityOfPage": "https://thefalcontour.com/blogs/europe/europe-travel-guide.html"}</script>
 </body>
 </html>

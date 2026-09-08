@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -95,10 +95,10 @@
   
   <ul class="blog-nav"><li><a href="../europe/europe-travel-guide.html">Europe Travel Guide</a></li><li><a href="../europe/europe-honeymoon-guide.html">Europe Honeymoon Guide</a></li><li><a href="../europe/best-time-to-visit-europe.html">Best Time to Visit Europe</a></li></ul>
 
-  <img width="1600" height="1063" class="blog-hero-img" src="../../assets/images/greece/santorini-guide.jpg" alt="Santorini caldera Oia sunset"/>
+  <img width="1600" height="1063" class="blog-hero-img" src="../../assets/images/greece/santorini-guide.webp" alt="Santorini caldera Oia sunset"/>
 
   <article class="blog-content">
-    <div class="blog-img-row"><figure><img width="1600" height="1063" class="blog-inline-img" src="../../assets/images/greece/santorini-guide.jpg" alt="Oia blue-domed churches"/><figcaption>Oia blue-domed churches</figcaption></figure><figure><img width="1600" height="1063" class="blog-inline-img" src="../../assets/images/greece/santorini-guide.jpg" alt="Santorini caldera view"/><figcaption>Santorini caldera view</figcaption></figure></div>
+    <div class="blog-img-row"><figure><img width="1600" height="1063" class="blog-inline-img" src="../../assets/images/greece/santorini-guide.webp" alt="Oia blue-domed churches"/><figcaption>Oia blue-domed churches</figcaption></figure><figure><img width="1600" height="1063" class="blog-inline-img" src="../../assets/images/greece/santorini-guide.webp" alt="Santorini caldera view"/><figcaption>Santorini caldera view</figcaption></figure></div>
     <h2>Why Visit Santorini</h2>
     <p>Santorini's whitewashed villages perched on volcanic cliffs above a deep blue caldera make it one of the most photographed islands in the world — and one of Europe's most popular honeymoon destinations.</p>
     <h2>Top Things to Do</h2>
@@ -250,15 +250,15 @@
   document.querySelectorAll('a,button,.magnetic').forEach(el => { el.addEventListener('mouseenter',()=>cursorRing.classList.add('grow')); el.addEventListener('mouseleave',()=>cursorRing.classList.remove('grow')); });
   document.querySelectorAll('.magnetic').forEach(btn => { btn.addEventListener('mousemove',(e)=>{const r=btn.getBoundingClientRect();const relX=e.clientX-r.left-r.width/2;const relY=e.clientY-r.top-r.height/2;btn.style.transform=`translate(${relX*0.18}px,${relY*0.35}px)`;});btn.addEventListener('mouseleave',()=>{btn.style.transform='';}); });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="../../assets/js/motion/gsap-init.js"></script>
-<script src="../../assets/js/motion/navbar.js"></script>
-<script src="../../assets/js/motion/footer.js"></script>
-<script src="../../assets/js/motion/buttons.js"></script>
-<script src="../../assets/js/motion/images.js"></script>
-<script src="../../assets/js/motion/counters.js"></script>
-<script src="../../assets/js/motion/blog-article.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="../../assets/js/motion/gsap-init.js" defer></script>
+<script src="../../assets/js/motion/navbar.js" defer></script>
+<script src="../../assets/js/motion/footer.js" defer></script>
+<script src="../../assets/js/motion/buttons.js" defer></script>
+<script src="../../assets/js/motion/images.js" defer></script>
+<script src="../../assets/js/motion/counters.js" defer></script>
+<script src="../../assets/js/motion/blog-article.js" defer></script>
 
 <!-- ============ SOCIAL CONTACT MODAL ============ -->
 <div id="socialContactModal" class="social-modal-overlay" onclick="if(event.target===this) closeSocialContactModal()">
@@ -337,6 +337,6 @@
   };
 </script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Santorini Travel Guide – Best Places, Sunsets & Itinerary", "description": "Complete Santorini travel guide covering Oia sunsets, best hotels, beaches and a 3-day itinerary for couples and honeymooners.", "image": "https://thefalcontour.com/assets/images/greece/santorini-guide.jpg", "datePublished": "2026-07-18", "dateModified": "2026-07-18", "author": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "publisher": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "mainEntityOfPage": "https://thefalcontour.com/blogs/greece/santorini-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Santorini Travel Guide – Best Places, Sunsets & Itinerary", "description": "Complete Santorini travel guide covering Oia sunsets, best hotels, beaches and a 3-day itinerary for couples and honeymooners.", "image": "https://thefalcontour.com/assets/images/greece/santorini-guide.webp", "datePublished": "2026-07-18", "dateModified": "2026-07-18", "author": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "publisher": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "mainEntityOfPage": "https://thefalcontour.com/blogs/greece/santorini-guide.html"}</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
@@ -95,10 +95,10 @@
   
   <ul class="blog-nav"><li><a href="../europe/europe-travel-guide.html">Europe Travel Guide</a></li><li><a href="../europe/europe-itinerary.html">Europe Itinerary</a></li><li><a href="../europe/europe-train-travel-guide.html">Europe Train Travel Guide</a></li></ul>
 
-  <img width="678" height="452" class="blog-hero-img" src="../../assets/images/netherlands/amsterdam-guide.jpg" alt="Amsterdam canals"/>
+  <img width="678" height="452" class="blog-hero-img" src="../../assets/images/netherlands/amsterdam-guide.webp" alt="Amsterdam canals"/>
 
   <article class="blog-content">
-    <div class="blog-img-row"><figure><img width="678" height="452" class="blog-inline-img" src="../../assets/images/netherlands/amsterdam-guide.jpg" alt="Amsterdam canal houses"/><figcaption>Amsterdam canal houses</figcaption></figure><figure><img width="678" height="452" class="blog-inline-img" src="../../assets/images/netherlands/amsterdam-guide.jpg" alt="Amsterdam cycling culture"/><figcaption>Amsterdam cycling culture</figcaption></figure></div>
+    <div class="blog-img-row"><figure><img width="678" height="452" class="blog-inline-img" src="../../assets/images/netherlands/amsterdam-guide.webp" alt="Amsterdam canal houses"/><figcaption>Amsterdam canal houses</figcaption></figure><figure><img width="678" height="452" class="blog-inline-img" src="../../assets/images/netherlands/amsterdam-guide.webp" alt="Amsterdam cycling culture"/><figcaption>Amsterdam cycling culture</figcaption></figure></div>
     <h2>Why Visit Amsterdam</h2>
     <p>Amsterdam's canal-lined streets, world-class museums and cycling culture make it one of Europe's most walkable, laid-back capitals — easy to explore on foot or by bike in just a couple of days.</p>
     <h2>Top Things to Do</h2>
@@ -250,15 +250,15 @@
   document.querySelectorAll('a,button,.magnetic').forEach(el => { el.addEventListener('mouseenter',()=>cursorRing.classList.add('grow')); el.addEventListener('mouseleave',()=>cursorRing.classList.remove('grow')); });
   document.querySelectorAll('.magnetic').forEach(btn => { btn.addEventListener('mousemove',(e)=>{const r=btn.getBoundingClientRect();const relX=e.clientX-r.left-r.width/2;const relY=e.clientY-r.top-r.height/2;btn.style.transform=`translate(${relX*0.18}px,${relY*0.35}px)`;});btn.addEventListener('mouseleave',()=>{btn.style.transform='';}); });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="../../assets/js/motion/gsap-init.js"></script>
-<script src="../../assets/js/motion/navbar.js"></script>
-<script src="../../assets/js/motion/footer.js"></script>
-<script src="../../assets/js/motion/buttons.js"></script>
-<script src="../../assets/js/motion/images.js"></script>
-<script src="../../assets/js/motion/counters.js"></script>
-<script src="../../assets/js/motion/blog-article.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="../../assets/js/motion/gsap-init.js" defer></script>
+<script src="../../assets/js/motion/navbar.js" defer></script>
+<script src="../../assets/js/motion/footer.js" defer></script>
+<script src="../../assets/js/motion/buttons.js" defer></script>
+<script src="../../assets/js/motion/images.js" defer></script>
+<script src="../../assets/js/motion/counters.js" defer></script>
+<script src="../../assets/js/motion/blog-article.js" defer></script>
 
 <!-- ============ SOCIAL CONTACT MODAL ============ -->
 <div id="socialContactModal" class="social-modal-overlay" onclick="if(event.target===this) closeSocialContactModal()">
@@ -337,6 +337,6 @@
   };
 </script>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Amsterdam Travel Guide – Canals, Museums & Best Itinerary", "description": "Complete Amsterdam travel guide covering canal cruises, museums, neighborhoods and a 2-day itinerary for first-time visitors.", "image": "https://thefalcontour.com/assets/images/netherlands/amsterdam-guide.jpg", "datePublished": "2026-07-18", "dateModified": "2026-07-18", "author": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "publisher": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "mainEntityOfPage": "https://thefalcontour.com/blogs/netherlands/amsterdam-guide.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Amsterdam Travel Guide – Canals, Museums & Best Itinerary", "description": "Complete Amsterdam travel guide covering canal cruises, museums, neighborhoods and a 2-day itinerary for first-time visitors.", "image": "https://thefalcontour.com/assets/images/netherlands/amsterdam-guide.webp", "datePublished": "2026-07-18", "dateModified": "2026-07-18", "author": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "publisher": {"@type": "Organization", "name": "The Falcon Tour", "url": "https://thefalcontour.com/"}, "mainEntityOfPage": "https://thefalcontour.com/blogs/netherlands/amsterdam-guide.html"}</script>
 </body>
 </html>
