@@ -62,12 +62,6 @@
 </ul>
 </nav>
 
-<div class="pkg-breadcrumb">
-  <div class="wrap">
-    <a href="../index.html">Home</a> <span>/</span> <a href="index.html">Packages</a> <span>/</span> Japan for First Timers
-  </div>
-</div>
-
 <!-- HERO -->
 <section class="pkg-hero">
   <img width="700" height="438" alt="Mt. Fuji panorama" class="pkg-hero-bg" src="../assets/images/japan/mount-fuji-guide.webp" style="filter: hue-rotate(20deg) saturate(1.1);"/>
@@ -518,8 +512,6 @@
 </div>
 
 <script>
-  const header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', () => { header.classList.add('scrolled'); });
   const burger = document.getElementById('burgerBtn');
   const mobileNav = document.getElementById('mobileNav');
   burger.addEventListener('click', () => { const open = mobileNav.style.display === 'block'; mobileNav.style.display = open ? 'none' : 'block'; });

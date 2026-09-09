@@ -62,12 +62,6 @@
 </ul>
 </nav>
 
-<div class="pkg-breadcrumb">
-  <div class="wrap">
-    <a href="../index.html">Home</a> <span>/</span> <a href="index.html">Packages</a> <span>/</span> New Zealand Discovery
-  </div>
-</div>
-
 <!-- HERO -->
 <section class="pkg-hero">
   <img width="1600" height="900" alt="Scenic Queenstown mountains" class="pkg-hero-bg" src="../assets/images/new-zealand/queenstown-guide.webp"/>
@@ -500,8 +494,6 @@
 </div>
 
 <script>
-  const header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', () => { header.classList.add('scrolled'); });
   const burger = document.getElementById('burgerBtn');
   const mobileNav = document.getElementById('mobileNav');
   burger.addEventListener('click', () => { const open = mobileNav.style.display === 'block'; mobileNav.style.display = open ? 'none' : 'block'; });

@@ -2,8 +2,8 @@
    The Falcon Tour — Navbar Motion (Stage 2: Global Components)
    --------------------------------------------------------------------------
    - On-load fade/slide-down (once).
-   - Scrolled-state background transition via ScrollTrigger toggleClass
-     (replaces old inline "add scrolled on scroll, never remove" bug).
+   - Header always keeps the dark "scrolled" background so page content
+     (breadcrumb etc.) never overlaps a transparent taller header.
    - Mobile-nav panel slide + stagger of nav links.
    - Burger icon morph (class toggle driven, CSS handles the visual morph).
    ========================================================================== */
@@ -26,14 +26,10 @@
       );
     }
 
-    /* 2. Scrolled-state background — ScrollTrigger toggleClass so it
-       correctly adds AND removes the class (fixes legacy one-way bug) */
-    if (ScrollTrigger) {
-      ScrollTrigger.create({
-        start: "top -40",
-        toggleClass: { targets: header, className: "scrolled" },
-      });
-    }
+    /* 2. Header always keeps the compact dark "scrolled" state, so the
+       breadcrumb / page content never slides under a taller transparent
+       header near the top of the page. */
+    header.classList.add("scrolled");
 
     /* 3. Mobile nav open/close */
     var burger = document.getElementById("burgerBtn");
