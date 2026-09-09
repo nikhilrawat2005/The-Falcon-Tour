@@ -1,5 +1,5 @@
-# robots.txt for https://thefalcontour.com
-# Last updated: 2026-07-18
+﻿# robots.txt for https://thefalcontour.com
+# Last updated: 2026-09-09
 
 User-agent: *
 Allow: /
