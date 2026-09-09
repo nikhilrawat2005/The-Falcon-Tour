@@ -1,0 +1,3888 @@
+========================================
+🚨 SEO ISSUES & BUGS REPORT: thefalcontour.com
+Audited on: 9/9/2026, 9:24:26 am
+Total Issues Detected: 647
+========================================
+
+[1] Broken Page (404 Error): /japan/anime-places-japan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[2] Broken Page (404 Error): /japan/best-time-to-visit-japan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[3] Broken Page (404 Error): /japan/cherry-blossom-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[4] Broken Page (404 Error): /japan/disneyland-japan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[5] Broken Page (404 Error): /japan/japan-family-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[6] Broken Page (404 Error): /japan/japan-faqs.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[7] Broken Page (404 Error): /japan/japan-honeymoon-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[8] Broken Page (404 Error): /japan/japan-itinerary.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[9] Broken Page (404 Error): /japan/japan-rail-pass-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[10] Broken Page (404 Error): /japan/japan-shopping-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[11] Broken Page (404 Error): /japan/japan-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[12] Broken Page (404 Error): /japan/japan-travel-tips.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[13] Broken Page (404 Error): /japan/japan-trip-cost.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[14] Broken Page (404 Error): /japan/japan-visa-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[15] Broken Page (404 Error): /japan/japanese-food-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[16] Broken Page (404 Error): /japan/kyoto-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[17] Broken Page (404 Error): /japan/mount-fuji-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[18] Broken Page (404 Error): /japan/nara-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[19] Broken Page (404 Error): /japan/osaka-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[20] Broken Page (404 Error): /japan/tokyo-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[21] Broken Page (404 Error): /australia/australia-budget.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[22] Broken Page (404 Error): /australia/australia-family-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[23] Broken Page (404 Error): /australia/australia-faqs.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[24] Broken Page (404 Error): /australia/australia-food-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[25] Broken Page (404 Error): /australia/australia-honeymoon-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[26] Broken Page (404 Error): /australia/australia-packing-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[27] Broken Page (404 Error): /australia/australia-road-trip-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[28] Broken Page (404 Error): /australia/australia-shopping-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[29] Broken Page (404 Error): /australia/australia-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[30] Broken Page (404 Error): /australia/australia-travel-tips.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[31] Broken Page (404 Error): /australia/australia-visa.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[32] Broken Page (404 Error): /australia/australia-wildlife-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[33] Broken Page (404 Error): /australia/best-time-to-visit-australia.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[34] Broken Page (404 Error): /australia/brisbane-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[35] Broken Page (404 Error): /australia/gold-coast-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[36] Broken Page (404 Error): /australia/great-barrier-reef.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[37] Broken Page (404 Error): /australia/great-ocean-road.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[38] Broken Page (404 Error): /australia/melbourne-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[39] Broken Page (404 Error): /australia/sydney-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[40] Broken Page (404 Error): /australia/tasmania-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[41] Broken Page (404 Error): /usa/best-time-to-visit-usa.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[42] Broken Page (404 Error): /usa/disney-world-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[43] Broken Page (404 Error): /usa/east-coast-vs-west-coast.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[44] Broken Page (404 Error): /usa/grand-canyon-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[45] Broken Page (404 Error): /usa/las-vegas-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[46] Broken Page (404 Error): /usa/los-angeles-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[47] Broken Page (404 Error): /usa/miami-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[48] Broken Page (404 Error): /usa/national-parks-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[49] Broken Page (404 Error): /usa/new-york-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[50] Broken Page (404 Error): /usa/orlando-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[51] Broken Page (404 Error): /usa/route-66-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[52] Broken Page (404 Error): /usa/san-francisco-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[53] Broken Page (404 Error): /usa/usa-budget-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[54] Broken Page (404 Error): /usa/usa-family-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[55] Broken Page (404 Error): /usa/usa-faqs.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[56] Broken Page (404 Error): /usa/usa-food-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[57] Broken Page (404 Error): /usa/usa-honeymoon-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[58] Broken Page (404 Error): /usa/usa-packing-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[59] Broken Page (404 Error): /usa/usa-shopping-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[60] Broken Page (404 Error): /usa/usa-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[61] Broken Page (404 Error): /usa/usa-travel-tips.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[62] Broken Page (404 Error): /usa/usa-trip-cost.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[63] Broken Page (404 Error): /usa/usa-visa-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[64] Broken Page (404 Error): /usa/washington-dc-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[65] Broken Page (404 Error): /usa/yellowstone-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[66] Broken Page (404 Error): /new-zealand/new-zealand-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[67] Broken Page (404 Error): /new-zealand/nz-10-days-itinerary.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[68] Broken Page (404 Error): /new-zealand/best-time-to-visit-nz.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[69] Broken Page (404 Error): /new-zealand/new-zealand-visa.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[70] Broken Page (404 Error): /new-zealand/nz-trip-cost.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[71] Broken Page (404 Error): /new-zealand/nz-travel-tips.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[72] Broken Page (404 Error): /new-zealand/road-trip-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[73] Broken Page (404 Error): /new-zealand/adventure-activities.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[74] Broken Page (404 Error): /new-zealand/nz-food-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[75] Broken Page (404 Error): /new-zealand/nz-honeymoon-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[76] Broken Page (404 Error): /new-zealand/nz-shopping-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[77] Broken Page (404 Error): /new-zealand/nz-faqs.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[78] Broken Page (404 Error): /new-zealand/auckland-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[79] Broken Page (404 Error): /new-zealand/christchurch-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[80] Broken Page (404 Error): /new-zealand/queenstown-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[81] Broken Page (404 Error): /new-zealand/rotorua-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[82] Broken Page (404 Error): /new-zealand/hobbiton-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[83] Broken Page (404 Error): /new-zealand/milford-sound-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[84] Broken Page (404 Error): /switzerland/interlaken-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[85] Broken Page (404 Error): /switzerland/swiss-alps-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[86] Broken Page (404 Error): /france/paris-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[87] Broken Page (404 Error): /italy/rome-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[88] Broken Page (404 Error): /italy/venice-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[89] Broken Page (404 Error): /spain/barcelona-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[90] Broken Page (404 Error): /austria/hallstatt-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[91] Broken Page (404 Error): /austria/vienna-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[92] Broken Page (404 Error): /netherlands/amsterdam-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[93] Broken Page (404 Error): /greece/santorini-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[94] Broken Page (404 Error): /iceland/iceland-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[95] Broken Page (404 Error): /czech-republic/prague-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[96] Broken Page (404 Error): /europe/europe-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[97] Broken Page (404 Error): /europe/europe-itinerary.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[98] Broken Page (404 Error): /europe/best-time-to-visit-europe.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[99] Broken Page (404 Error): /europe/europe-backpacking-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[100] Broken Page (404 Error): /europe/europe-family-trip-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[101] Broken Page (404 Error): /europe/europe-honeymoon-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[102] Broken Page (404 Error): /europe/europe-packing-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[103] Broken Page (404 Error): /europe/europe-train-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[104] Broken Page (404 Error): /europe/europe-travel-tips.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[105] Broken Page (404 Error): /europe/europe-trip-cost.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[106] Broken Page (404 Error): /europe/europe-visa-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[107] Broken Page (404 Error): /europe/schengen-visa-faqs.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[108] Broken Page (404 Error): /europe/northern-lights-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[109] Broken Page (404 Error): /dubai/7-days-in-dubai.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[110] Broken Page (404 Error): /turkey/cappadocia-balloons-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[111] Broken Page (404 Error): /singapore/singapore-family-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[112] Broken Page (404 Error): /sri-lanka/sri-lanka-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[113] Broken Page (404 Error): /package-essence-of-europe.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[114] Broken Page (404 Error): /package-swiss-paris.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[115] Broken Page (404 Error): /package-uk-scotland.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[116] Broken Page (404 Error): /package-grand-european-odyssey.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[117] Broken Page (404 Error): /package-alpine-elegance-switzerland.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[118] Broken Page (404 Error): /package-scandinavia-northern-lights.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[119] Broken Page (404 Error): /package-classic-scandinavia.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[120] Broken Page (404 Error): /package-iceland.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[121] Broken Page (404 Error): /package-scandinavia-unveiled.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[122] Broken Page (404 Error): /package-japan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[123] Broken Page (404 Error): /package-japan-alpine.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[124] Broken Page (404 Error): /package-journey-through-japan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[125] Broken Page (404 Error): /package-japan-first-impressions.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[126] Broken Page (404 Error): /package-japan-f1-adventure.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[127] Broken Page (404 Error): /package-new-zealand.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[128] Broken Page (404 Error): /package-new-zealand-uncovered.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[129] Broken Page (404 Error): /package-scenic-new-zealand.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[130] Broken Page (404 Error): /package-new-zealand-shared-journey.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[131] Broken Page (404 Error): /package-discover-australia.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[132] Broken Page (404 Error): /package-essence-of-australia.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[133] Broken Page (404 Error): /package-discover-melbourne.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[134] Broken Page (404 Error): /package-classic-australia.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[135] Broken Page (404 Error): /package-australia-new-zealand-combo.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[136] Broken Page (404 Error): /package-west-coast-usa.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[137] Broken Page (404 Error): /package-east-coast-usa.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[138] Broken Page (404 Error): /package-explore-america.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[139] Broken Page (404 Error): /package-singapore-malaysia.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[140] Broken Page (404 Error): /package-singapore-highlights.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[141] Broken Page (404 Error): /package-discover-singapore-value.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[142] Broken Page (404 Error): /package-ultimate-singapore-luxury.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[143] Broken Page (404 Error): /package-sri-lanka-escape.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[144] Broken Page (404 Error): /package-classic-sri-lanka.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[145] Broken Page (404 Error): /package-best-of-sri-lanka.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[146] Broken Page (404 Error): /package-complete-sri-lanka-experience.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[147] Broken Page (404 Error): /package-discover-dubai.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[148] Broken Page (404 Error): /package-ultimate-dubai-luxury.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[149] Broken Page (404 Error): /package-thailand-essentials.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[150] Broken Page (404 Error): /package-classic-thailand.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[151] Broken Page (404 Error): /package-thailand-phuket-krabi.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[152] Broken Page (404 Error): /package-thailand-ultimate.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[153] Broken Page (404 Error): /package-vietnam-essentials.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[154] Broken Page (404 Error): /package-classic-vietnam.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[155] Broken Page (404 Error): /package-vietnam-best.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[156] Broken Page (404 Error): /package-vietnam-ultimate.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[157] Broken Page (404 Error): /package-bali-essentials.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[158] Broken Page (404 Error): /package-classic-bali.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[159] Broken Page (404 Error): /package-bali-unveiled.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[160] Broken Page (404 Error): /package-bali-ultimate.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[161] Broken Page (404 Error): /package-kerala-escape.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[162] Broken Page (404 Error): /package-kerala-gods-own-country.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[163] Broken Page (404 Error): /package-kerala-highlights.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[164] Broken Page (404 Error): /package-kerala-complete-experience.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[165] Broken Page (404 Error): /package-ladakh-getaway.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[166] Broken Page (404 Error): /package-ladakh-classic.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[167] Broken Page (404 Error): /package-ladakh-lakes-valleys.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[168] Broken Page (404 Error): /package-ladakh-ultimate.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[169] Broken Page (404 Error): /package-kashmir-delight.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[170] Broken Page (404 Error): /package-classic-kashmir.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[171] Broken Page (404 Error): /package-best-of-kashmir.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[172] Broken Page (404 Error): /package-kashmir-complete-experience.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[173] Broken Page (404 Error): /package-bhutan-serenity.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[174] Broken Page (404 Error): /package-classic-bhutan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[175] Broken Page (404 Error): /package-best-of-bhutan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[176] Broken Page (404 Error): /package-bhutan-complete-experience.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[177] Broken Page (404 Error): /package-almaty-city-escape.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[178] Broken Page (404 Error): /package-classic-almaty.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[179] Broken Page (404 Error): /package-best-of-almaty.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[180] Broken Page (404 Error): /package-almaty-complete-experience.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[181] Broken Page (404 Error): /australia-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[182] Broken Page (404 Error): /australia-travel-tips.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[183] Broken Page (404 Error): /australia-packing-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[184] Broken Page (404 Error): /best-time-to-visit-australia.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[185] Broken Page (404 Error): /gold-coast-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[186] Broken Page (404 Error): /australia-wildlife-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[187] Broken Page (404 Error): /australia-visa.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[188] Broken Page (404 Error): /australia-budget.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[189] Broken Page (404 Error): /melbourne-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[190] Broken Page (404 Error): /australia-shopping-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[191] Broken Page (404 Error): /sydney-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[192] Broken Page (404 Error): /great-barrier-reef.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[193] Broken Page (404 Error): /tasmania-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[194] Broken Page (404 Error): /great-ocean-road.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[195] Broken Page (404 Error): /australia-food-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[196] Broken Page (404 Error): /australia-faqs.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[197] Broken Page (404 Error): /australia-family-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[198] Broken Page (404 Error): /brisbane-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[199] Broken Page (404 Error): /australia-road-trip-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[200] Broken Page (404 Error): /vienna-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[201] Broken Page (404 Error): /hallstatt-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[202] Broken Page (404 Error): /venice-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[203] Broken Page (404 Error): /rome-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[204] Broken Page (404 Error): /japan-shopping-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[205] Broken Page (404 Error): /tokyo-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[206] Broken Page (404 Error): /japan-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[207] Broken Page (404 Error): /disneyland-japan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[208] Broken Page (404 Error): /cherry-blossom-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[209] Broken Page (404 Error): /japan-itinerary.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[210] Broken Page (404 Error): /mount-fuji-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[211] Broken Page (404 Error): /best-time-to-visit-japan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[212] Broken Page (404 Error): /kyoto-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[213] Broken Page (404 Error): /japan-family-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[214] Broken Page (404 Error): /anime-places-japan.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[215] Broken Page (404 Error): /nara-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[216] Broken Page (404 Error): /japan-visa-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[217] Broken Page (404 Error): /japan-trip-cost.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[218] Broken Page (404 Error): /japan-travel-tips.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[219] Broken Page (404 Error): /japan-rail-pass-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[220] Broken Page (404 Error): /japan-faqs.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[221] Broken Page (404 Error): /osaka-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[222] Broken Page (404 Error): /japanese-food-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[223] Broken Page (404 Error): /new-zealand-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[224] Broken Page (404 Error): /nz-10-days-itinerary.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[225] Broken Page (404 Error): /road-trip-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[226] Broken Page (404 Error): /nz-food-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[227] Broken Page (404 Error): /queenstown-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[228] Broken Page (404 Error): /rotorua-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[229] Broken Page (404 Error): /new-zealand-visa.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[230] Broken Page (404 Error): /auckland-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[231] Broken Page (404 Error): /milford-sound-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[232] Broken Page (404 Error): /hobbiton-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[233] Broken Page (404 Error): /best-time-to-visit-nz.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[234] Broken Page (404 Error): /adventure-activities.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[235] Broken Page (404 Error): /christchurch-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[236] Broken Page (404 Error): /swiss-alps-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[237] Broken Page (404 Error): /interlaken-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[238] Broken Page (404 Error): /usa-travel-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[239] Broken Page (404 Error): /national-parks-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[240] Broken Page (404 Error): /usa-trip-cost.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[241] Broken Page (404 Error): /usa-travel-tips.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[242] Broken Page (404 Error): /orlando-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[243] Broken Page (404 Error): /usa-family-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[244] Broken Page (404 Error): /usa-packing-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[245] Broken Page (404 Error): /new-york-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[246] Broken Page (404 Error): /los-angeles-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[247] Broken Page (404 Error): /san-francisco-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[248] Broken Page (404 Error): /route-66-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[249] Broken Page (404 Error): /best-time-to-visit-usa.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[250] Broken Page (404 Error): /grand-canyon-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[251] Broken Page (404 Error): /usa-budget-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[252] Broken Page (404 Error): /east-coast-vs-west-coast.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[253] Broken Page (404 Error): /usa-food-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[254] Broken Page (404 Error): /usa-honeymoon-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[255] Broken Page (404 Error): /yellowstone-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[256] Broken Page (404 Error): /washington-dc-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[257] Broken Page (404 Error): /usa-shopping-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[258] Broken Page (404 Error): /disney-world-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[259] Broken Page (404 Error): /miami-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[260] Broken Page (404 Error): /usa-faqs.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[261] Broken Page (404 Error): /usa-visa-guide.html
+Severity: HIGH | Category: PAGES
+Problem Detail: Internal page load par HTTP 404 status return hua. Dead link detect hui.
+Impact: Users encounter broken links leading to immediate bounce and negative user journey.
+----------------------------------------
+
+[262] Excessive DOM complexity — 2204 nodes / depth 11 (target <1500 nodes & <32 depth).
+Severity: MEDIUM | Category: TECHNICAL
+Problem Detail: Found during crawler analysis (technical). Directly affects page crawlability and user experience.
+Impact: Sub-optimal indexing factor and minor SEO friction.
+----------------------------------------
+
+[263] 113 orphan page(s) mile — koi internal link point nahi karta: /blogs/australia/australia-budget.html, /blogs/australia/australia-family-guide.html, /blogs/australia/australia-faqs.html
+Severity: MEDIUM | Category: LINKS
+Problem Detail: Found during crawler analysis (links). Directly affects page crawlability and user experience.
+Impact: Sub-optimal indexing factor and minor SEO friction.
+----------------------------------------
+
+[264] Duplicate page titles: "Packages | The Falcon Tour" | "Blog | The Falcon Tour" | "The Falcon Tour - Curated Adventure Travel From the Himalayas" — har page ka title unique hona chahiye.
+Severity: MEDIUM | Category: ONPAGE
+Problem Detail: Found during crawler analysis (onpage). Directly affects page crawlability and user experience.
+Impact: Sub-optimal indexing factor and minor SEO friction.
+----------------------------------------
+
+[265] URL Architecture: 9 URL(s) contain query parameters or uppercase segments.
+Severity: MEDIUM | Category: TECHNICAL
+Problem Detail: Query parameters (?id=..) aur special characters search engines ko page intent samajhne mein confuse karte hain.
+Impact: Advisory warning that reduces organic discovery performance.
+----------------------------------------
+
+[266] Crawl Budget & Renderability: 1 render-blocking external script(s) found in document.
+Severity: MEDIUM | Category: TECHNICAL
+Problem Detail: Render-blocking JavaScript first paint time aur core web vitals ko delay karta hai.
+Impact: Advisory warning that reduces organic discovery performance.
+----------------------------------------
+
+[267] Core Web Vitals & Speed: Server TTFB: 791ms · Page load proxy: ~1168ms.
+Severity: MEDIUM | Category: TECHNICAL
+Problem Detail: Slow server response time (>600ms) user bounce rate badhata hai aur ranking hurt karta hai.
+Impact: Advisory warning that reduces organic discovery performance.
+----------------------------------------
+
+[268] DOM Complexity & Performance Depth: 2204 total DOM nodes · Max depth: 11 levels — exceeds recommended thresholds.
+Severity: MEDIUM | Category: TECHNICAL
+Problem Detail: Excessive DOM complexity (>1500 nodes ) cause karta hai slow rendering, browser memory pressure aur poor Lighthouse scores.
+Impact: Advisory warning that reduces organic discovery performance.
+----------------------------------------
+
+[269] Content Readability & Heading Flow: Readability: Complex (~39 words/sentence) · Heading hierarchy: ⚠️ Levels skipped.
+Severity: MEDIUM | Category: CONTENT
+Problem Detail: Complex sentences (>39 words avg) Google ke "helpful content" guidelines aur AEO (AI search) ke liye parse karna mushkil bana deti hain. Skipped heading levels (e.g. H1→H4) screen readers aur bots ko confuse karte hain.
+Impact: Advisory warning that reduces organic discovery performance.
+----------------------------------------
+
+[270] Orphan Internal Page: /blogs/australia/australia-budget.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[271] Orphan Internal Page: /blogs/australia/australia-family-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[272] Orphan Internal Page: /blogs/australia/australia-faqs.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[273] Orphan Internal Page: /blogs/australia/australia-food-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[274] Orphan Internal Page: /blogs/australia/australia-honeymoon-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[275] Orphan Internal Page: /blogs/australia/australia-packing-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[276] Orphan Internal Page: /blogs/australia/australia-road-trip-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[277] Orphan Internal Page: /blogs/australia/australia-shopping-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[278] Orphan Internal Page: /blogs/australia/australia-travel-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[279] Orphan Internal Page: /blogs/australia/australia-travel-tips.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[280] Orphan Internal Page: /blogs/australia/australia-visa.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[281] Orphan Internal Page: /blogs/australia/australia-wildlife-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[282] Orphan Internal Page: /blogs/australia/best-time-to-visit-australia.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[283] Orphan Internal Page: /blogs/australia/brisbane-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[284] Orphan Internal Page: /blogs/australia/gold-coast-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[285] Orphan Internal Page: /blogs/australia/great-barrier-reef.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[286] Orphan Internal Page: /blogs/australia/great-ocean-road.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[287] Orphan Internal Page: /blogs/australia/melbourne-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[288] Orphan Internal Page: /blogs/australia/sydney-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[289] Orphan Internal Page: /blogs/australia/tasmania-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[290] Orphan Internal Page: /blogs/austria/hallstatt-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[291] Orphan Internal Page: /blogs/austria/vienna-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[292] Orphan Internal Page: /blogs/czech-republic/prague-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[293] Orphan Internal Page: /blogs/europe/best-time-to-visit-europe.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[294] Orphan Internal Page: /blogs/europe/europe-backpacking-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[295] Orphan Internal Page: /blogs/europe/europe-family-trip-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[296] Orphan Internal Page: /blogs/europe/europe-honeymoon-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[297] Orphan Internal Page: /blogs/europe/europe-itinerary.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[298] Orphan Internal Page: /blogs/europe/europe-packing-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[299] Orphan Internal Page: /blogs/europe/europe-train-travel-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[300] Orphan Internal Page: /blogs/europe/europe-travel-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[301] Orphan Internal Page: /blogs/europe/europe-travel-tips.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[302] Orphan Internal Page: /blogs/europe/europe-trip-cost.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[303] Orphan Internal Page: /blogs/europe/europe-visa-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[304] Orphan Internal Page: /blogs/europe/northern-lights-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[305] Orphan Internal Page: /blogs/europe/schengen-visa-faqs.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[306] Orphan Internal Page: /blogs/france/paris-travel-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[307] Orphan Internal Page: /blogs/greece/santorini-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[308] Orphan Internal Page: /blogs/iceland/iceland-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[309] Orphan Internal Page: /blogs/italy/rome-travel-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[310] Orphan Internal Page: /blogs/italy/venice-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[311] Orphan Internal Page: /blogs/japan/anime-places-japan.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[312] Orphan Internal Page: /blogs/japan/best-time-to-visit-japan.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[313] Orphan Internal Page: /blogs/japan/cherry-blossom-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[314] Orphan Internal Page: /blogs/japan/disneyland-japan.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[315] Orphan Internal Page: /blogs/japan/japan-family-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[316] Orphan Internal Page: /blogs/japan/japan-faqs.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[317] Orphan Internal Page: /blogs/japan/japan-honeymoon-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[318] Orphan Internal Page: /blogs/japan/japan-rail-pass-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[319] Orphan Internal Page: /blogs/japan/japan-shopping-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[320] Orphan Internal Page: /blogs/japan/japan-travel-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[321] Orphan Internal Page: /blogs/japan/japan-travel-tips.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[322] Orphan Internal Page: /blogs/japan/japan-trip-cost.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[323] Orphan Internal Page: /blogs/japan/japan-visa-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[324] Orphan Internal Page: /blogs/japan/japanese-food-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[325] Orphan Internal Page: /blogs/japan/kyoto-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[326] Orphan Internal Page: /blogs/japan/mount-fuji-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[327] Orphan Internal Page: /blogs/japan/nara-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[328] Orphan Internal Page: /blogs/japan/osaka-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[329] Orphan Internal Page: /blogs/japan/tokyo-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[330] Orphan Internal Page: /blogs/netherlands/amsterdam-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[331] Orphan Internal Page: /blogs/new-zealand/adventure-activities.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[332] Orphan Internal Page: /blogs/new-zealand/auckland-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[333] Orphan Internal Page: /blogs/new-zealand/christchurch-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[334] Orphan Internal Page: /blogs/new-zealand/hobbiton-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[335] Orphan Internal Page: /blogs/new-zealand/milford-sound-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[336] Orphan Internal Page: /blogs/new-zealand/new-zealand-travel-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[337] Orphan Internal Page: /blogs/new-zealand/nz-10-days-itinerary.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[338] Orphan Internal Page: /blogs/new-zealand/nz-faqs.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[339] Orphan Internal Page: /blogs/new-zealand/nz-food-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[340] Orphan Internal Page: /blogs/new-zealand/nz-shopping-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[341] Orphan Internal Page: /blogs/new-zealand/nz-travel-tips.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[342] Orphan Internal Page: /blogs/new-zealand/nz-trip-cost.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[343] Orphan Internal Page: /blogs/new-zealand/queenstown-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[344] Orphan Internal Page: /blogs/new-zealand/road-trip-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[345] Orphan Internal Page: /blogs/new-zealand/rotorua-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[346] Orphan Internal Page: /blogs/spain/barcelona-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[347] Orphan Internal Page: /blogs/switzerland/interlaken-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[348] Orphan Internal Page: /blogs/switzerland/swiss-alps-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[349] Orphan Internal Page: /blogs/usa/best-time-to-visit-usa.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[350] Orphan Internal Page: /blogs/usa/disney-world-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[351] Orphan Internal Page: /blogs/usa/grand-canyon-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[352] Orphan Internal Page: /blogs/usa/las-vegas-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[353] Orphan Internal Page: /blogs/usa/los-angeles-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[354] Orphan Internal Page: /blogs/usa/miami-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[355] Orphan Internal Page: /blogs/usa/national-parks-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[356] Orphan Internal Page: /blogs/usa/new-york-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[357] Orphan Internal Page: /blogs/usa/route-66-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[358] Orphan Internal Page: /blogs/usa/san-francisco-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[359] Orphan Internal Page: /blogs/usa/usa-budget-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[360] Orphan Internal Page: /blogs/usa/usa-family-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[361] Orphan Internal Page: /blogs/usa/usa-faqs.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[362] Orphan Internal Page: /blogs/usa/usa-food-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[363] Orphan Internal Page: /blogs/usa/usa-honeymoon-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[364] Orphan Internal Page: /blogs/usa/usa-packing-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[365] Orphan Internal Page: /blogs/usa/usa-shopping-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[366] Orphan Internal Page: /blogs/usa/usa-travel-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[367] Orphan Internal Page: /blogs/usa/usa-travel-tips.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[368] Orphan Internal Page: /blogs/usa/usa-trip-cost.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[369] Orphan Internal Page: /blogs/usa/usa-visa-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[370] Orphan Internal Page: /blogs/usa/washington-dc-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[371] Orphan Internal Page: /blogs/usa/yellowstone-guide.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[372] Orphan Internal Page: /packages/package-australia-new-zealand-combo.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[373] Orphan Internal Page: /packages/package-classic-dubai.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[374] Orphan Internal Page: /packages/package-classic-scandinavia.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[375] Orphan Internal Page: /packages/package-discover-singapore-value.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[376] Orphan Internal Page: /packages/package-iceland.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[377] Orphan Internal Page: /packages/package-japan-f1-adventure.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[378] Orphan Internal Page: /packages/package-japan-first-impressions.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[379] Orphan Internal Page: /packages/package-scandinavia-northern-lights.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[380] Orphan Internal Page: /packages/package-scandinavia-unveiled.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[381] Orphan Internal Page: /packages/package-ultimate-singapore-luxury.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[382] Orphan Internal Page: /packages/trip-fixed-group-tour.html
+Severity: MEDIUM | Category: PAGES
+Problem Detail: Website ke kisi bhi parent ya child navigation se is page ka internal incoming link nahi hai.
+Impact: Search crawlers is page ko easily discover ya rank nahi kar paate.
+----------------------------------------
+
+[383] 325 inline style attributes — CSS ko external/<style> me nikalo.
+Severity: LOW | Category: TECHNICAL
+Problem Detail: Found during crawler analysis (technical). Directly affects page crawlability and user experience.
+Impact: Sub-optimal indexing factor and minor SEO friction.
+----------------------------------------
+
+[384] Heading hierarchy skipped (e.g. H1 directly jumps to H3/H4 without intermediate levels).
+Severity: LOW | Category: CONTENT
+Problem Detail: Found during crawler analysis (content). Directly affects page crawlability and user experience.
+Impact: Sub-optimal indexing factor and minor SEO friction.
+----------------------------------------
+
+[385] Content readability complex hai (~ 39 words/sentence) — sentences chote aur clear rakhein.
+Severity: LOW | Category: CONTENT
+Problem Detail: Found during crawler analysis (content). Directly affects page crawlability and user experience.
+Impact: Sub-optimal indexing factor and minor SEO friction.
+----------------------------------------
+
+[386] Duplicate H1 tags across pages: "Thirty-two premium journeys, meticulously planned." | "Notes from the road, not the brochure." | "Where the falcon flies, you follow."
+Severity: LOW | Category: ONPAGE
+Problem Detail: Found during crawler analysis (onpage). Directly affects page crawlability and user experience.
+Impact: Sub-optimal indexing factor and minor SEO friction.
+----------------------------------------
+
+[387] Missing H1 Heading on Page: /japan/anime-places-japan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[388] Missing H1 Heading on Page: /japan/best-time-to-visit-japan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[389] Missing H1 Heading on Page: /japan/cherry-blossom-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[390] Missing H1 Heading on Page: /japan/disneyland-japan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[391] Missing H1 Heading on Page: /japan/japan-family-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[392] Missing H1 Heading on Page: /japan/japan-faqs.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[393] Missing H1 Heading on Page: /japan/japan-honeymoon-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[394] Missing H1 Heading on Page: /japan/japan-itinerary.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[395] Missing H1 Heading on Page: /japan/japan-rail-pass-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[396] Missing H1 Heading on Page: /japan/japan-shopping-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[397] Missing H1 Heading on Page: /japan/japan-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[398] Missing H1 Heading on Page: /japan/japan-travel-tips.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[399] Missing H1 Heading on Page: /japan/japan-trip-cost.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[400] Missing H1 Heading on Page: /japan/japan-visa-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[401] Missing H1 Heading on Page: /japan/japanese-food-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[402] Missing H1 Heading on Page: /japan/kyoto-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[403] Missing H1 Heading on Page: /japan/mount-fuji-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[404] Missing H1 Heading on Page: /japan/nara-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[405] Missing H1 Heading on Page: /japan/osaka-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[406] Missing H1 Heading on Page: /japan/tokyo-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[407] Missing H1 Heading on Page: /australia/australia-budget.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[408] Missing H1 Heading on Page: /australia/australia-family-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[409] Missing H1 Heading on Page: /australia/australia-faqs.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[410] Missing H1 Heading on Page: /australia/australia-food-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[411] Missing H1 Heading on Page: /australia/australia-honeymoon-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[412] Missing H1 Heading on Page: /australia/australia-packing-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[413] Missing H1 Heading on Page: /australia/australia-road-trip-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[414] Missing H1 Heading on Page: /australia/australia-shopping-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[415] Missing H1 Heading on Page: /australia/australia-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[416] Missing H1 Heading on Page: /australia/australia-travel-tips.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[417] Missing H1 Heading on Page: /australia/australia-visa.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[418] Missing H1 Heading on Page: /australia/australia-wildlife-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[419] Missing H1 Heading on Page: /australia/best-time-to-visit-australia.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[420] Missing H1 Heading on Page: /australia/brisbane-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[421] Missing H1 Heading on Page: /australia/gold-coast-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[422] Missing H1 Heading on Page: /australia/great-barrier-reef.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[423] Missing H1 Heading on Page: /australia/great-ocean-road.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[424] Missing H1 Heading on Page: /australia/melbourne-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[425] Missing H1 Heading on Page: /australia/sydney-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[426] Missing H1 Heading on Page: /australia/tasmania-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[427] Missing H1 Heading on Page: /usa/best-time-to-visit-usa.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[428] Missing H1 Heading on Page: /usa/disney-world-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[429] Missing H1 Heading on Page: /usa/east-coast-vs-west-coast.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[430] Missing H1 Heading on Page: /usa/grand-canyon-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[431] Missing H1 Heading on Page: /usa/las-vegas-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[432] Missing H1 Heading on Page: /usa/los-angeles-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[433] Missing H1 Heading on Page: /usa/miami-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[434] Missing H1 Heading on Page: /usa/national-parks-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[435] Missing H1 Heading on Page: /usa/new-york-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[436] Missing H1 Heading on Page: /usa/orlando-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[437] Missing H1 Heading on Page: /usa/route-66-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[438] Missing H1 Heading on Page: /usa/san-francisco-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[439] Missing H1 Heading on Page: /usa/usa-budget-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[440] Missing H1 Heading on Page: /usa/usa-family-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[441] Missing H1 Heading on Page: /usa/usa-faqs.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[442] Missing H1 Heading on Page: /usa/usa-food-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[443] Missing H1 Heading on Page: /usa/usa-honeymoon-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[444] Missing H1 Heading on Page: /usa/usa-packing-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[445] Missing H1 Heading on Page: /usa/usa-shopping-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[446] Missing H1 Heading on Page: /usa/usa-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[447] Missing H1 Heading on Page: /usa/usa-travel-tips.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[448] Missing H1 Heading on Page: /usa/usa-trip-cost.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[449] Missing H1 Heading on Page: /usa/usa-visa-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[450] Missing H1 Heading on Page: /usa/washington-dc-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[451] Missing H1 Heading on Page: /usa/yellowstone-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[452] Missing H1 Heading on Page: /new-zealand/new-zealand-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[453] Missing H1 Heading on Page: /new-zealand/nz-10-days-itinerary.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[454] Missing H1 Heading on Page: /new-zealand/best-time-to-visit-nz.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[455] Missing H1 Heading on Page: /new-zealand/new-zealand-visa.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[456] Missing H1 Heading on Page: /new-zealand/nz-trip-cost.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[457] Missing H1 Heading on Page: /new-zealand/nz-travel-tips.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[458] Missing H1 Heading on Page: /new-zealand/road-trip-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[459] Missing H1 Heading on Page: /new-zealand/adventure-activities.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[460] Missing H1 Heading on Page: /new-zealand/nz-food-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[461] Missing H1 Heading on Page: /new-zealand/nz-honeymoon-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[462] Missing H1 Heading on Page: /new-zealand/nz-shopping-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[463] Missing H1 Heading on Page: /new-zealand/nz-faqs.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[464] Missing H1 Heading on Page: /new-zealand/auckland-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[465] Missing H1 Heading on Page: /new-zealand/christchurch-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[466] Missing H1 Heading on Page: /new-zealand/queenstown-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[467] Missing H1 Heading on Page: /new-zealand/rotorua-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[468] Missing H1 Heading on Page: /new-zealand/hobbiton-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[469] Missing H1 Heading on Page: /new-zealand/milford-sound-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[470] Missing H1 Heading on Page: /switzerland/interlaken-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[471] Missing H1 Heading on Page: /switzerland/swiss-alps-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[472] Missing H1 Heading on Page: /france/paris-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[473] Missing H1 Heading on Page: /italy/rome-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[474] Missing H1 Heading on Page: /italy/venice-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[475] Missing H1 Heading on Page: /spain/barcelona-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[476] Missing H1 Heading on Page: /austria/hallstatt-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[477] Missing H1 Heading on Page: /austria/vienna-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[478] Missing H1 Heading on Page: /netherlands/amsterdam-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[479] Missing H1 Heading on Page: /greece/santorini-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[480] Missing H1 Heading on Page: /iceland/iceland-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[481] Missing H1 Heading on Page: /czech-republic/prague-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[482] Missing H1 Heading on Page: /europe/europe-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[483] Missing H1 Heading on Page: /europe/europe-itinerary.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[484] Missing H1 Heading on Page: /europe/best-time-to-visit-europe.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[485] Missing H1 Heading on Page: /europe/europe-backpacking-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[486] Missing H1 Heading on Page: /europe/europe-family-trip-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[487] Missing H1 Heading on Page: /europe/europe-honeymoon-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[488] Missing H1 Heading on Page: /europe/europe-packing-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[489] Missing H1 Heading on Page: /europe/europe-train-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[490] Missing H1 Heading on Page: /europe/europe-travel-tips.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[491] Missing H1 Heading on Page: /europe/europe-trip-cost.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[492] Missing H1 Heading on Page: /europe/europe-visa-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[493] Missing H1 Heading on Page: /europe/schengen-visa-faqs.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[494] Missing H1 Heading on Page: /europe/northern-lights-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[495] Missing H1 Heading on Page: /dubai/7-days-in-dubai.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[496] Missing H1 Heading on Page: /turkey/cappadocia-balloons-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[497] Missing H1 Heading on Page: /singapore/singapore-family-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[498] Missing H1 Heading on Page: /sri-lanka/sri-lanka-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[499] Missing H1 Heading on Page: /package-essence-of-europe.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[500] Missing H1 Heading on Page: /package-swiss-paris.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[501] Missing H1 Heading on Page: /package-uk-scotland.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[502] Missing H1 Heading on Page: /package-grand-european-odyssey.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[503] Missing H1 Heading on Page: /package-alpine-elegance-switzerland.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[504] Missing H1 Heading on Page: /package-scandinavia-northern-lights.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[505] Missing H1 Heading on Page: /package-classic-scandinavia.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[506] Missing H1 Heading on Page: /package-iceland.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[507] Missing H1 Heading on Page: /package-scandinavia-unveiled.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[508] Missing H1 Heading on Page: /package-japan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[509] Missing H1 Heading on Page: /package-japan-alpine.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[510] Missing H1 Heading on Page: /package-journey-through-japan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[511] Missing H1 Heading on Page: /package-japan-first-impressions.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[512] Missing H1 Heading on Page: /package-japan-f1-adventure.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[513] Missing H1 Heading on Page: /package-new-zealand.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[514] Missing H1 Heading on Page: /package-new-zealand-uncovered.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[515] Missing H1 Heading on Page: /package-scenic-new-zealand.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[516] Missing H1 Heading on Page: /package-new-zealand-shared-journey.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[517] Missing H1 Heading on Page: /package-discover-australia.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[518] Missing H1 Heading on Page: /package-essence-of-australia.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[519] Missing H1 Heading on Page: /package-discover-melbourne.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[520] Missing H1 Heading on Page: /package-classic-australia.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[521] Missing H1 Heading on Page: /package-australia-new-zealand-combo.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[522] Missing H1 Heading on Page: /package-west-coast-usa.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[523] Missing H1 Heading on Page: /package-east-coast-usa.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[524] Missing H1 Heading on Page: /package-explore-america.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[525] Missing H1 Heading on Page: /package-singapore-malaysia.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[526] Missing H1 Heading on Page: /package-singapore-highlights.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[527] Missing H1 Heading on Page: /package-discover-singapore-value.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[528] Missing H1 Heading on Page: /package-ultimate-singapore-luxury.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[529] Missing H1 Heading on Page: /package-sri-lanka-escape.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[530] Missing H1 Heading on Page: /package-classic-sri-lanka.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[531] Missing H1 Heading on Page: /package-best-of-sri-lanka.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[532] Missing H1 Heading on Page: /package-complete-sri-lanka-experience.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[533] Missing H1 Heading on Page: /package-discover-dubai.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[534] Missing H1 Heading on Page: /package-ultimate-dubai-luxury.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[535] Missing H1 Heading on Page: /package-thailand-essentials.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[536] Missing H1 Heading on Page: /package-classic-thailand.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[537] Missing H1 Heading on Page: /package-thailand-phuket-krabi.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[538] Missing H1 Heading on Page: /package-thailand-ultimate.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[539] Missing H1 Heading on Page: /package-vietnam-essentials.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[540] Missing H1 Heading on Page: /package-classic-vietnam.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[541] Missing H1 Heading on Page: /package-vietnam-best.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[542] Missing H1 Heading on Page: /package-vietnam-ultimate.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[543] Missing H1 Heading on Page: /package-bali-essentials.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[544] Missing H1 Heading on Page: /package-classic-bali.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[545] Missing H1 Heading on Page: /package-bali-unveiled.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[546] Missing H1 Heading on Page: /package-bali-ultimate.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[547] Missing H1 Heading on Page: /package-kerala-escape.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[548] Missing H1 Heading on Page: /package-kerala-gods-own-country.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[549] Missing H1 Heading on Page: /package-kerala-highlights.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[550] Missing H1 Heading on Page: /package-kerala-complete-experience.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[551] Missing H1 Heading on Page: /package-ladakh-getaway.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[552] Missing H1 Heading on Page: /package-ladakh-classic.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[553] Missing H1 Heading on Page: /package-ladakh-lakes-valleys.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[554] Missing H1 Heading on Page: /package-ladakh-ultimate.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[555] Missing H1 Heading on Page: /package-kashmir-delight.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[556] Missing H1 Heading on Page: /package-classic-kashmir.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[557] Missing H1 Heading on Page: /package-best-of-kashmir.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[558] Missing H1 Heading on Page: /package-kashmir-complete-experience.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[559] Missing H1 Heading on Page: /package-bhutan-serenity.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[560] Missing H1 Heading on Page: /package-classic-bhutan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[561] Missing H1 Heading on Page: /package-best-of-bhutan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[562] Missing H1 Heading on Page: /package-bhutan-complete-experience.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[563] Missing H1 Heading on Page: /package-almaty-city-escape.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[564] Missing H1 Heading on Page: /package-classic-almaty.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[565] Missing H1 Heading on Page: /package-best-of-almaty.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[566] Missing H1 Heading on Page: /package-almaty-complete-experience.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[567] Missing H1 Heading on Page: /australia-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[568] Missing H1 Heading on Page: /australia-travel-tips.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[569] Missing H1 Heading on Page: /australia-packing-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[570] Missing H1 Heading on Page: /best-time-to-visit-australia.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[571] Missing H1 Heading on Page: /gold-coast-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[572] Missing H1 Heading on Page: /australia-wildlife-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[573] Missing H1 Heading on Page: /australia-visa.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[574] Missing H1 Heading on Page: /australia-budget.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[575] Missing H1 Heading on Page: /melbourne-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[576] Missing H1 Heading on Page: /australia-shopping-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[577] Missing H1 Heading on Page: /sydney-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[578] Missing H1 Heading on Page: /great-barrier-reef.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[579] Missing H1 Heading on Page: /tasmania-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[580] Missing H1 Heading on Page: /great-ocean-road.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[581] Missing H1 Heading on Page: /australia-food-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[582] Missing H1 Heading on Page: /australia-faqs.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[583] Missing H1 Heading on Page: /australia-family-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[584] Missing H1 Heading on Page: /brisbane-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[585] Missing H1 Heading on Page: /australia-road-trip-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[586] Missing H1 Heading on Page: /vienna-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[587] Missing H1 Heading on Page: /hallstatt-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[588] Missing H1 Heading on Page: /venice-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[589] Missing H1 Heading on Page: /rome-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[590] Missing H1 Heading on Page: /japan-shopping-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[591] Missing H1 Heading on Page: /tokyo-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[592] Missing H1 Heading on Page: /japan-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[593] Missing H1 Heading on Page: /disneyland-japan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[594] Missing H1 Heading on Page: /cherry-blossom-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[595] Missing H1 Heading on Page: /japan-itinerary.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[596] Missing H1 Heading on Page: /mount-fuji-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[597] Missing H1 Heading on Page: /best-time-to-visit-japan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[598] Missing H1 Heading on Page: /kyoto-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[599] Missing H1 Heading on Page: /japan-family-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[600] Missing H1 Heading on Page: /anime-places-japan.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[601] Missing H1 Heading on Page: /nara-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[602] Missing H1 Heading on Page: /japan-visa-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[603] Missing H1 Heading on Page: /japan-trip-cost.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[604] Missing H1 Heading on Page: /japan-travel-tips.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[605] Missing H1 Heading on Page: /japan-rail-pass-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[606] Missing H1 Heading on Page: /japan-faqs.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[607] Missing H1 Heading on Page: /osaka-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[608] Missing H1 Heading on Page: /japanese-food-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[609] Missing H1 Heading on Page: /new-zealand-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[610] Missing H1 Heading on Page: /nz-10-days-itinerary.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[611] Missing H1 Heading on Page: /road-trip-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[612] Missing H1 Heading on Page: /nz-food-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[613] Missing H1 Heading on Page: /queenstown-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[614] Missing H1 Heading on Page: /rotorua-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[615] Missing H1 Heading on Page: /new-zealand-visa.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[616] Missing H1 Heading on Page: /auckland-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[617] Missing H1 Heading on Page: /milford-sound-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[618] Missing H1 Heading on Page: /hobbiton-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[619] Missing H1 Heading on Page: /best-time-to-visit-nz.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[620] Missing H1 Heading on Page: /adventure-activities.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[621] Missing H1 Heading on Page: /christchurch-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[622] Missing H1 Heading on Page: /swiss-alps-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[623] Missing H1 Heading on Page: /interlaken-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[624] Missing H1 Heading on Page: /usa-travel-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[625] Missing H1 Heading on Page: /national-parks-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[626] Missing H1 Heading on Page: /usa-trip-cost.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[627] Missing H1 Heading on Page: /usa-travel-tips.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[628] Missing H1 Heading on Page: /orlando-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[629] Missing H1 Heading on Page: /usa-family-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[630] Missing H1 Heading on Page: /usa-packing-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[631] Missing H1 Heading on Page: /new-york-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[632] Missing H1 Heading on Page: /los-angeles-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[633] Missing H1 Heading on Page: /san-francisco-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[634] Missing H1 Heading on Page: /route-66-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[635] Missing H1 Heading on Page: /best-time-to-visit-usa.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[636] Missing H1 Heading on Page: /grand-canyon-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[637] Missing H1 Heading on Page: /usa-budget-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[638] Missing H1 Heading on Page: /east-coast-vs-west-coast.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[639] Missing H1 Heading on Page: /usa-food-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[640] Missing H1 Heading on Page: /usa-honeymoon-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[641] Missing H1 Heading on Page: /yellowstone-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[642] Missing H1 Heading on Page: /washington-dc-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[643] Missing H1 Heading on Page: /usa-shopping-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[644] Missing H1 Heading on Page: /disney-world-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[645] Missing H1 Heading on Page: /miami-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[646] Missing H1 Heading on Page: /usa-faqs.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
+[647] Missing H1 Heading on Page: /usa-visa-guide.html
+Severity: LOW | Category: PAGES
+Problem Detail: Page structure me primary H1 heading element absent hai.
+Impact: Search engines ko primary topic clarity nahi milti.
+----------------------------------------
+
