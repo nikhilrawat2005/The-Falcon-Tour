@@ -1,5 +1,5 @@
 /* ================================================================
-   PACKAGE DETAIL PAGE • The Falcon Tour
+   PACKAGE DETAIL PAGE â€¢ The Falcon Tour
    Shared stylesheet for all 5 NexusDMC package pages
    ================================================================ */
 
@@ -115,7 +115,7 @@
 .overview-strip {
   background: var(--ink-2);
   padding: 36px 0;
-  border-bottom: 1px solid rgba(212,175,55,.12);
+  border-top: 1px solid rgba(212,175,55,.12);border-bottom: 1px solid rgba(212,175,55,.12);
 }
 .overview-pills {
   display: flex;
@@ -135,14 +135,14 @@
   font-size: 10px;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: rgba(245,245,244,.45);
+  color: rgba(245,245,244,.5);
   margin-bottom: 6px;
 }
 .overview-pill .op-value {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   color: var(--cream);
-  font-weight: 500;
+  font-weight: 600;
 }
 .overview-pill .op-value em {
   font-style: italic;
@@ -200,7 +200,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   color: var(--cream);
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 10px;
   line-height: 1.2;
 }
@@ -353,7 +353,7 @@
   font-size: 10px;
   letter-spacing: .14em;
   text-transform: uppercase;
-  color: rgba(245,245,244,.45);
+  color: rgba(245,245,244,.5);
   margin-bottom: 6px;
 }
 .sidebar-price {
@@ -367,7 +367,7 @@
 .sidebar-price sup { font-size: 22px; vertical-align: super; }
 .sidebar-price-note {
   font-size: 12px;
-  color: rgba(245,245,244,.45);
+  color: rgba(245,245,244,.5);
   margin-bottom: 24px;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -476,11 +476,11 @@
 }
 
 /* ==========================================================================
-   Part 3 — shared package-detail component classes
+   Part 3 â€” shared package-detail component classes
    (previously duplicated as inline styles across all 32 detail pages)
    ========================================================================== */
 .pkg-section-title{font-size:32px;margin-bottom:12px;color:var(--cream);}
-.pkg-section-subtitle{color:var(--cream-2);margin-bottom:40px;font-size:15px;}
+.pkg-section-subtitle{color:rgba(245,245,244,.65);margin-bottom:40px;font-size:15px;}
 .pkg-section-alt{background:var(--ink-2);border-top:1px solid rgba(212,175,55,.15);}
 .pkg-section-base{background:var(--ink);color:var(--cream);}
 .btn-on-dark{border-color:rgba(245,245,244,.3);color:var(--cream);}
@@ -511,3 +511,16 @@
 .pkg-card-link{display:block;color:inherit;}
 .trip-card-media{position:absolute;inset:0;}
 .trip-card-media-front{position:absolute;inset:0;z-index:3;}
+
+
+.note-box { margin-top:40px;padding:20px 24px;background:rgba(10,10,10,0.55);border:1px solid rgba(212,175,55,.22);border-radius:6px;backdrop-filter:blur(8px); }
+.note-label { margin:0;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:10px; }
+.note-body { margin:0;font-size:13.5px;color:rgba(245,245,244,.72);line-height:1.75; }
+.gallery-heading { color:var(--cream); }
+.pkg-footer--lg { background: var(--ink-2); color: var(--cream); padding: 80px 0 30px; border-top: 1px solid rgba(255,255,255,0.05); }
+.pkg-footer-nav-btn { margin-top:20px; }
+.pkg-footer-nav-btn .btn { font-size:12px;padding:12px 20px; }
+.pkg-copyright { margin-top:40px;font-size:12px;color:var(--text-mute); }
+.visually-hidden { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0; }
+.trip-wrap-narrow { max-width:820px; }
+.pkg-hero-bg--japan { filter: hue-rotate(20deg) saturate(1.1); }
