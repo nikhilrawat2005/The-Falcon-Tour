@@ -279,7 +279,7 @@
 </a>
 
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowEurope').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -385,7 +385,7 @@
 </a>
 
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowJapan').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -534,7 +534,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowDubai').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -621,7 +621,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowVietnam').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -729,7 +729,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowBali').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -818,7 +818,7 @@
 </a>
 
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowSingapore').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -943,7 +943,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowThailand').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -1028,7 +1028,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowSriLanka').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -1255,7 +1255,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowNewZealand').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -1342,7 +1342,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowAustralia').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -1427,7 +1427,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowAlmaty').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -1512,7 +1512,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowKashmir').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -1596,7 +1596,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowLadakh').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -1662,7 +1662,7 @@
     </div>
   </a>
 </div>
-<div class="carousel-nav" class="mb-40">
+<div class="carousel-nav mb-40">
   <button aria-label="Scroll left" onclick="document.getElementById('pkgRowUSA').scrollBy({left:-370,behavior:'smooth'})">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -2104,13 +2104,15 @@
     }, { passive: true });
   }
 
-  // Motion Dev integration
-  const { animate, stagger, spring } = Motion;
+  // Motion Dev integration (guarded — motion.js loads asynchronously via defer, so the
+  //  global may not exist when this inline script runs; the carousel auto-scroll below
+  //  must keep working regardless, and motion effects re-init once it has loaded)
+  function initMotionFX() {
+    if (typeof Motion === 'undefined') return;
+    const { animate, stagger, spring } = Motion;
 
-  // 1. Magnetic buttons: now handled by assets/js/motion/buttons.js (GSAP, Stage 2)
-
-  // 2. High performance spring 3D tilt
-  document.querySelectorAll('.tilt').forEach(card => {
+    // 2. High performance spring 3D tilt
+    document.querySelectorAll('.tilt').forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const r = card.getBoundingClientRect();
       const px = (e.clientX - r.left) / r.width - 0.5;
@@ -2132,6 +2134,9 @@
       );
     });
   });
+  }
+  initMotionFX();
+  document.addEventListener('DOMContentLoaded', initMotionFX);
 
   // hero parallax: now handled by assets/js/motion/images.js (GSAP ScrollTrigger, Stage 2)
 
