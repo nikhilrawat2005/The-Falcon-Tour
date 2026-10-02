@@ -1,5 +1,5 @@
 /* ================================================================
-   PACKAGE DETAIL PAGE â€¢ The Falcon Tour
+   PACKAGE DETAIL PAGE • The Falcon Tour
    Shared stylesheet for all 5 NexusDMC package pages
    ================================================================ */
 
@@ -476,7 +476,7 @@
 }
 
 /* ==========================================================================
-   Part 3 â€” shared package-detail component classes
+   Part 3 — shared package-detail component classes
    (previously duplicated as inline styles across all 32 detail pages)
    ========================================================================== */
 .pkg-section-title{font-size:32px;margin-bottom:12px;color:var(--cream);}
